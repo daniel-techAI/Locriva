@@ -19,7 +19,7 @@ if (navToggle && nav) {
 }
 
 if (signupForm && formStatus) {
-  signupForm.addEventListener("submit", (event) => {
+  signupForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     const data = new FormData(signupForm);
     const email = String(data.get("email") || "").trim();
@@ -29,7 +29,19 @@ if (signupForm && formStatus) {
       return;
     }
 
-    signupForm.reset();
-    formStatus.textContent = "Thanks. Your GrowthStack call request is ready.";
+    try {
+      if (window.location.protocol !== "file:") {
+        await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(data).toString(),
+        });
+      }
+
+      signupForm.reset();
+      formStatus.textContent = "Thanks. Your GrowthStack call request is ready.";
+    } catch {
+      formStatus.textContent = "Something went wrong. Email hello@growthstack.local directly.";
+    }
   });
 }
