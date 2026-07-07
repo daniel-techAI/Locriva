@@ -4,7 +4,7 @@ Static, self-owned website for GrowthStack, a small-business web design and grow
 
 ## Open Locally
 
-Open `index.html` in a browser, or deploy the folder as a static site.
+Double-click `Open GrowthStack.bat`, open `index.html` in a browser, or deploy the folder as a static site.
 
 ## Files
 
@@ -14,6 +14,7 @@ Open `index.html` in a browser, or deploy the folder as a static site.
 - `netlify.toml` - Netlify static deploy config
 - `.github/workflows/pages.yml` - GitHub Pages deploy workflow
 - `robots.txt` and `sitemap.xml` - starter SEO files
+- `Open GrowthStack.bat` - double-click local preview shortcut for Windows
 - `assets/growthstack-concept.png` - generated visual reference used during implementation
 - `qa/polsia-reference.png` and `qa/polsia-reference-text.txt` - captured reference from the Polsia page
 
