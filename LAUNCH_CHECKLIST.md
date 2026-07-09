@@ -3,12 +3,15 @@
 ## Before Going Public
 
 - Pick final domain name.
-- Replace `https://example.com` in `robots.txt` and `sitemap.xml`.
-- Replace starter privacy and terms pages with final business copy.
+- Replace placeholder contact email.
+- Add a sitemap after the final public URL exists.
+- Review privacy and terms pages for your country before paid client work.
 - Decide final offer prices.
 - Add real email address in footer.
 - Submit the contact form after deploy and confirm the lead arrives.
 - Test on mobile, tablet, and desktop.
+- Confirm business registration/tax approach before accepting paid client money.
+- Confirm whether you need Impressum/GDPR language for your market.
 
 ## First Offers
 

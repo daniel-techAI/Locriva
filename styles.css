@@ -559,6 +559,21 @@ h1 {
   line-height: 1.65;
 }
 
+.portfolio-grid .text-link {
+  display: inline-flex;
+  margin: 0 24px 26px;
+}
+
+.text-link {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.text-link:hover {
+  color: var(--blue-dark);
+}
+
 .portfolio-preview {
   display: flex;
   flex-direction: column;
@@ -690,6 +705,13 @@ h1 {
   background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
 }
 
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 520px));
+  justify-content: center;
+  gap: 18px;
+}
+
 .pricing-card {
   width: min(100%, 520px);
   margin: 0 auto;
@@ -759,6 +781,100 @@ h1 {
 .pricing-card .trial-note {
   margin-top: 16px;
   text-align: center;
+}
+
+.page-hero {
+  padding: 88px 0 64px;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-hero h1 {
+  max-width: 840px;
+}
+
+.page-hero p {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1.65;
+}
+
+.content-section {
+  padding: 82px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.content-card {
+  padding: 26px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.content-card h2,
+.content-card h3 {
+  margin-bottom: 12px;
+}
+
+.content-card p,
+.content-card li {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.content-card ul,
+.content-card ol {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.wide-card {
+  grid-column: span 2;
+}
+
+.intake-form {
+  display: grid;
+  gap: 16px;
+  width: min(100%, 760px);
+}
+
+.intake-form label {
+  display: grid;
+  gap: 8px;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.intake-form input,
+.intake-form select,
+.intake-form textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  color: var(--text);
+  background: #ffffff;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  outline: none;
+}
+
+.intake-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.intake-form input:focus,
+.intake-form select:focus,
+.intake-form textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 4px rgba(35, 100, 232, 0.12);
 }
 
 .final-cta {
@@ -875,8 +991,14 @@ h1 {
 
   .feature-grid,
   .portfolio-grid,
+  .pricing-grid,
+  .content-grid,
   .process-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wide-card {
+    grid-column: span 2;
   }
 
   .final-cta > div {
@@ -964,9 +1086,15 @@ h1 {
   .logo-row,
   .feature-grid,
   .portfolio-grid,
+  .pricing-grid,
+  .content-grid,
   .process-list,
   .testimonial-grid {
     grid-template-columns: 1fr;
+  }
+
+  .wide-card {
+    grid-column: span 1;
   }
 
   .features,

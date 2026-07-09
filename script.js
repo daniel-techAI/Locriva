@@ -1,7 +1,6 @@
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
-const signupForm = document.querySelector("[data-signup-form]");
-const formStatus = document.querySelector("[data-form-status]");
+const forms = document.querySelectorAll("[data-signup-form]");
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
@@ -18,14 +17,15 @@ if (navToggle && nav) {
   });
 }
 
-if (signupForm && formStatus) {
-  signupForm.addEventListener("submit", async (event) => {
+forms.forEach((form) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const data = new FormData(signupForm);
+    const data = new FormData(form);
+    const formStatus = form.querySelector("[data-form-status]");
     const email = String(data.get("email") || "").trim();
 
     if (!email) {
-      formStatus.textContent = "Enter your email to start.";
+      if (formStatus) formStatus.textContent = "Enter your email to start.";
       return;
     }
 
@@ -38,10 +38,12 @@ if (signupForm && formStatus) {
         });
       }
 
-      signupForm.reset();
-      formStatus.textContent = "Thanks. Your GrowthStack call request is ready.";
+      form.reset();
+      if (formStatus) formStatus.textContent = "Thanks. Your GrowthStack request is ready.";
     } catch {
-      formStatus.textContent = "Something went wrong. Email hello@growthstack.local directly.";
+      if (formStatus) {
+        formStatus.textContent = "Something went wrong. Please try again from the Start Project page.";
+      }
     }
   });
-}
+});

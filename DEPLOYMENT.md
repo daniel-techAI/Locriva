@@ -6,8 +6,8 @@
 - Netlify Forms-ready lead form
 - Netlify config
 - GitHub Pages workflow
-- Robots and sitemap starter files
-- Privacy and terms starter pages
+- Robots file
+- Privacy and terms pages
 
 ## Recommended Launch Path
 
@@ -21,8 +21,8 @@
 6. In Netlify, open Forms and confirm `growthstack-leads` appears after the first deploy.
 7. Buy a domain.
 8. Add the domain to Netlify.
-9. Update `robots.txt` and `sitemap.xml` by replacing `https://example.com` with the real domain.
-10. Test the contact form, mobile layout, and footer links after the domain is connected.
+9. Add a sitemap after you know the real public URL.
+10. Test the contact form, mobile layout, and footer links after the public URL is live.
 
 ## GitHub Pages Alternative
 

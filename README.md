@@ -13,8 +13,12 @@ Double-click `Open GrowthStack.bat`, open `index.html` in a browser, or deploy t
 - `script.js` - mobile navigation and form success state
 - `netlify.toml` - Netlify static deploy config
 - `.github/workflows/pages.yml` - GitHub Pages deploy workflow
-- `robots.txt` and `sitemap.xml` - starter SEO files
+- `robots.txt` - crawler file
 - `Open GrowthStack.bat` - double-click local preview shortcut for Windows
+- `start-project.html` - client intake page
+- `maintenance.html` - recurring support offer
+- `demo-*.html` - sample portfolio demo sites
+- `client-kit/` - sales, scope, agreement, and maintenance templates
 - `assets/growthstack-concept.png` - generated visual reference used during implementation
 - `qa/polsia-reference.png` and `qa/polsia-reference-text.txt` - captured reference from the Polsia page
 

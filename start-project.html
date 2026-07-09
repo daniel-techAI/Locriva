@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Start a Project | GrowthStack</title>
+    <meta
+      name="description"
+      content="Start a small-business website project with GrowthStack by answering a practical client intake form."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="GrowthStack home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" role="img">
+            <path d="M7 22.5h5.5V25H7zM13.5 15h5.5v10h-5.5zM20 7h5.5v18H20z" />
+            <path d="M7 12.7 15.9 7l4.2 4.2 5.2-6.1" />
+          </svg>
+        </span>
+        <span>GrowthStack</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#features">Services</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a class="nav-cta" href="start-project.html">Start Project</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero section-shell">
+        <p class="section-label">Client intake</p>
+        <h1>Start with the details that make a website sell.</h1>
+        <p>
+          This form collects the minimum information needed to quote a small-business website without
+          guessing. It works locally for testing and can collect submissions through Netlify Forms
+          after deployment.
+        </p>
+      </section>
+
+      <section class="content-section section-shell">
+        <div class="content-grid">
+          <article class="content-card">
+            <h2>Good fit</h2>
+            <p>Local service businesses, shops, restaurants, salons, consultants, and solo operators.</p>
+          </article>
+          <article class="content-card">
+            <h2>First build</h2>
+            <p>Start with a one-page site or a focused 4-5 page business site.</p>
+          </article>
+          <article class="content-card">
+            <h2>Best outcome</h2>
+            <p>A site that explains the offer clearly and makes it easy to contact the business.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell">
+        <form class="intake-form" name="project-intake" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-signup-form>
+          <input type="hidden" name="form-name" value="project-intake" />
+          <p class="hidden-field">
+            <label>Do not fill this out <input name="bot-field" /></label>
+          </p>
+          <label>
+            <span>Your email</span>
+            <input type="email" name="email" placeholder="you@company.com" autocomplete="email" required />
+          </label>
+          <label>
+            <span>Business name</span>
+            <input type="text" name="business-name" placeholder="Example Roofing Co." required />
+          </label>
+          <label>
+            <span>Business type</span>
+            <select name="business-type" required>
+              <option value="">Choose one</option>
+              <option>Home services</option>
+              <option>Restaurant or cafe</option>
+              <option>Beauty or wellness</option>
+              <option>Consultant or professional service</option>
+              <option>Retail or e-commerce</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            <span>What should the website help with?</span>
+            <textarea name="goal" placeholder="More quote requests, bookings, calls, trust, better mobile presence..." required></textarea>
+          </label>
+          <label>
+            <span>Current website or social link</span>
+            <input type="url" name="current-site" placeholder="https://example.com" />
+          </label>
+          <label>
+            <span>Ideal launch timeline</span>
+            <select name="timeline" required>
+              <option value="">Choose one</option>
+              <option>Within 1 week</option>
+              <option>Within 2-3 weeks</option>
+              <option>This month</option>
+              <option>Just exploring</option>
+            </select>
+          </label>
+          <label>
+            <span>Budget range</span>
+            <select name="budget" required>
+              <option value="">Choose one</option>
+              <option>Under $500</option>
+              <option>$500-$1,000</option>
+              <option>$1,000-$2,000</option>
+              <option>$2,000+</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Send Project Details</button>
+          <p class="form-status" role="status" data-form-status></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="index.html">GrowthStack</a>
+      <nav aria-label="Footer navigation">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="maintenance.html">Maintenance</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
