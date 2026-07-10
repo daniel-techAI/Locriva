@@ -22,13 +22,13 @@ Starter Website:
 - Contact or quote form.
 - Basic SEO titles and descriptions.
 - Launch checklist.
-- Suggested pilot price: $499.
+- Suggested pilot price: €499.
 
 Care Plan:
 - Monthly link/form check.
 - Small content edits.
 - Analytics snapshot.
-- Suggested first price: $49-$99/month.
+- Suggested first price: €49-€99/month.
 
 ## Outreach Message
 

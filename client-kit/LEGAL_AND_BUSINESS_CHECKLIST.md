@@ -6,6 +6,8 @@ This is not legal or tax advice. It is a checklist of topics to resolve before t
 
 - Decide whether you are operating as an individual/sole proprietor or registered business.
 - Check whether you need local business registration.
+- Because your permanent address is in Slovakia and you are temporarily in the Netherlands, check whether you should register/operate through Slovakia, the Netherlands, or another structure before taking paid work.
+- If you keep the name GrowthStack, check the KVK Name Checker, KVK Business Register, BOIP trademark register, and relevant Slovak registers before relying on it commercially.
 - Set up a way to invoice clients.
 - Set up a business bank/payment method.
 - Track income and expenses from day one.
@@ -31,8 +33,8 @@ This is not legal or tax advice. It is a checklist of topics to resolve before t
 
 ## Inputs Needed From You
 
-- Country/state where you will operate.
-- Your preferred business name.
-- Your contact email.
+- Country/state where you will legally register.
+- Your preferred business name after name checks.
+- Your contact email: daniellaky.uni@gmail.com.
 - Payment method you can accept.
 - Whether you want to sell in English, German, or both.

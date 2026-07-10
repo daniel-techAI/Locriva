@@ -42,7 +42,7 @@ forms.forEach((form) => {
       if (formStatus) formStatus.textContent = "Thanks. Your GrowthStack request is ready.";
     } catch {
       if (formStatus) {
-        formStatus.textContent = "Something went wrong. Please try again from the Start Project page.";
+        formStatus.textContent = "Something went wrong. Email daniellaky.uni@gmail.com directly.";
       }
     }
   });

@@ -3,7 +3,7 @@
 ## Before Going Public
 
 - Pick final domain name.
-- Replace placeholder contact email.
+- Contact email set to daniellaky.uni@gmail.com.
 - Add a sitemap after the final public URL exists.
 - Review privacy and terms pages for your country before paid client work.
 - Decide final offer prices.
@@ -11,6 +11,7 @@
 - Submit the contact form after deploy and confirm the lead arrives.
 - Test on mobile, tablet, and desktop.
 - Confirm business registration/tax approach before accepting paid client money.
+- Check whether GrowthStack is available as a trade name/trademark before relying on it commercially.
 - Confirm whether you need Impressum/GDPR language for your market.
 
 ## First Offers

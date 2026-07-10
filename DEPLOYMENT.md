@@ -33,14 +33,14 @@ The included workflow at `.github/workflows/pages.yml` publishes the static site
 Run this from the `GrowthStack` folder, replacing the URL with your repo URL:
 
 ```powershell
-git remote add origin https://github.com/YOUR_USERNAME/GrowthStack.git
+git remote add origin https://github.com/daniel-techAI/GrowthStack.git
 git push -u origin main
 ```
 
 If `origin` already exists, use:
 
 ```powershell
-git remote set-url origin https://github.com/YOUR_USERNAME/GrowthStack.git
+git remote set-url origin https://github.com/daniel-techAI/GrowthStack.git
 git push -u origin main
 ```
 

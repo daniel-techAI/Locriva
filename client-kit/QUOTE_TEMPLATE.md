@@ -25,6 +25,7 @@ This depends on receiving business info, text, images, and feedback on time.
 ## Price
 
 Project price: [amount]
+Currency: EUR
 
 Payment schedule:
 - Deposit: [amount] to start
