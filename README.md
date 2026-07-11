@@ -16,7 +16,6 @@ The local preview opens the site directly from this folder. It does not need Nod
 - `Start Local Preview.bat` - Windows preview shortcut with clear instructions
 - `Start Local Preview.ps1` - PowerShell launcher used by the preview shortcut
 - `netlify.toml` - Netlify static deploy config
-- `.github/workflows/pages.yml` - GitHub Pages deploy workflow
 - `robots.txt` - crawler file
 - `Open GrowthStack.bat` - double-click local preview shortcut for Windows
 - `start-project.html` - client intake page
@@ -29,5 +28,9 @@ The local preview opens the site directly from this folder. It does not need Nod
 ## Deploy
 
 This can be hosted as a static site on GitHub Pages, Netlify, Cloudflare Pages, or Vercel. Upload the folder as-is and set `index.html` as the entry page.
+
+For GitHub Pages, use repository Settings -> Pages -> Deploy from a branch -> `main` -> `/root`, then save. The public URL will be:
+
+`https://daniel-techAI.github.io/GrowthStack/`
 
 Netlify is the easiest first choice because the contact form is already marked up for Netlify Forms.
