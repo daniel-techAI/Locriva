@@ -4,13 +4,17 @@ Static, self-owned website for GrowthStack, a small-business web design and grow
 
 ## Open Locally
 
-Double-click `Open GrowthStack.bat`, open `index.html` in a browser, or deploy the folder as a static site.
+Fastest option: double-click `Open GrowthStack.bat`, double-click `Start Local Preview.bat`, or open `index.html` in a browser.
+
+The local preview opens the site directly from this folder. It does not need Node, Netlify, or a domain. When opened from a file, contact forms create an email draft with the request details.
 
 ## Files
 
 - `index.html` - page content and sections
 - `styles.css` - responsive visual system
 - `script.js` - mobile navigation and form success state
+- `Start Local Preview.bat` - Windows preview shortcut with clear instructions
+- `Start Local Preview.ps1` - PowerShell launcher used by the preview shortcut
 - `netlify.toml` - Netlify static deploy config
 - `.github/workflows/pages.yml` - GitHub Pages deploy workflow
 - `robots.txt` - crawler file

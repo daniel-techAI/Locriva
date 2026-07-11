@@ -43,7 +43,8 @@ a {
 
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
 }
 
@@ -484,6 +485,7 @@ h1 {
 
 .features,
 .portfolio,
+.delivery,
 .results,
 .pricing {
   padding: 94px 0;
@@ -491,6 +493,7 @@ h1 {
 
 .features,
 .portfolio,
+.delivery,
 .pricing {
   border-top: 1px solid var(--line);
 }
@@ -629,6 +632,70 @@ h1 {
 
 .care-preview {
   background: linear-gradient(135deg, #1d4ed8, #059669);
+}
+
+.delivery {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(420px, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.delivery-copy h2 {
+  max-width: 640px;
+  margin-bottom: 18px;
+  font-size: clamp(34px, 4.4vw, 54px);
+  line-height: 1.03;
+}
+
+.delivery-copy p:not(.section-label) {
+  max-width: 640px;
+  margin-bottom: 26px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.delivery-board {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+  background: #f7fbff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 22px 52px rgba(24, 39, 75, 0.08);
+}
+
+.delivery-board article {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 16px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.delivery-board span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  color: #ffffff;
+  background: var(--blue);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.delivery-board h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.delivery-board p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 .feature-card {
@@ -931,10 +998,11 @@ h1 {
 }
 
 .signup-form input,
-.signup-form select {
+.signup-form select,
+.signup-form textarea {
   width: 100%;
   min-height: 50px;
-  padding: 0 14px;
+  padding: 12px 14px;
   color: var(--text);
   background: #ffffff;
   border: 1px solid var(--line-strong);
@@ -942,14 +1010,26 @@ h1 {
   outline: none;
 }
 
+.signup-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
 .signup-form input:focus,
-.signup-form select:focus {
+.signup-form select:focus,
+.signup-form textarea:focus {
   border-color: var(--blue);
   box-shadow: 0 0 0 4px rgba(35, 100, 232, 0.12);
 }
 
 .signup-form button {
   width: 100%;
+}
+
+.signup-form button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
 }
 
 .hidden-field {
@@ -1003,6 +1083,7 @@ h1 {
 
 @media (max-width: 980px) {
   .hero,
+  .delivery,
   .final-cta {
     grid-template-columns: 1fr;
   }
@@ -1122,6 +1203,7 @@ h1 {
 
   .features,
   .portfolio,
+  .delivery,
   .results,
   .pricing {
     padding: 74px 0;

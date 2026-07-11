@@ -46,6 +46,7 @@
       <nav class="site-nav" id="site-nav" data-nav>
         <a href="#features">Services</a>
         <a href="#portfolio">Portfolio</a>
+        <a href="#delivery">Delivery</a>
         <a href="#process">How It Works</a>
         <a href="#pricing">Pricing</a>
         <a class="nav-cta" href="start-project.html">Start Project</a>
@@ -77,8 +78,8 @@
           <div class="dashboard">
             <div class="dashboard-top">
               <div>
-                <span class="dash-title">Client launch tracker</span>
-                <strong>Website performance</strong>
+                <span class="dash-title">Example launch tracker</span>
+                <strong>Sample performance</strong>
               </div>
               <span class="live-dot">Live</span>
             </div>
@@ -119,8 +120,8 @@
 
             <div class="lead-panel">
               <div>
-                <strong>Recent Leads</strong>
-                <p>New inquiries from client sites</p>
+                <strong>Example Leads</strong>
+                <p>Sample inquiries from demo sites</p>
               </div>
               <ul>
                 <li><span>R</span><b>Roofing quote</b><small>Highland Roofing</small></li>
@@ -133,14 +134,14 @@
         </div>
       </section>
 
-      <section class="trusted section-shell" aria-label="Trusted businesses">
+      <section class="trusted section-shell" aria-label="Business categories">
         <p>Built for service businesses, shops, consultants, and local brands</p>
         <div class="logo-row">
-          <span>Bloom Co</span>
-          <span>Nexus Labs</span>
-          <span>Verdant</span>
-          <span>Atlas AI</span>
-          <span>Forge</span>
+          <span>Home services</span>
+          <span>Cafes</span>
+          <span>Salons</span>
+          <span>Consultants</span>
+          <span>Local retail</span>
         </div>
       </section>
 
@@ -239,6 +240,42 @@
             <h3>Beauty and Wellness</h3>
             <p>Services, pricing, stylist proof, gallery, and a direct appointment booking flow.</p>
             <a class="text-link" href="demo-salon.html">View demo</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="delivery section-shell" id="delivery">
+        <div class="delivery-copy">
+          <p class="section-label">Delivery system</p>
+          <h2>Every client site should launch with checks, not hope.</h2>
+          <p>
+            GrowthStack is built around repeatable delivery: clear scope, clean pages, tested forms,
+            basic search setup, and a simple handoff the client can understand.
+          </p>
+          <a class="button button-secondary" href="client-kit/CLIENT_INTAKE.md">Open Intake Checklist</a>
+        </div>
+
+        <div class="delivery-board" aria-label="GrowthStack launch checklist">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Before build</h3>
+              <p>Confirm offer, service area, contact details, pages, photos, and what counts as a lead.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Before launch</h3>
+              <p>Check mobile layout, page speed basics, links, forms, SEO titles, metadata, and favicon.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>After launch</h3>
+              <p>Send handoff notes, test the contact path, connect the domain, and offer monthly care.</p>
+            </div>
           </article>
         </div>
       </section>
@@ -386,6 +423,20 @@
               <option>Restaurant or hospitality</option>
               <option>Other small business</option>
             </select>
+          </label>
+          <label>
+            <span>What do you need?</span>
+            <select name="need" required>
+              <option value="">Choose one</option>
+              <option>New website</option>
+              <option>Website redesign</option>
+              <option>Maintenance plan</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label>
+            <span>Short message</span>
+            <textarea name="message" placeholder="What business is this for, and what should the site help with?"></textarea>
           </label>
           <button class="button button-primary" type="submit">Send Quick Request</button>
           <p class="form-status" role="status" data-form-status></p>
