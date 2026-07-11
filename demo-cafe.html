@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>North Table Cafe Demo | GrowthStack</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -19,42 +20,73 @@
         <a href="#order">Order</a>
       </nav>
     </header>
+
     <main>
-      <section class="demo-hero demo-section">
+      <section class="demo-hero demo-shell">
         <div>
           <p class="demo-label">Neighborhood cafe</p>
           <h1>Breakfast, coffee, and weekend brunch without the wait.</h1>
           <p>A warm local cafe page focused on menu discovery, opening hours, location, and pickup orders.</p>
-          <a class="demo-button" href="#order">Order Ahead</a>
-        </div>
-        <aside class="demo-card">
-          <p class="demo-label">Today</p>
-          <strong>Open 7am-4pm</strong>
-          <p>Seasonal sandwiches, espresso, and brunch plates.</p>
-          <div class="demo-stats">
-            <span>Pickup</span>
-            <span>Catering</span>
-            <span>Brunch</span>
+          <div class="demo-actions">
+            <a class="demo-button" href="#order">Order Ahead</a>
+            <a class="demo-button secondary" href="#menu">View Menu</a>
           </div>
-        </aside>
-      </section>
-      <section class="demo-section" id="menu">
-        <p class="demo-label">Menu highlights</p>
-        <h2>Help customers decide before they arrive.</h2>
-        <div class="demo-grid">
-          <article class="demo-tile"><h3>Espresso Bar</h3><p>House espresso, cold brew, matcha, and seasonal drinks.</p></article>
-          <article class="demo-tile"><h3>Brunch Plates</h3><p>Egg sandwiches, grain bowls, pastries, and weekend specials.</p></article>
-          <article class="demo-tile"><h3>Catering</h3><p>Office breakfast boxes and coffee service for local teams.</p></article>
+        </div>
+        <div class="hero-media">
+          <img src="assets/demo-cafe-hero.png" alt="Warm cafe counter with coffee and pastries" />
+          <div class="media-stat">
+            <strong>Open 7am-4pm</strong>
+            <span>Seasonal sandwiches, espresso, brunch plates, pickup, and catering in one focused homepage.</span>
+          </div>
         </div>
       </section>
-      <section class="demo-section" id="visit">
-        <p class="demo-label">Visit</p>
-        <h2>Location, hours, and CTA in one place.</h2>
-        <p>Real client version would include Google Maps, ordering platform link, menu PDFs, and real photography.</p>
+
+      <section class="proof-strip demo-shell" aria-label="North Table Cafe highlights">
+        <div class="proof-item"><strong>Pickup</strong><span>Quick order path for busy mornings</span></div>
+        <div class="proof-item"><strong>Brunch</strong><span>Weekend menu spotlight</span></div>
+        <div class="proof-item"><strong>Catering</strong><span>Office breakfast boxes and coffee</span></div>
+        <div class="proof-item"><strong>Local</strong><span>Hours and location near the top</span></div>
       </section>
-      <section class="demo-section" id="order">
-        <p class="demo-label">Order intent</p>
-        <h2>Push the next action.</h2>
+
+      <section class="demo-section demo-shell" id="menu">
+        <div class="section-head">
+          <div>
+            <p class="demo-label">Menu highlights</p>
+            <h2>Help customers decide before they arrive.</h2>
+          </div>
+          <p>A cafe site should make the food feel real, make hours obvious, and move hungry visitors toward ordering or visiting.</p>
+        </div>
+        <div class="demo-grid">
+          <article class="demo-tile"><span class="tile-number">01</span><h3>Espresso Bar</h3><p>House espresso, cold brew, matcha, and seasonal drinks.</p></article>
+          <article class="demo-tile"><span class="tile-number">02</span><h3>Brunch Plates</h3><p>Egg sandwiches, grain bowls, pastries, and weekend specials.</p></article>
+          <article class="demo-tile"><span class="tile-number">03</span><h3>Catering</h3><p>Office breakfast boxes and coffee service for local teams.</p></article>
+        </div>
+      </section>
+
+      <section class="demo-section demo-shell" id="visit">
+        <div class="feature-split">
+          <div class="feature-image">
+            <img src="assets/demo-cafe-hero.png" alt="Cafe food and coffee used for menu presentation" />
+          </div>
+          <div>
+            <p class="demo-label">Visit</p>
+            <h2>Location, hours, and CTA in one place.</h2>
+            <p>Real client versions would include Google Maps, ordering platform links, menu PDFs, real photography, and seasonal menu updates.</p>
+            <ul class="check-list">
+              <li>Current hours and holiday updates</li>
+              <li>Online order or reservation link</li>
+              <li>Menu highlights with real food photography</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-cta" id="order">
+        <div>
+          <p class="demo-label">Order intent</p>
+          <h2>Turn menu interest into pickup orders.</h2>
+          <p>The form is a placeholder for a real order, catering, or booking platform link in a production client site.</p>
+        </div>
         <form class="demo-form">
           <input placeholder="Name" />
           <input placeholder="Phone or email" />
@@ -63,6 +95,7 @@
         </form>
       </section>
     </main>
+
     <footer class="demo-footer">
       <strong>North Table Cafe Demo</strong>
       <a href="index.html#portfolio">Back to GrowthStack</a>

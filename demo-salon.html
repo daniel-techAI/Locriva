@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Luna Salon Demo | GrowthStack</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -19,42 +20,73 @@
         <a href="#book">Book</a>
       </nav>
     </header>
+
     <main>
-      <section class="demo-hero demo-section">
+      <section class="demo-hero demo-shell">
         <div>
           <p class="demo-label">Salon and beauty studio</p>
           <h1>Modern color, cuts, and styling with simple online booking.</h1>
           <p>A beauty site designed around service clarity, pricing confidence, stylist trust, and appointment booking.</p>
-          <a class="demo-button" href="#book">Book Appointment</a>
-        </div>
-        <aside class="demo-card">
-          <p class="demo-label">Booking-focused</p>
-          <strong>Choose service. Pick time. Confirm.</strong>
-          <p>Reduce back-and-forth messages with a clear booking flow.</p>
-          <div class="demo-stats">
-            <span>Color</span>
-            <span>Cuts</span>
-            <span>Styling</span>
+          <div class="demo-actions">
+            <a class="demo-button" href="#book">Book Appointment</a>
+            <a class="demo-button secondary" href="#services">View Services</a>
           </div>
-        </aside>
-      </section>
-      <section class="demo-section" id="services">
-        <p class="demo-label">Services</p>
-        <h2>Price clarity builds confidence.</h2>
-        <div class="demo-grid">
-          <article class="demo-tile"><h3>Color</h3><p>Balayage, gloss, highlights, and corrective color consultations.</p></article>
-          <article class="demo-tile"><h3>Cuts</h3><p>Modern cuts, styling, and maintenance appointments.</p></article>
-          <article class="demo-tile"><h3>Events</h3><p>Bridal, editorial, and group styling request flow.</p></article>
+        </div>
+        <div class="hero-media">
+          <img src="assets/demo-salon-hero.png" alt="Elegant modern salon interior with styling chair" />
+          <div class="media-stat">
+            <strong>Choose service. Pick time. Confirm.</strong>
+            <span>A booking-focused structure reduces back-and-forth messages and clarifies services before contact.</span>
+          </div>
         </div>
       </section>
-      <section class="demo-section" id="style">
-        <p class="demo-label">Gallery placeholder</p>
-        <h2>Real salons need real visual proof.</h2>
-        <p>Client version would include approved before/after photos, stylist bios, service prices, and booking policy.</p>
+
+      <section class="proof-strip demo-shell" aria-label="Luna Salon booking highlights">
+        <div class="proof-item"><strong>Color</strong><span>Balayage, gloss, highlights</span></div>
+        <div class="proof-item"><strong>Cuts</strong><span>Maintenance and restyles</span></div>
+        <div class="proof-item"><strong>Events</strong><span>Bridal and group requests</span></div>
+        <div class="proof-item"><strong>Booking</strong><span>Simple appointment path</span></div>
       </section>
-      <section class="demo-section" id="book">
-        <p class="demo-label">Appointment request</p>
-        <h2>Turn interest into bookings.</h2>
+
+      <section class="demo-section demo-shell" id="services">
+        <div class="section-head">
+          <div>
+            <p class="demo-label">Services</p>
+            <h2>Price clarity builds confidence.</h2>
+          </div>
+          <p>Beauty visitors need style proof, clear service categories, booking policy, and an easy way to request a time.</p>
+        </div>
+        <div class="demo-grid">
+          <article class="demo-tile"><span class="tile-number">01</span><h3>Color</h3><p>Balayage, gloss, highlights, and corrective color consultations.</p></article>
+          <article class="demo-tile"><span class="tile-number">02</span><h3>Cuts</h3><p>Modern cuts, styling, and maintenance appointments.</p></article>
+          <article class="demo-tile"><span class="tile-number">03</span><h3>Events</h3><p>Bridal, editorial, and group styling request flow.</p></article>
+        </div>
+      </section>
+
+      <section class="demo-section demo-shell" id="style">
+        <div class="feature-split">
+          <div class="feature-image">
+            <img src="assets/demo-salon-hero.png" alt="Salon interior used as a premium style preview" />
+          </div>
+          <div>
+            <p class="demo-label">Style proof</p>
+            <h2>Real salons need real visual proof.</h2>
+            <p>Client versions would include approved before/after photos, stylist bios, service prices, cancellation policy, and booking links.</p>
+            <ul class="check-list">
+              <li>Photo gallery with client permission</li>
+              <li>Service menu and starting prices</li>
+              <li>Booking policy and appointment CTA</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-cta" id="book">
+        <div>
+          <p class="demo-label">Appointment request</p>
+          <h2>Turn interest into bookings.</h2>
+          <p>The first form should be short. Collect the basics, then confirm details through the salon booking workflow.</p>
+        </div>
         <form class="demo-form">
           <input placeholder="Name" />
           <input placeholder="Phone or email" />
@@ -63,6 +95,7 @@
         </form>
       </section>
     </main>
+
     <footer class="demo-footer">
       <strong>Luna Salon Demo</strong>
       <a href="index.html#portfolio">Back to GrowthStack</a>

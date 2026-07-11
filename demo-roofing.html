@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Highland Roofing Demo | GrowthStack</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -19,42 +20,73 @@
         <a href="#quote">Quote</a>
       </nav>
     </header>
+
     <main>
-      <section class="demo-hero demo-section">
+      <section class="demo-hero demo-shell">
         <div>
           <p class="demo-label">Roof repair and replacement</p>
           <h1>Fast roof quotes for storm damage and urgent repairs.</h1>
           <p>Licensed local roofing team with clear pricing, photo-based estimates, and emergency repair scheduling.</p>
-          <a class="demo-button" href="#quote">Request a Roof Quote</a>
-        </div>
-        <aside class="demo-card">
-          <p class="demo-label">Lead-focused homepage</p>
-          <strong>Quote-first layout</strong>
-          <p>Built around service areas, trust markers, and one obvious next step.</p>
-          <div class="demo-stats">
-            <span>24h reply</span>
-            <span>Free inspection</span>
-            <span>Insured</span>
+          <div class="demo-actions">
+            <a class="demo-button" href="#quote">Request a Roof Quote</a>
+            <a class="demo-button secondary" href="#services">View Services</a>
           </div>
-        </aside>
-      </section>
-      <section class="demo-section" id="services">
-        <p class="demo-label">Services</p>
-        <h2>Clear services for high-intent visitors.</h2>
-        <div class="demo-grid">
-          <article class="demo-tile"><h3>Emergency Repair</h3><p>Storm leaks, missing shingles, and fast temporary protection.</p></article>
-          <article class="demo-tile"><h3>Roof Replacement</h3><p>Simple quote flow for asphalt, metal, and flat roofing projects.</p></article>
-          <article class="demo-tile"><h3>Inspection</h3><p>Photo report and next-step recommendations after every visit.</p></article>
+        </div>
+        <div class="hero-media">
+          <img src="assets/demo-roofing-hero.png" alt="Roofer inspecting a clean residential roof" />
+          <div class="media-stat">
+            <strong>Quote-first layout</strong>
+            <span>Built around service areas, trust markers, emergency needs, and one obvious next step.</span>
+          </div>
         </div>
       </section>
-      <section class="demo-section" id="proof">
-        <p class="demo-label">Trust section</p>
-        <h2>Proof blocks go before the form.</h2>
-        <p>Real sites would use actual project photos, licenses, service areas, review links, and warranty details.</p>
+
+      <section class="proof-strip demo-shell" aria-label="Highland Roofing trust signals">
+        <div class="proof-item"><strong>24h reply</strong><span>Fast response for urgent roof problems</span></div>
+        <div class="proof-item"><strong>Free inspection</strong><span>Simple next step before a full quote</span></div>
+        <div class="proof-item"><strong>Insured crew</strong><span>Trust signal for high-ticket work</span></div>
+        <div class="proof-item"><strong>Photo report</strong><span>Clear proof after every inspection</span></div>
       </section>
-      <section class="demo-section" id="quote">
-        <p class="demo-label">Quote request</p>
-        <h2>Make the next step obvious.</h2>
+
+      <section class="demo-section demo-shell" id="services">
+        <div class="section-head">
+          <div>
+            <p class="demo-label">Services</p>
+            <h2>Clear services for high-intent visitors.</h2>
+          </div>
+          <p>Roofing visitors usually arrive with urgency. The page needs to reduce doubt and push the quote request quickly.</p>
+        </div>
+        <div class="demo-grid">
+          <article class="demo-tile"><span class="tile-number">01</span><h3>Emergency Repair</h3><p>Storm leaks, missing shingles, and fast temporary protection.</p></article>
+          <article class="demo-tile"><span class="tile-number">02</span><h3>Roof Replacement</h3><p>Simple quote flow for asphalt, metal, and flat roofing projects.</p></article>
+          <article class="demo-tile"><span class="tile-number">03</span><h3>Inspection</h3><p>Photo report and next-step recommendations after every visit.</p></article>
+        </div>
+      </section>
+
+      <section class="demo-section demo-shell" id="proof">
+        <div class="feature-split">
+          <div class="feature-image">
+            <img src="assets/demo-roofing-hero.png" alt="Residential roof inspection used as project proof" />
+          </div>
+          <div>
+            <p class="demo-label">Trust section</p>
+            <h2>Proof blocks go before the form.</h2>
+            <p>Real client sites would use actual project photos, licenses, service areas, review links, warranty details, and before/after proof.</p>
+            <ul class="check-list">
+              <li>Service area and emergency response promise</li>
+              <li>Approved photos from real completed jobs</li>
+              <li>Insurance, warranty, and review links</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-cta" id="quote">
+        <div>
+          <p class="demo-label">Quote request</p>
+          <h2>Make the next step impossible to miss.</h2>
+          <p>The quote form asks for only enough information to start the conversation. More questions can happen after the lead is captured.</p>
+        </div>
         <form class="demo-form">
           <input placeholder="Name" />
           <input placeholder="Phone or email" />
@@ -63,6 +95,7 @@
         </form>
       </section>
     </main>
+
     <footer class="demo-footer">
       <strong>Highland Roofing Demo</strong>
       <a href="index.html#portfolio">Back to GrowthStack</a>
