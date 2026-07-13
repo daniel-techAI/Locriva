@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="demo-sites.css" />
   </head>
   <body class="cafe">
@@ -16,83 +16,99 @@
       <a class="demo-brand" href="index.html">North Table Cafe</a>
       <nav class="demo-nav">
         <a href="#menu">Menu</a>
-        <a href="#visit">Visit</a>
-        <a href="#order">Order</a>
+        <a href="#visit">Hours</a>
+        <a href="#story">Story</a>
+        <a href="#reserve">Reserve</a>
       </nav>
     </header>
 
     <main>
-      <section class="demo-hero demo-shell">
+      <section class="cafe-hero demo-shell">
         <div>
-          <p class="demo-label">Neighborhood cafe</p>
-          <h1>Breakfast, coffee, and weekend brunch without the wait.</h1>
-          <p>A warm local cafe page focused on menu discovery, opening hours, location, and pickup orders.</p>
+          <p class="demo-label">Coffee, breakfast, brunch</p>
+          <h1>Neighborhood brunch with real food, clear hours, and easy booking.</h1>
+          <p>Warm cafe pages need appetite first: food photos, menu prices, opening times, location, reservations, and pickup options without making people hunt.</p>
           <div class="demo-actions">
-            <a class="demo-button" href="#order">Order Ahead</a>
-            <a class="demo-button secondary" href="#menu">View Menu</a>
+            <a class="demo-button" href="#reserve">Reserve a Table</a>
+            <a class="demo-button secondary" href="#menu">See Menu</a>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="assets/demo-cafe-hero.png" alt="Warm cafe counter with coffee and pastries" />
-          <div class="media-stat">
-            <strong>Open 7am-4pm</strong>
-            <span>Seasonal sandwiches, espresso, brunch plates, pickup, and catering in one focused homepage.</span>
+        <div class="cafe-photo-card">
+          <img src="assets/demo-cafe-menu.png" alt="Cafe breakfast, coffee, pastry, sandwich, and granola on a wooden table" />
+          <div class="cafe-hours-card">
+            <strong>Open today 7:00-16:00</strong>
+            <span>Breakfast all day, weekend brunch, espresso bar, pickup orders, and small group reservations.</span>
           </div>
         </div>
       </section>
 
-      <section class="proof-strip demo-shell" aria-label="North Table Cafe highlights">
-        <div class="proof-item"><strong>Pickup</strong><span>Quick order path for busy mornings</span></div>
-        <div class="proof-item"><strong>Brunch</strong><span>Weekend menu spotlight</span></div>
-        <div class="proof-item"><strong>Catering</strong><span>Office breakfast boxes and coffee</span></div>
-        <div class="proof-item"><strong>Local</strong><span>Hours and location near the top</span></div>
+      <section class="cafe-info-strip demo-shell" aria-label="Cafe quick information">
+        <article><strong>Morning pickup</strong><span>Order coffee and breakfast before work</span></article>
+        <article><strong>Weekend brunch</strong><span>Reserved tables from 9:00-14:00</span></article>
+        <article><strong>Local suppliers</strong><span>Seasonal produce and bakery partners</span></article>
+        <article><strong>Catering</strong><span>Breakfast boxes for nearby offices</span></article>
       </section>
 
-      <section class="demo-section demo-shell" id="menu">
-        <div class="section-head">
+      <section class="cafe-menu-section" id="menu">
+        <div class="demo-shell">
           <div>
-            <p class="demo-label">Menu highlights</p>
-            <h2>Help customers decide before they arrive.</h2>
+            <p class="demo-label">Menu board</p>
+            <h2>Show the food before asking people to order.</h2>
+            <p>A real cafe site should put best sellers, prices, dietary notes, and ordering choices directly on the page. This makes it feel like a real place instead of a generic landing page.</p>
           </div>
-          <p>A cafe site should make the food feel real, make hours obvious, and move hungry visitors toward ordering or visiting.</p>
-        </div>
-        <div class="demo-grid">
-          <article class="demo-tile"><span class="tile-number">01</span><h3>Espresso Bar</h3><p>House espresso, cold brew, matcha, and seasonal drinks.</p></article>
-          <article class="demo-tile"><span class="tile-number">02</span><h3>Brunch Plates</h3><p>Egg sandwiches, grain bowls, pastries, and weekend specials.</p></article>
-          <article class="demo-tile"><span class="tile-number">03</span><h3>Catering</h3><p>Office breakfast boxes and coffee service for local teams.</p></article>
+          <div class="menu-board">
+            <article class="menu-row"><div><h3>House Breakfast Plate</h3><p>Eggs, roasted tomato, greens, toasted sourdough, bacon or mushrooms.</p></div><strong>€13</strong></article>
+            <article class="menu-row"><div><h3>Grilled Market Sandwich</h3><p>Seasonal vegetables, cheddar, herb mayo, and side salad.</p></div><strong>€11</strong></article>
+            <article class="menu-row"><div><h3>Granola Bowl</h3><p>Greek yogurt, berries, toasted oats, honey, and seeds.</p></div><strong>€8</strong></article>
+            <article class="menu-row"><div><h3>Flat White / Latte</h3><p>House espresso, dairy or oat milk, served hot or iced.</p></div><strong>€3.80</strong></article>
+            <article class="menu-row"><div><h3>Office Breakfast Box</h3><p>Pastries, fruit, filter coffee, and sandwich halves for teams.</p></div><strong>from €42</strong></article>
+          </div>
         </div>
       </section>
 
-      <section class="demo-section demo-shell" id="visit">
-        <div class="feature-split">
-          <div class="feature-image">
-            <img src="assets/demo-cafe-hero.png" alt="Cafe food and coffee used for menu presentation" />
-          </div>
-          <div>
+      <section class="cafe-visit demo-shell" id="visit">
+        <div class="cafe-visit-grid">
+          <img src="assets/demo-cafe-hero.png" alt="Warm cafe interior with coffee counter and pastries" />
+          <div class="cafe-panel">
             <p class="demo-label">Visit</p>
-            <h2>Location, hours, and CTA in one place.</h2>
-            <p>Real client versions would include Google Maps, ordering platform links, menu PDFs, real photography, and seasonal menu updates.</p>
-            <ul class="check-list">
-              <li>Current hours and holiday updates</li>
-              <li>Online order or reservation link</li>
-              <li>Menu highlights with real food photography</li>
+            <h2>Hours, table policy, and location in one place.</h2>
+            <p>For a cafe, practical details are conversion content. People need to know when to come, whether they can reserve, and how to order.</p>
+            <ul class="hours-list">
+              <li><span>Mon-Fri</span><strong>7:00-16:00</strong></li>
+              <li><span>Saturday</span><strong>8:00-15:00</strong></li>
+              <li><span>Sunday brunch</span><strong>9:00-14:00</strong></li>
+              <li><span>Kitchen closes</span><strong>30 min before close</strong></li>
             </ul>
+            <a class="demo-button" href="#reserve">Reserve or ask about catering</a>
           </div>
         </div>
       </section>
 
-      <section class="demo-cta" id="order">
-        <div>
-          <p class="demo-label">Order intent</p>
-          <h2>Turn menu interest into pickup orders.</h2>
-          <p>The form is a placeholder for a real order, catering, or booking platform link in a production client site.</p>
+      <section class="cafe-story demo-shell" id="story">
+        <div class="story-grid">
+          <h2>Built around regulars, seasonal food, and a room people remember.</h2>
+          <div>
+            <p>Real cafe websites should not sound like SaaS pages. This section would tell the owner story, local suppliers, house roast, weekend specials, private events, and why the place is worth visiting.</p>
+            <p>For a client build, GrowthStack would swap in real photography, Google Maps, online ordering, reservation links, allergen notes, and seasonal updates.</p>
+          </div>
         </div>
-        <form class="demo-form">
-          <input placeholder="Name" />
-          <input placeholder="Phone or email" />
-          <textarea placeholder="Pickup or catering request"></textarea>
-          <button class="demo-button" type="button">Start Order</button>
-        </form>
+      </section>
+
+      <section class="cafe-visit demo-shell" id="reserve">
+        <div class="cafe-visit-grid">
+          <div class="cafe-panel">
+            <p class="demo-label">Reservations and orders</p>
+            <h2>Make the next step obvious.</h2>
+            <p>This demo form would become a booking link, order platform, or catering inquiry depending on the real cafe workflow.</p>
+          </div>
+          <form class="reservation-form">
+            <input placeholder="Name" />
+            <input placeholder="Phone or email" />
+            <select><option>Reservation</option><option>Pickup order</option><option>Catering request</option></select>
+            <textarea placeholder="Preferred date, time, number of people, or catering details"></textarea>
+            <button class="demo-button" type="button">Send Cafe Request</button>
+          </form>
+        </div>
       </section>
     </main>
 

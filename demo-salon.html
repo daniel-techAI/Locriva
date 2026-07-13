@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="demo-sites.css" />
   </head>
   <body class="salon">
@@ -16,81 +16,86 @@
       <a class="demo-brand" href="index.html">Luna Salon</a>
       <nav class="demo-nav">
         <a href="#services">Services</a>
-        <a href="#style">Style</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#stylists">Stylists</a>
         <a href="#book">Book</a>
       </nav>
     </header>
 
     <main>
-      <section class="demo-hero demo-shell">
+      <section class="salon-hero demo-shell">
         <div>
-          <p class="demo-label">Salon and beauty studio</p>
-          <h1>Modern color, cuts, and styling with simple online booking.</h1>
-          <p>A beauty site designed around service clarity, pricing confidence, stylist trust, and appointment booking.</p>
+          <p class="demo-label">Color, cuts, styling</p>
+          <h1>Hair work people can see before they book.</h1>
+          <p>A salon website needs visual proof first: finished cuts, color specialties, service prices, stylist confidence, policies, and a booking path that feels premium.</p>
           <div class="demo-actions">
-            <a class="demo-button" href="#book">Book Appointment</a>
-            <a class="demo-button secondary" href="#services">View Services</a>
+            <a class="demo-button" href="#book">Book Consultation</a>
+            <a class="demo-button secondary" href="#lookbook">View Lookbook</a>
+          </div>
+          <div class="salon-badges" aria-label="Salon specialties">
+            <span>Balayage</span><span>Precision bobs</span><span>Bridal styling</span><span>Gloss and tone</span>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="assets/demo-salon-hero.png" alt="Elegant modern salon interior with styling chair" />
-          <div class="media-stat">
-            <strong>Choose service. Pick time. Confirm.</strong>
-            <span>A booking-focused structure reduces back-and-forth messages and clarifies services before contact.</span>
-          </div>
-        </div>
+        <img src="assets/demo-salon-lookbook.png" alt="Salon lookbook with balayage waves, bob cut, layered cut, and bridal updo" />
       </section>
 
-      <section class="proof-strip demo-shell" aria-label="Luna Salon booking highlights">
-        <div class="proof-item"><strong>Color</strong><span>Balayage, gloss, highlights</span></div>
-        <div class="proof-item"><strong>Cuts</strong><span>Maintenance and restyles</span></div>
-        <div class="proof-item"><strong>Events</strong><span>Bridal and group requests</span></div>
-        <div class="proof-item"><strong>Booking</strong><span>Simple appointment path</span></div>
-      </section>
-
-      <section class="demo-section demo-shell" id="services">
-        <div class="section-head">
+      <section class="salon-services" id="services">
+        <div class="demo-shell">
           <div>
-            <p class="demo-label">Services</p>
-            <h2>Price clarity builds confidence.</h2>
+            <p class="demo-label">Service menu</p>
+            <h2>Price clarity makes booking easier.</h2>
+            <p>Beauty clients want to know what you specialize in, where prices start, and whether the service fits their hair goals before they message.</p>
           </div>
-          <p>Beauty visitors need style proof, clear service categories, booking policy, and an easy way to request a time.</p>
-        </div>
-        <div class="demo-grid">
-          <article class="demo-tile"><span class="tile-number">01</span><h3>Color</h3><p>Balayage, gloss, highlights, and corrective color consultations.</p></article>
-          <article class="demo-tile"><span class="tile-number">02</span><h3>Cuts</h3><p>Modern cuts, styling, and maintenance appointments.</p></article>
-          <article class="demo-tile"><span class="tile-number">03</span><h3>Events</h3><p>Bridal, editorial, and group styling request flow.</p></article>
+          <div class="service-menu">
+            <article class="service-card"><div><h3>Balayage and lived-in color</h3><p>Consultation, custom placement, gloss, blow dry, and aftercare notes.</p></div><strong>from €145</strong></article>
+            <article class="service-card"><div><h3>Precision cut and finish</h3><p>Face-shape consultation, wash, cut, blow dry, and style coaching.</p></div><strong>from €58</strong></article>
+            <article class="service-card"><div><h3>Gloss, tone, and refresh</h3><p>Maintenance appointment for color shine, tone, and softness.</p></div><strong>from €68</strong></article>
+            <article class="service-card"><div><h3>Bridal and event styling</h3><p>Trial session, updo, waves, accessory placement, and group options.</p></div><strong>quote</strong></article>
+          </div>
         </div>
       </section>
 
-      <section class="demo-section demo-shell" id="style">
-        <div class="feature-split">
-          <div class="feature-image">
-            <img src="assets/demo-salon-hero.png" alt="Salon interior used as a premium style preview" />
-          </div>
+      <section class="lookbook demo-shell" id="lookbook">
+        <div class="lookbook-grid">
+          <img src="assets/demo-salon-lookbook.png" alt="Hair salon finished styles and specialist cuts" />
           <div>
-            <p class="demo-label">Style proof</p>
-            <h2>Real salons need real visual proof.</h2>
-            <p>Client versions would include approved before/after photos, stylist bios, service prices, cancellation policy, and booking links.</p>
-            <ul class="check-list">
-              <li>Photo gallery with client permission</li>
-              <li>Service menu and starting prices</li>
-              <li>Booking policy and appointment CTA</li>
-            </ul>
+            <p class="demo-label">Lookbook</p>
+            <h2>Show the exact kind of work the salon wants to sell.</h2>
+            <p>A real salon page should include approved client photos, before/after sets, stylist notes, hair type context, and maintenance advice. That makes the work believable.</p>
+            <div class="style-tags">
+              <span>Soft blonde balayage</span>
+              <span>Clean blunt bob</span>
+              <span>Layered brunette cut</span>
+              <span>Bridal textured updo</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="demo-cta" id="book">
+      <section class="stylists demo-shell" id="stylists">
         <div>
-          <p class="demo-label">Appointment request</p>
-          <h2>Turn interest into bookings.</h2>
-          <p>The first form should be short. Collect the basics, then confirm details through the salon booking workflow.</p>
+          <p class="demo-label">Stylist specialties</p>
+          <h2>People book with people, not just a business name.</h2>
+          <p>For a real salon, each worker should have a short specialty profile, days available, and examples of work they are strongest at.</p>
+        </div>
+        <div class="stylist-grid">
+          <article class="stylist-card"><span>Color specialist</span><h3>Mara</h3><p>Dimensional blondes, gloss refreshes, and low-maintenance color plans.</p></article>
+          <article class="stylist-card"><span>Cut specialist</span><h3>Eva</h3><p>Sharp bobs, fringe shaping, layers, and styling routines clients can repeat.</p></article>
+          <article class="stylist-card"><span>Event styling</span><h3>Nina</h3><p>Bridal trials, soft waves, textured updos, and group preparation timelines.</p></article>
+        </div>
+      </section>
+
+      <section class="salon-book" id="book">
+        <div>
+          <p class="demo-label">Booking request</p>
+          <h2>Ask the right questions before the appointment.</h2>
+          <p>The form should help the salon understand hair goal, service type, timing, and whether a consultation is needed first.</p>
         </div>
         <form class="demo-form">
           <input placeholder="Name" />
           <input placeholder="Phone or email" />
-          <textarea placeholder="What service are you interested in?"></textarea>
+          <select><option>Color consultation</option><option>Cut and finish</option><option>Gloss or tone</option><option>Bridal styling</option></select>
+          <textarea placeholder="Tell us your hair goal, current color, and preferred date"></textarea>
           <button class="demo-button" type="button">Request Appointment</button>
         </form>
       </section>
