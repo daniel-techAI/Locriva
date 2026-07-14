@@ -14,12 +14,12 @@
       content="Launch a modern small-business website with lead capture, SEO basics, and simple growth tracking."
     />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#2364e8" />
+    <meta name="theme-color" content="#0f6b2c" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -45,22 +45,22 @@
 
       <nav class="site-nav" id="site-nav" data-nav>
         <a href="#features">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#delivery">Delivery</a>
-        <a href="#process">How It Works</a>
+        <a href="#portfolio">Demo Work</a>
+        <a href="#care">Care & Analytics</a>
+        <a href="#process">Process</a>
         <a href="#pricing">Pricing</a>
+        <a href="preview.html">Preview Hub</a>
         <a class="nav-cta" href="start-project.html">Start Project</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero section-shell">
-        <div class="hero-copy">
-          <p class="section-label">Small-business web studio</p>
-          <h1>Your website. Your leads. Your growth.</h1>
+      <section class="growth-hero section-shell">
+        <div class="growth-hero-copy">
+          <h1>Websites that bring in more local customers.</h1>
           <p class="hero-lede">
-            GrowthStack builds modern websites and simple growth systems for small businesses that
-            need more calls, bookings, quote requests, and local trust without paying agency prices.
+            GrowthStack builds clean, fast websites for small businesses, then keeps them working
+            with simple monthly care and clear lead tracking.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="start-project.html">
@@ -71,76 +71,44 @@
             </a>
             <a class="button button-secondary" href="#portfolio">See Demo Work</a>
           </div>
-          <p class="trial-note">Transparent pilot offer. Clear scope before any paid work.</p>
+          <div class="proof-row" aria-label="GrowthStack service proof points">
+            <article>
+              <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" /></svg></span>
+              <h3>Built to feel real</h3>
+              <p>Industry-specific pages, not one template copied three times.</p>
+            </article>
+            <article>
+              <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.7M20 12a8 8 0 0 1-13.7 5.7M17 3v4h-4M7 21v-4h4" /></svg></span>
+              <h3>Monthly care</h3>
+              <p>Checks, edits, reporting, and improvement ideas after launch.</p>
+            </article>
+            <article>
+              <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19V5M5 19h14M9 16v-5M13 16V8M17 16v-8" /></svg></span>
+              <h3>Clear insights</h3>
+              <p>Know which pages get attention and which calls to action get used.</p>
+            </article>
+          </div>
         </div>
 
-        <div class="hero-visual" aria-label="GrowthStack client launch dashboard preview">
-          <div class="dashboard">
-            <div class="dashboard-top">
-              <div>
-                <span class="dash-title">Example launch tracker</span>
-                <strong>Sample performance</strong>
-              </div>
-              <span class="live-dot">Live</span>
-            </div>
-
-            <div class="metric-grid">
-              <article class="metric-card">
-                <span>Visitors</span>
-                <strong>12.4k</strong>
-                <em>+18%</em>
-              </article>
-              <article class="metric-card">
-                <span>Leads</span>
-                <strong>348</strong>
-                <em>+24%</em>
-              </article>
-              <article class="metric-card">
-                <span>Calls</span>
-                <strong>42</strong>
-                <em>+31%</em>
-              </article>
-            </div>
-
-            <div class="chart-block">
-              <div class="chart-head">
-                <strong>Weekly Performance</strong>
-                <span>Traffic to inquiries</span>
-              </div>
-              <div class="chart-bars" aria-hidden="true">
-                <span style="--h: 38%"></span>
-                <span style="--h: 52%"></span>
-                <span style="--h: 45%"></span>
-                <span style="--h: 70%"></span>
-                <span style="--h: 58%"></span>
-                <span style="--h: 84%"></span>
-                <span style="--h: 76%"></span>
-              </div>
-            </div>
-
-            <div class="lead-panel">
-              <div>
-                <strong>Example Leads</strong>
-                <p>Sample inquiries from demo sites</p>
-              </div>
-              <ul>
-                <li><span>R</span><b>Roofing quote</b><small>Highland Roofing</small></li>
-                <li><span>D</span><b>Design consult</b><small>Park Studio</small></li>
-                <li><span>L</span><b>Local SEO call</b><small>Torres Media</small></li>
-              </ul>
-            </div>
+        <div class="growth-hero-media">
+          <img src="assets/growthstack-local-owner-hero.png" alt="Small business owner standing outside a local shop" />
+          <div class="hero-insight-card" aria-label="GrowthStack outcome example">
+            <strong>More enquiries. Better bookings.</strong>
+            <span>Less guessing about what to improve next.</span>
+            <svg viewBox="0 0 112 42" aria-hidden="true">
+              <path d="M4 34h18l12-12 14 8 15-18 15 10 30-18" />
+            </svg>
           </div>
-          <div class="roi-chip">Lead-ready</div>
         </div>
       </section>
 
       <section class="trusted section-shell" aria-label="Business categories">
-        <p>Built for service businesses, shops, consultants, and local brands</p>
+        <p>Built for service businesses, cafes, salons, consultants, and local brands</p>
         <div class="logo-row">
           <span>Home services</span>
-          <span>Cafes</span>
-          <span>Salons</span>
-          <span>Consultants</span>
+          <span>Food and drink</span>
+          <span>Beauty</span>
+          <span>Professional</span>
           <span>Local retail</span>
         </div>
       </section>
@@ -148,9 +116,10 @@
       <section class="features section-shell" id="features">
         <div class="section-heading">
           <p class="section-label">Services</p>
-          <h2>Everything your first serious site needs</h2>
+          <h2>A website offer you can explain without sounding technical.</h2>
           <p>
-            Start with a clean website, then add the pieces that turn attention into actual leads.
+            The service is simple: make the business look trustworthy, make contacting easy, and
+            keep improving the site after it goes live.
           </p>
         </div>
 
@@ -160,240 +129,267 @@
               <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 10h16M9 5v14" /></svg>
             </span>
             <h3>Website Design</h3>
-            <p>Fast, mobile-friendly pages built around trust, clarity, and conversion.</p>
+            <p>Mobile-friendly pages with clear services, photos, prices or starting points, and strong contact paths.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" /></svg>
             </span>
             <h3>Lead Capture</h3>
-            <p>Forms, quote requests, booking links, and follow-up flows that do not leak leads.</p>
+            <p>Quote forms, booking buttons, click-to-call links, and email drafts tested before launch.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-8" /></svg>
             </span>
-            <h3>Analytics Setup</h3>
-            <p>Simple tracking so you know where visitors come from and what they do.</p>
+            <h3>Simple Analytics</h3>
+            <p>Track visits, top pages, contact clicks, and form requests so monthly advice has evidence behind it.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 3l1.6 4.8L18 10l-4.4 2.2L12 17l-1.6-4.8L6 10l4.4-2.2zM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z" /></svg>
             </span>
             <h3>Copy and Offers</h3>
-            <p>Clear headlines, service pages, and calls to action written for real buyers.</p>
+            <p>Plain-language headlines, service descriptions, trust points, and calls to action a real buyer understands.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M6 7h15l-2 8H8L6 4H3M9 20h.1M18 20h.1" /></svg>
             </span>
             <h3>Local SEO Basics</h3>
-            <p>Page structure, titles, descriptions, and local trust signals for search visibility.</p>
+            <p>Page titles, descriptions, structure, business details, service areas, and search-friendly page content.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M11 5a6 6 0 1 0 0 12 6 6 0 0 0 0-12zM20 20l-4.6-4.6M11 8v6M8 11h6" /></svg>
             </span>
-            <h3>Competitor Research</h3>
-            <p>Review nearby competitors and build a site that makes your offer easier to choose.</p>
+            <h3>Competitor Review</h3>
+            <p>Look at nearby businesses and make the new site easier to trust, compare, and contact.</p>
           </article>
         </div>
       </section>
 
       <section class="portfolio section-shell" id="portfolio">
         <div class="section-heading">
-          <p class="section-label">Portfolio</p>
-          <h2>Demo builds for the first niches to sell</h2>
+          <p class="section-label">Demo work</p>
+          <h2>Three demos that now feel like three different businesses.</h2>
           <p>
-            These are clearly labeled sample builds. They show the kind of sites GrowthStack can
-            customize after a real client project is scoped.
+            These are sample builds for selling conversations. They are not fake client projects;
+            they show the kind of niche-specific structure GrowthStack can build.
           </p>
         </div>
 
-        <div class="portfolio-grid">
-          <article>
-            <div class="portfolio-preview service-preview">
-              <img src="assets/demo-roofing-hero.png" alt="Roofing demo preview" />
-              <span>01</span>
-              <strong>Roofing inspection flow</strong>
+        <div class="demo-showcase">
+          <article class="demo-card demo-card-roofing">
+            <a class="demo-image" href="demo-roofing.html">
+              <img src="assets/demo-roofing-hero.png" alt="Roofing contractor demo preview" />
+            </a>
+            <div>
+              <h3>Roofing Contractor</h3>
+              <p>Practical, trust-heavy service site with inspection steps, repair categories, project proof, and quote qualification.</p>
+              <ul class="check-list">
+                <li>Emergency wording without fake 24/7 promises</li>
+                <li>Roof types, service areas, and project photos</li>
+                <li>Quote request form built around real job details</li>
+              </ul>
+              <a class="text-link" href="demo-roofing.html">View roofing demo</a>
             </div>
-            <h3>Home Services</h3>
-            <p>Inspection process, project gallery, service types, warranty notes, and quote qualification form.</p>
-            <a class="text-link" href="demo-roofing.html">View demo</a>
           </article>
-          <article>
-            <div class="portfolio-preview food-preview">
+          <article class="demo-card demo-card-cafe">
+            <a class="demo-image" href="demo-cafe.html">
               <img src="assets/demo-cafe-hero.png" alt="Cafe demo preview" />
-              <span>02</span>
-              <strong>Cafe menu and reservation page</strong>
+            </a>
+            <div>
+              <h3>Cozy Cafe</h3>
+              <p>Warm food-led page with menu prices, opening hours, table policy, pickup, catering, and reservations.</p>
+              <ul class="check-list">
+                <li>Menu board and signature items</li>
+                <li>Hours, location, and visit information</li>
+                <li>Reservation and catering request flow</li>
+              </ul>
+              <a class="text-link" href="demo-cafe.html">View cafe demo</a>
             </div>
-            <h3>Restaurant and Cafe</h3>
-            <p>Food-led design with menu prices, hours, table policy, story, pickup, catering, and reservation flow.</p>
-            <a class="text-link" href="demo-cafe.html">View demo</a>
           </article>
-          <article>
-            <div class="portfolio-preview care-preview">
-              <img src="assets/demo-salon-hero.png" alt="Salon demo preview" />
-              <span>03</span>
-              <strong>Salon lookbook and booking site</strong>
+          <article class="demo-card demo-card-salon">
+            <a class="demo-image" href="demo-salon.html">
+              <img src="assets/demo-salon-hero.png" alt="Hair salon demo preview" />
+            </a>
+            <div>
+              <h3>Premium Hair Salon</h3>
+              <p>Style-first booking site with a lookbook, service prices, stylist specialties, and consultation questions.</p>
+              <ul class="check-list">
+                <li>Before and after style gallery</li>
+                <li>Service menu with starting prices</li>
+                <li>Appointment request with hair goal details</li>
+              </ul>
+              <a class="text-link" href="demo-salon.html">View salon demo</a>
             </div>
-            <h3>Beauty and Wellness</h3>
-            <p>Style gallery, service pricing, stylist specialties, consultation questions, and booking request flow.</p>
-            <a class="text-link" href="demo-salon.html">View demo</a>
           </article>
+        </div>
+
+        <div class="portfolio-actions">
+          <a class="button button-primary" href="preview.html">Open Preview Hub</a>
+          <a class="button button-secondary" href="client-kit/CLIENT_INTAKE.md">Open Intake Checklist</a>
         </div>
       </section>
 
-      <section class="delivery section-shell" id="delivery">
-        <div class="delivery-copy">
-          <p class="section-label">Delivery system</p>
-          <h2>Every client site should launch with checks, not hope.</h2>
+      <section class="care-analytics section-shell" id="care">
+        <div class="care-copy">
+          <p class="section-label">Monthly care and analytics</p>
+          <h2>We keep the website healthy and make improvements less random.</h2>
           <p>
-            GrowthStack is built around repeatable delivery: clear scope, clean pages, tested forms,
-            basic search setup, and a simple handoff the client can understand.
+            This is the subscription part. The client pays monthly because someone keeps the site
+            checked, updated, measured, and improved without them touching the technical work.
           </p>
-          <a class="button button-secondary" href="client-kit/CLIENT_INTAKE.md">Open Intake Checklist</a>
+          <ul class="check-list">
+            <li>Check contact forms, booking links, phone links, and broken pages</li>
+            <li>Make small text, photo, hours, menu, and service updates</li>
+            <li>Review visits, top pages, lead clicks, and form requests</li>
+            <li>Send a short monthly note: what happened, what changed, what to try next</li>
+          </ul>
+          <a class="button button-secondary" href="maintenance.html">See Maintenance Plans</a>
         </div>
 
-        <div class="delivery-board" aria-label="GrowthStack launch checklist">
-          <article>
-            <span>01</span>
-            <div>
-              <h3>Before build</h3>
-              <p>Confirm offer, service area, contact details, pages, photos, and what counts as a lead.</p>
-            </div>
-          </article>
-          <article>
-            <span>02</span>
-            <div>
-              <h3>Before launch</h3>
-              <p>Check mobile layout, page speed basics, links, forms, SEO titles, metadata, and favicon.</p>
-            </div>
-          </article>
-          <article>
-            <span>03</span>
-            <div>
-              <h3>After launch</h3>
-              <p>Send handoff notes, test the contact path, connect the domain, and offer monthly care.</p>
-            </div>
-          </article>
+        <div class="analytics-panel" aria-label="Example monthly website report">
+          <div class="analytics-header">
+            <strong>Your site this month</strong>
+            <span>Example report</span>
+          </div>
+          <div class="analytics-metrics">
+            <article><span>Visitors</span><strong>1,248</strong><em>steady</em></article>
+            <article><span>Enquiries</span><strong>37</strong><em>+23%</em></article>
+            <article><span>Bookings</span><strong>21</strong><em>+31%</em></article>
+          </div>
+          <div class="simple-chart" aria-hidden="true">
+            <span style="--h: 32%"></span>
+            <span style="--h: 42%"></span>
+            <span style="--h: 39%"></span>
+            <span style="--h: 56%"></span>
+            <span style="--h: 47%"></span>
+            <span style="--h: 63%"></span>
+            <span style="--h: 72%"></span>
+            <span style="--h: 68%"></span>
+          </div>
+          <div class="top-pages">
+            <strong>Top pages</strong>
+            <p><span>/services</span><b>842</b></p>
+            <p><span>/contact</span><b>298</b></p>
+            <p><span>/gallery</span><b>186</b></p>
+          </div>
         </div>
       </section>
 
       <section class="process section-shell" id="process">
         <div class="section-heading">
-          <p class="section-label">Simple process</p>
-          <h2>Up and running in three steps</h2>
+          <p class="section-label">Launch process</p>
+          <h2>From chat to launch. Simple.</h2>
           <p>
-            No technical skills required. No agency needed. Follow the flow and watch your online
-            presence take shape.
+            This is the clean version of what you sell: discovery, design, build, test, publish,
+            then support if the client wants ongoing help.
           </p>
         </div>
 
-        <div class="process-list">
+        <div class="launch-steps">
           <article>
             <span>01</span>
-            <h3>Build Your Site</h3>
-            <p>Answer a few questions about the business, audience, offer, and current website problems.</p>
+            <h3>Discovery call</h3>
+            <p>Learn the business, customers, services, area, photos, competitors, and what counts as a lead.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Connect Your Tools</h3>
-            <p>Build the homepage, service sections, lead form, analytics basics, and mobile layout.</p>
+            <h3>Plan and design</h3>
+            <p>Choose pages, structure, calls to action, visual style, and the first version of the copy.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Grow Your Business</h3>
-            <p>Publish, connect the domain, test the contact flow, and start outreach or ads.</p>
+            <h3>Build and refine</h3>
+            <p>Create the site, test it on mobile, fix weak parts, and make sure forms actually work.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Launch and grow</h3>
+            <p>Connect the domain, publish, check analytics, and offer monthly care for ongoing support.</p>
           </article>
         </div>
       </section>
 
-      <section class="results section-shell">
-        <div class="section-heading">
-          <p class="section-label">Pilot offer</p>
-          <h2>Built to earn real proof the right way</h2>
+      <section class="review-hub section-shell">
+        <div class="review-copy">
+          <p class="section-label">Feedback and testing hub</p>
+          <h2>Your input. Better results.</h2>
+          <p>
+            Send one link to family, friends, or early prospects. They can open the main site, test
+            the demos, click the forms, and tell you what feels real or fake before you sell.
+          </p>
+          <ul class="check-list">
+            <li>Review the homepage and all three demo sites</li>
+            <li>Test desktop, tablet, and mobile if possible</li>
+            <li>Check whether the service sounds understandable</li>
+            <li>Send honest feedback by email</li>
+          </ul>
+          <a class="button button-primary" href="preview.html">Open Preview Hub</a>
         </div>
-
-        <div class="testimonial-grid">
-          <figure>
-            <blockquote>
-              First clients should get a clear pilot offer: fast build, fair price, transparent
-              scope, and permission to use the finished project as a real case study.
-            </blockquote>
-            <figcaption>
-              <span>01</span>
-              <div>
-                <strong>Honest proof only</strong>
-                <small>Only use proof after a real client approves it</small>
-              </div>
-            </figcaption>
-          </figure>
-          <figure>
-            <blockquote>
-              Every project should end with launch checks, form testing, basic analytics, and a
-              maintenance option so the client is not left alone after delivery.
-            </blockquote>
-            <figcaption>
-              <span>02</span>
-              <div>
-                <strong>Maintainable handoff</strong>
-                <small>Build once, support monthly when the client wants help</small>
-              </div>
-            </figcaption>
-          </figure>
+        <div class="review-window" aria-label="Preview hub mockup">
+          <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <img src="assets/demo-cafe-menu.png" alt="Cafe menu demo preview" />
+          <div class="comment-stack">
+            <article><strong>Question</strong><p>Does this look like a real cafe website?</p></article>
+            <article><strong>Check</strong><p>Can you find the hours, menu, and reservation button?</p></article>
+            <article><strong>Fix</strong><p>What feels confusing, fake, or unfinished?</p></article>
+          </div>
         </div>
       </section>
 
       <section class="pricing section-shell" id="pricing">
         <div class="section-heading">
           <p class="section-label">Simple pricing</p>
-          <h2>Simple packages to start selling</h2>
+          <h2>Start with offers you can actually deliver.</h2>
           <p>
-            Prices can change later, but these first offers are clear enough to pitch right now.
+            These prices are not magic numbers. They are clean starting packages for early client
+            conversations, then you adjust with experience.
           </p>
         </div>
 
         <div class="pricing-grid">
-        <article class="pricing-card">
-          <div class="pricing-top">
-            <span class="popular">Pilot</span>
-            <h3>Starter Website</h3>
-            <p>One-page site for a small business that needs to look legit fast</p>
-            <div class="price"><strong>â‚¬499</strong><span>project</span></div>
-          </div>
-          <ul class="included-list">
-            <li>Custom one-page website</li>
-            <li>Mobile responsive design</li>
-            <li>Contact or quote form</li>
-            <li>Basic SEO setup</li>
-            <li>Speed and launch testing</li>
-            <li>Domain connection support</li>
-            <li>Optional monthly care plan</li>
-          </ul>
-          <a class="button button-primary pricing-button" href="start-project.html">Start Project</a>
-          <p class="trial-note">Suggested starting price. Adjust after real client feedback.</p>
-        </article>
+          <article class="pricing-card">
+            <div class="pricing-top">
+              <span class="popular">Pilot</span>
+              <h3>Starter Website</h3>
+              <p>One-page or focused small-business site that looks trustworthy fast.</p>
+              <div class="price"><strong>&euro;499</strong><span>project</span></div>
+            </div>
+            <ul class="included-list">
+              <li>Custom website design</li>
+              <li>Mobile responsive layout</li>
+              <li>Contact, quote, or booking form</li>
+              <li>Basic SEO setup</li>
+              <li>Speed and launch testing</li>
+              <li>Domain connection support</li>
+              <li>Optional monthly care plan</li>
+            </ul>
+            <a class="button button-primary pricing-button" href="start-project.html">Start Project</a>
+            <p class="trial-note">Good first sale target. Scope clearly before saying yes.</p>
+          </article>
 
-        <article class="pricing-card">
-          <div class="pricing-top">
-            <span class="popular">Recurring</span>
-            <h3>Care Plan</h3>
-            <p>Monthly help so clients do not need to touch the technical work</p>
-            <div class="price"><strong>â‚¬99</strong><span>/month</span></div>
-          </div>
-          <ul class="included-list">
-            <li>Monthly form and link checks</li>
-            <li>Small content edits</li>
-            <li>Analytics snapshot</li>
-            <li>Basic SEO upkeep</li>
-            <li>Priority support window</li>
-            <li>Conversion improvement ideas</li>
-            <li>Cancel anytime with notice</li>
-          </ul>
-          <a class="button button-secondary pricing-button" href="maintenance.html">See Maintenance</a>
-          <p class="trial-note">Only sell what you can reliably deliver each month.</p>
-        </article>
+          <article class="pricing-card">
+            <div class="pricing-top">
+              <span class="popular">Recurring</span>
+              <h3>Care Plan</h3>
+              <p>Monthly help so clients do not need to manage the technical work.</p>
+              <div class="price"><strong>&euro;99</strong><span>/month</span></div>
+            </div>
+            <ul class="included-list">
+              <li>Monthly form and link checks</li>
+              <li>Small content updates</li>
+              <li>Analytics snapshot</li>
+              <li>Basic SEO upkeep</li>
+              <li>Priority support window</li>
+              <li>Conversion improvement ideas</li>
+              <li>Cancel anytime with notice</li>
+            </ul>
+            <a class="button button-secondary pricing-button" href="maintenance.html">See Maintenance</a>
+            <p class="trial-note">Only sell monthly work you can repeat reliably.</p>
+          </article>
         </div>
       </section>
 
@@ -455,6 +451,7 @@
         <span>GrowthStack</span>
       </a>
       <nav aria-label="Footer navigation">
+        <a href="preview.html">Preview Hub</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="maintenance.html">Maintenance</a>

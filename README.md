@@ -13,6 +13,7 @@ The local preview opens the site directly from this folder. It does not need Nod
 - `index.html` - page content and sections
 - `styles.css` - responsive visual system
 - `script.js` - mobile navigation and form success state
+- `preview.html` - shareable review hub for family, testers, and early prospects
 - `Start Local Preview.bat` - Windows preview shortcut with clear instructions
 - `Start Local Preview.ps1` - PowerShell launcher used by the preview shortcut
 - `netlify.toml` - Netlify static deploy config
@@ -22,7 +23,9 @@ The local preview opens the site directly from this folder. It does not need Nod
 - `maintenance.html` - recurring support offer
 - `demo-*.html` - sample portfolio demo sites
 - `client-kit/` - sales, scope, agreement, and maintenance templates
-- `assets/growthstack-concept.png` - generated visual reference used during implementation
+- `assets/growthstack-redo-concept.png` - generated visual reference for the rebuilt agency direction
+- `assets/growthstack-local-owner-hero.png` - generated homepage hero image
+- `assets/growthstack-concept.png` - earlier generated visual reference used during implementation
 - `qa/polsia-reference.png` and `qa/polsia-reference-text.txt` - captured reference from the Polsia page
 
 ## Deploy
@@ -32,5 +35,9 @@ This can be hosted as a static site on GitHub Pages, Netlify, Cloudflare Pages, 
 For GitHub Pages, use repository Settings -> Pages -> Deploy from a branch -> `main` -> `/root`, then save. The public URL will be:
 
 `https://daniel-techAI.github.io/GrowthStack/`
+
+Once GitHub Pages is enabled, send testers:
+
+`https://daniel-techAI.github.io/GrowthStack/preview.html`
 
 Netlify is the easiest first choice because the contact form is already marked up for Netlify Forms.
