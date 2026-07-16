@@ -1,7 +1,12 @@
+document.documentElement.classList.add("motion-ready");
+
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const forms = document.querySelectorAll("[data-signup-form]");
+const revealItems = document.querySelectorAll("[data-reveal]");
+const demoCards = document.querySelectorAll("[data-demo-card]");
 const contactEmail = "daniellaky.uni@gmail.com";
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
@@ -35,24 +40,21 @@ forms.forEach((form) => {
     if (formStatus) formStatus.textContent = "Preparing your request...";
 
     try {
-      if (window.location.protocol === "file:") {
-        const formName = String(data.get("form-name") || form.getAttribute("name") || "GrowthStack request");
-        const lines = Array.from(data.entries())
-          .filter(([key, value]) => key !== "form-name" && key !== "bot-field" && String(value).trim())
-          .map(([key, value]) => `${formatFieldName(key)}: ${String(value).trim()}`);
-
-        const subject = encodeURIComponent(`GrowthStack request - ${formName}`);
-        const body = encodeURIComponent(lines.join("\n"));
-        window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
-        if (formStatus) {
-          formStatus.textContent = "Local preview: your email app should open with the request details.";
-        }
+      if (shouldUseEmailDraft()) {
+        openEmailDraft(data, form);
+        if (formStatus) formStatus.textContent = "Your email app should open with the request details.";
       } else {
-        await fetch("/", {
+        const response = await fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(data).toString(),
         });
+
+        if (!response.ok) {
+          openEmailDraft(data, form);
+          if (formStatus) formStatus.textContent = "The form provider did not respond, so an email draft was prepared instead.";
+          return;
+        }
 
         form.reset();
         if (formStatus) formStatus.textContent = "Thanks. Your GrowthStack request was sent.";
@@ -67,8 +69,68 @@ forms.forEach((form) => {
   });
 });
 
+if (revealItems.length) {
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+  } else {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -12% 0px", threshold: 0.18 }
+    );
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+  }
+}
+
+if (demoCards.length) {
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    demoCards.forEach((card) => card.classList.add("is-active"));
+  } else {
+    let activeDemoCard = demoCards[0];
+    const demoObserver = new IntersectionObserver(
+      (entries) => {
+        const mostVisible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (!mostVisible || mostVisible.target === activeDemoCard) return;
+
+        activeDemoCard.classList.remove("is-active");
+        mostVisible.target.classList.add("is-active");
+        activeDemoCard = mostVisible.target;
+      },
+      { rootMargin: "-24% 0px -24% 0px", threshold: [0.28, 0.45, 0.62, 0.78] }
+    );
+
+    demoCards.forEach((card) => demoObserver.observe(card));
+  }
+}
+
 function formatFieldName(name) {
   return String(name)
     .replace(/[-_]/g, " ")
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function shouldUseEmailDraft() {
+  const host = window.location.hostname;
+  return window.location.protocol === "file:" || host.endsWith("github.io") || host === "127.0.0.1" || host === "localhost";
+}
+
+function openEmailDraft(data, form) {
+  const formName = String(data.get("form-name") || form.getAttribute("name") || "GrowthStack request");
+  const lines = Array.from(data.entries())
+    .filter(([key, value]) => key !== "form-name" && key !== "bot-field" && String(value).trim())
+    .map(([key, value]) => `${formatFieldName(key)}: ${String(value).trim()}`);
+
+  const subject = encodeURIComponent(`GrowthStack request - ${formName}`);
+  const body = encodeURIComponent(lines.join("\n"));
+  window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
 }

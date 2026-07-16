@@ -12,6 +12,7 @@ This is not legal or tax advice. It is a checklist of topics to resolve before t
 - Set up a business bank/payment method.
 - Track income and expenses from day one.
 - Understand tax obligations in your country/state.
+- Add your official business name, registration number, VAT/tax number if applicable, and registered address to the website before formal paid contracting.
 
 ## Website Compliance
 
@@ -19,7 +20,8 @@ This is not legal or tax advice. It is a checklist of topics to resolve before t
 - Do not use fake reviews or fake testimonials.
 - Get permission before using client logos, reviews, or photos.
 - Use a privacy policy when collecting form submissions or analytics data.
-- If serving EU/Germany, check GDPR and Impressum requirements.
+- If serving EU customers, check GDPR, cookie consent, service-provider information, invoice rules, and consumer rights if you sell to consumers.
+- Keep the current site free of tracking cookies unless the cookie policy and consent flow are updated.
 - Do not guarantee SEO rankings or business results.
 
 ## Client Protection
@@ -37,4 +39,4 @@ This is not legal or tax advice. It is a checklist of topics to resolve before t
 - Your preferred business name after name checks.
 - Your contact email: daniellaky.uni@gmail.com.
 - Payment method you can accept.
-- Whether you want to sell in English, German, or both.
+- Whether you want to sell in English, Dutch, Slovak, German, or another language.

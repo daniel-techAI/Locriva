@@ -16,12 +16,6 @@
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#0f6b2c" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -179,8 +173,8 @@
           </p>
         </div>
 
-        <div class="demo-showcase">
-          <article class="demo-card demo-card-roofing">
+        <div class="demo-showcase" data-demo-showcase>
+          <article class="demo-card demo-card-roofing is-active" data-demo-card data-reveal>
             <a class="demo-image" href="demo-roofing.html">
               <img src="assets/demo-roofing-hero.png" alt="Roofing contractor demo preview" />
             </a>
@@ -195,7 +189,7 @@
               <a class="text-link" href="demo-roofing.html">View roofing demo</a>
             </div>
           </article>
-          <article class="demo-card demo-card-cafe">
+          <article class="demo-card demo-card-cafe" data-demo-card data-reveal>
             <a class="demo-image" href="demo-cafe.html">
               <img src="assets/demo-cafe-hero.png" alt="Cafe demo preview" />
             </a>
@@ -210,7 +204,7 @@
               <a class="text-link" href="demo-cafe.html">View cafe demo</a>
             </div>
           </article>
-          <article class="demo-card demo-card-salon">
+          <article class="demo-card demo-card-salon" data-demo-card data-reveal>
             <a class="demo-image" href="demo-salon.html">
               <img src="assets/demo-salon-hero.png" alt="Hair salon demo preview" />
             </a>
@@ -434,6 +428,10 @@
             <span>Short message</span>
             <textarea name="message" placeholder="What business is this for, and what should the site help with?"></textarea>
           </label>
+          <p class="form-note">
+            By sending this, you agree that GrowthStack can use the details to reply to your enquiry.
+            See the <a href="privacy.html">Privacy Policy</a>.
+          </p>
           <button class="button button-primary" type="submit">Send Quick Request</button>
           <p class="form-status" role="status" data-form-status></p>
         </form>
@@ -454,6 +452,8 @@
         <a href="preview.html">Preview Hub</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
+        <a href="legal.html">Legal Notice</a>
+        <a href="cookies.html">Cookies</a>
         <a href="maintenance.html">Maintenance</a>
         <a href="mailto:daniellaky.uni@gmail.com">Contact</a>
       </nav>

@@ -28,6 +28,8 @@ The project includes [number] revision rounds. Extra revisions are billed at [ra
 
 Client is responsible for providing accurate text, images, logos, business details, legal notices, and permissions for any reviews or testimonials used.
 
+Client is responsible for checking privacy, cookie, consumer-law, regulated-claim, license, and industry-specific requirements for their own business before launch.
+
 ## Ownership
 
 After final payment, Client owns the final website files created specifically for the project. Provider may reuse general methods, layouts, code patterns, and know-how.

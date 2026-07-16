@@ -13,7 +13,7 @@ Date:
 - Mobile responsive layout.
 - Contact form or quote form.
 - Basic SEO titles and meta descriptions.
-- Footer links: privacy, terms, contact.
+- Footer links: privacy, terms, legal notice, cookie policy, contact.
 - Launch testing on desktop and mobile.
 - Up to [number] revision rounds.
 
@@ -35,6 +35,7 @@ Date:
 - Review drafts within [number] business days.
 - Own and pay for domain/hosting/accounts unless otherwise agreed.
 - Confirm legal/business information is accurate.
+- Check privacy, cookies, regulated claims, licenses, and industry-specific requirements before approving launch.
 
 ## Timeline
 

@@ -6,7 +6,7 @@ Static, self-owned website for GrowthStack, a small-business web design and grow
 
 Fastest option: double-click `Open GrowthStack.bat`, double-click `Start Local Preview.bat`, or open `index.html` in a browser.
 
-The local preview opens the site directly from this folder. It does not need Node, Netlify, or a domain. When opened from a file, contact forms create an email draft with the request details.
+The local preview opens the site directly from this folder. It does not need Node, Netlify, or a domain. On local preview and GitHub Pages, contact forms create an email draft with the request details.
 
 ## Files
 
@@ -14,6 +14,7 @@ The local preview opens the site directly from this folder. It does not need Nod
 - `styles.css` - responsive visual system
 - `script.js` - mobile navigation and form success state
 - `preview.html` - shareable review hub for family, testers, and early prospects
+- `privacy.html`, `terms.html`, `legal.html`, `cookies.html` - starter legal pages for public launch
 - `Start Local Preview.bat` - Windows preview shortcut with clear instructions
 - `Start Local Preview.ps1` - PowerShell launcher used by the preview shortcut
 - `netlify.toml` - Netlify static deploy config
@@ -40,4 +41,4 @@ Once GitHub Pages is enabled, send testers:
 
 `https://daniel-techAI.github.io/GrowthStack/preview.html`
 
-Netlify is the easiest first choice because the contact form is already marked up for Netlify Forms.
+GitHub Pages is the current free public setup. The site does not use tracking cookies or external web fonts. If you later add analytics, payments, booking widgets, chat, or stored form submissions, update the privacy and cookie pages first.

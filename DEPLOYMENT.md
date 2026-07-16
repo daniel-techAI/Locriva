@@ -3,30 +3,26 @@
 ## What Is Already Prepared
 
 - Static site files
-- Netlify Forms-ready lead form
-- Netlify config
-- GitHub Pages workflow
+- GitHub Pages-ready public site
+- Email-draft form fallback for GitHub Pages
+- Optional Netlify config if you later want hosted form storage
 - Robots file
-- Privacy and terms pages
+- Privacy, terms, legal notice, and cookie pages
 
 ## Recommended Launch Path
 
-1. Create a new GitHub repository named `GrowthStack`.
-2. Push this folder to that repository.
-3. Connect the repository to Netlify.
-4. Use these Netlify settings:
-   - Build command: leave empty
-   - Publish directory: `.`
-5. Deploy the site.
-6. In Netlify, open Forms and confirm `growthstack-leads` appears after the first deploy.
-7. Buy a domain.
-8. Add the domain to Netlify.
-9. Add a sitemap after you know the real public URL.
-10. Test the contact form, mobile layout, and footer links after the public URL is live.
+1. Push this folder to the `GrowthStack` GitHub repository.
+2. In GitHub, open Settings -> Pages.
+3. Set Source to `Deploy from a branch`, Branch to `main`, and Folder to `/root`.
+4. Save and wait for GitHub Pages to publish.
+5. Open `https://daniel-techAI.github.io/GrowthStack/`.
+6. Test the homepage, preview hub, project form email draft, mobile layout, and footer links.
+7. Add a sitemap after you know the final public URL.
+8. Buy and connect a domain later if you decide the offer is ready.
 
-## GitHub Pages Alternative
+## Optional Netlify Path
 
-The included workflow at `.github/workflows/pages.yml` publishes the static site from the repository root. GitHub Pages is fine for hosting, but it will not collect form submissions by itself. Use Netlify or a form provider if you want form submissions.
+Netlify can host the same static files and collect form submissions if the form attributes remain in the HTML. Before switching, update the privacy policy to name Netlify/form storage and test that submissions are actually received.
 
 ## If The GitHub Repo Already Exists
 
@@ -52,4 +48,4 @@ gh auth login
 
 ## Public URL Before Buying A Domain
 
-You do not need a custom domain to make the site public. Netlify gives you a free `*.netlify.app` URL after deploy, and GitHub Pages gives you a `*.github.io` URL after Pages is enabled. Buy the custom domain later, then connect it to the same deployed site.
+You do not need a custom domain to make the site public. GitHub Pages gives you a `*.github.io` URL after Pages is enabled. Buy the custom domain later, then connect it to the same deployed site.
