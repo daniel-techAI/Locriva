@@ -1585,6 +1585,123 @@ h2 {
   color: #ffffff;
 }
 
+.trust-readiness {
+  padding: 96px 0;
+  border-top: 1px solid var(--line);
+}
+
+.trust-copy {
+  max-width: 780px;
+  margin-bottom: 36px;
+}
+
+.trust-copy h2 {
+  max-width: 720px;
+  margin-bottom: 16px;
+  font-size: clamp(36px, 4.8vw, 58px);
+  line-height: 1.03;
+}
+
+.trust-copy p:not(.section-label) {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.trust-grid article {
+  min-width: 0;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 36px rgba(22, 52, 28, 0.06);
+}
+
+.trust-grid span {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 22px;
+  color: #ffffff;
+  background: #102414;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.trust-grid h3 {
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+.trust-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.faq-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+  gap: 42px;
+  align-items: start;
+  margin-top: 42px;
+  padding-top: 42px;
+  border-top: 1px solid var(--line);
+}
+
+.compact-heading {
+  max-width: 520px;
+  margin: 0;
+  text-align: left;
+}
+
+.compact-heading h2 {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-list details {
+  min-width: 0;
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(22, 52, 28, 0.05);
+}
+
+.faq-list details[open] {
+  border-color: rgba(15, 107, 44, 0.34);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  color: #182216;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.faq-list summary::marker {
+  color: var(--blue);
+}
+
+.faq-list p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .launch-steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1839,8 +1956,14 @@ h2 {
   .pricing-grid,
   .content-grid,
   .process-list,
-  .preview-grid {
+  .preview-grid,
+  .trust-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-panel {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .wide-card {
@@ -1950,6 +2073,7 @@ h2 {
   .process-list,
   .testimonial-grid,
   .preview-grid,
+  .trust-grid,
   .analytics-metrics,
   .launch-steps {
     grid-template-columns: 1fr;
@@ -1968,8 +2092,14 @@ h2 {
   }
 
   .care-analytics,
-  .review-hub {
+  .review-hub,
+  .trust-readiness {
     padding: 74px 0;
+  }
+
+  .trust-grid article,
+  .faq-list details {
+    padding: 20px;
   }
 
   .review-hub {
