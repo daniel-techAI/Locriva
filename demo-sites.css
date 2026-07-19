@@ -79,8 +79,17 @@ section,
   font-size: 15px;
   font-weight: 900;
   cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 .demo-button.secondary { color: var(--ink); background: transparent; border-color: var(--line); box-shadow: none; }
+.demo-button:hover {
+  box-shadow: var(--button-shadow, 0 14px 28px rgba(24, 39, 75, 0.12));
+  transform: translateY(-2px);
+}
+.demo-button.secondary:hover {
+  border-color: var(--accent);
+  box-shadow: none;
+}
 .demo-label {
   margin: 0 0 14px;
   color: var(--accent);
@@ -90,6 +99,45 @@ section,
   text-transform: uppercase;
 }
 .demo-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+
+@keyframes demo-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cafe-hero > *,
+.cafe-info-strip article,
+.cafe-specials > *,
+.salon-hero > *,
+.salon-proof article,
+.roofing-hero > *,
+.trust-rail article,
+.roof-proof > * {
+  animation: demo-rise 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.cafe-info-strip article:nth-child(2),
+.salon-proof article:nth-child(2),
+.trust-rail article:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.cafe-info-strip article:nth-child(3),
+.salon-proof article:nth-child(3),
+.trust-rail article:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.cafe-info-strip article:nth-child(4),
+.trust-rail article:nth-child(4) {
+  animation-delay: 240ms;
+}
 
 /* Cafe */
 .cafe {
@@ -120,14 +168,75 @@ section,
 .cafe-hours-card strong { display: block; margin-bottom: 6px; font-size: 23px; font-family: "Playfair Display", Georgia, serif; }
 .cafe-hours-card span { color: rgba(255, 250, 244, 0.78); font-size: 14px; font-weight: 700; line-height: 1.5; }
 .cafe-info-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding-bottom: 58px; }
-.cafe-info-strip article { padding: 18px; background: #fff; border: 1px solid var(--line); border-radius: 14px; }
+.cafe-info-strip article { padding: 18px; background: #fff; border: 1px solid var(--line); border-radius: 14px; transition: transform 180ms ease, box-shadow 180ms ease; }
+.cafe-info-strip article:hover { box-shadow: 0 16px 36px rgba(68, 37, 18, 0.1); transform: translateY(-2px); }
 .cafe-info-strip strong { display: block; margin-bottom: 5px; font-size: 18px; }
 .cafe-info-strip span { color: var(--muted); font-size: 13px; font-weight: 750; }
+.cafe-specials {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(420px, 1fr);
+  gap: 44px;
+  align-items: start;
+  padding: 0 0 78px;
+}
+.cafe-specials h2 {
+  margin: 0 0 16px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(34px, 4.4vw, 56px);
+  line-height: 1;
+}
+.cafe-specials p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+.cafe-special-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.cafe-special-grid article {
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgba(68, 37, 18, 0.08);
+}
+.cafe-special-grid span {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cafe-special-grid strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.cafe-special-grid p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
 .cafe-menu-section { padding: 82px 0; background: #24150f; color: #fffaf4; }
 .cafe-menu-section .demo-shell { display: grid; grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1fr); gap: 54px; align-items: start; }
 .cafe-menu-section .demo-label { color: #f59e0b; }
 .cafe-menu-section h2 { margin: 0 0 18px; font-size: clamp(36px, 5vw, 62px); line-height: 1; }
 .cafe-menu-section p { color: rgba(255, 250, 244, 0.7); font-size: 18px; line-height: 1.7; }
+.menu-note {
+  padding: 16px;
+  margin-top: 24px;
+  color: #fffaf4 !important;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  font-size: 14px !important;
+}
 .menu-board { display: grid; gap: 12px; }
 .menu-row { display: grid; grid-template-columns: 1fr auto; gap: 18px; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.18); }
 .menu-row h3 { margin: 0 0 5px; font-size: 19px; }
@@ -165,6 +274,42 @@ section,
 .salon-hero img { width: 100%; aspect-ratio: 0.95 / 1; object-fit: cover; border-radius: 999px 999px 18px 18px; box-shadow: 0 28px 80px rgba(35, 14, 32, 0.18); }
 .salon-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
 .salon-badges span { padding: 9px 13px; background: #fff; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 13px; font-weight: 850; }
+.salon-proof {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding-bottom: 72px;
+}
+.salon-proof article {
+  min-width: 0;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 18px 46px rgba(35, 14, 32, 0.08);
+}
+.salon-proof span {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 22px;
+  color: #fff8fc;
+  background: #171018;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 900;
+}
+.salon-proof strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 21px;
+}
+.salon-proof p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
 .salon-services { padding: 82px 0; background: #171018; color: #fff8fc; }
 .salon-services .demo-shell { display: grid; grid-template-columns: 0.72fr 1fr; gap: 52px; }
 .salon-services .demo-label { color: #f0a4cc; }
@@ -182,13 +327,32 @@ section,
 .lookbook p, .stylists p { color: var(--muted); font-size: 18px; line-height: 1.7; }
 .style-tags { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
 .style-tags span { padding: 16px; background: #fff; border: 1px solid var(--line); border-radius: 12px; font-weight: 900; }
+.salon-care-note {
+  margin-top: 18px;
+  padding: 18px;
+  color: #171018;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  line-height: 1.65;
+}
+.salon-care-note strong {
+  color: var(--accent);
+}
 .stylists { padding: 80px 0; border-top: 1px solid var(--line); }
 .stylist-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
-.stylist-card { padding: 26px; background: #fff; border: 1px solid var(--line); border-radius: 16px; }
+.stylist-card { padding: 26px; background: #fff; border: 1px solid var(--line); border-radius: 16px; transition: transform 180ms ease, box-shadow 180ms ease; }
+.stylist-card:hover { box-shadow: 0 18px 46px rgba(35, 14, 32, 0.1); transform: translateY(-2px); }
 .stylist-card span { color: var(--accent); font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.08em; }
 .stylist-card h3 { margin: 12px 0 8px; font-size: 24px; }
 .salon-book { width: min(calc(100% - 40px), var(--max)); margin: 0 auto 78px; display: grid; grid-template-columns: 0.8fr minmax(340px, 460px); gap: 50px; align-items: center; padding: 42px; background: #fff; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 24px 70px rgba(35, 14, 32, 0.11); }
 .salon-book h2 { margin: 0 0 16px; font-size: clamp(36px, 4.5vw, 58px); line-height: 0.98; }
+.salon-form-note {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.45;
+}
 
 /* Roofing */
 .roofing {
@@ -262,6 +426,44 @@ section,
 .trust-rail article { padding: 20px; color: #ffffff; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 8px; }
 .trust-rail strong { display: block; margin-bottom: 6px; font-size: 18px; }
 .trust-rail span { color: rgba(255, 255, 255, 0.78); font-size: 13px; font-weight: 750; }
+.roof-proof {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(420px, 1fr);
+  gap: 44px;
+  align-items: start;
+  padding: 78px 0 0;
+}
+.roof-proof h2 {
+  margin: 0 0 16px;
+  font-size: clamp(36px, 4.5vw, 58px);
+  line-height: 1;
+}
+.roof-proof p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+.roof-proof-grid {
+  display: grid;
+  gap: 12px;
+}
+.roof-proof-grid article {
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: 0 16px 38px rgba(17, 24, 39, 0.07);
+}
+.roof-proof-grid strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+.roof-proof-grid span {
+  color: var(--muted);
+  line-height: 1.6;
+}
 .roof-services, .roof-process, .roof-projects { padding: 84px 0; border-top: 1px solid var(--line); }
 .roof-services,
 .roof-projects {
@@ -271,7 +473,8 @@ section,
 .roof-head h2 { margin: 0; font-size: clamp(36px, 4.5vw, 58px); line-height: 1; }
 .roof-head p { color: var(--muted); font-size: 18px; line-height: 1.7; }
 .roof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.roof-tile { padding: 26px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.roof-tile { padding: 26px; border: 1px solid var(--line); border-radius: 8px; background: #fff; transition: transform 180ms ease, box-shadow 180ms ease; }
+.roof-tile:hover { box-shadow: 0 18px 46px rgba(17, 24, 39, 0.08); transform: translateY(-2px); }
 .roof-tile h3 { margin: 0 0 10px; font-size: 22px; }
 .roof-tile p { color: var(--muted); line-height: 1.65; }
 .roof-tile ul { display: grid; gap: 8px; padding-left: 18px; color: #344054; font-weight: 750; }
@@ -285,15 +488,30 @@ section,
 .quote-panel { padding: 30px; border: 1px solid var(--line); border-radius: 8px; background: #f8fafc; }
 .quote-panel h2 { margin: 0 0 16px; font-size: clamp(34px, 4vw, 52px); line-height: 1; }
 .quote-panel p { color: var(--muted); font-size: 17px; line-height: 1.65; }
+.urgency-scale {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 4px;
+}
+.urgency-scale span {
+  padding: 8px 10px;
+  color: #0f3f3b;
+  background: #e6fffb;
+  border: 1px solid #b8eee7;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+}
 .demo-form { display: grid; gap: 12px; margin-top: 22px; }
 .demo-form input, .demo-form textarea, .demo-form select { width: 100%; min-height: 48px; padding: 12px 14px; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 8px; outline: none; }
 .demo-form textarea { min-height: 104px; resize: vertical; }
 .demo-form input:focus, .demo-form textarea:focus, .demo-form select:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.12); }
 
 @media (max-width: 980px) {
-  .cafe-hero, .cafe-menu-section .demo-shell, .cafe-visit-grid, .story-grid, .salon-hero, .salon-services .demo-shell, .lookbook-grid, .salon-book, .roofing-hero, .roof-head, .roof-project-split { grid-template-columns: 1fr; }
-  .cafe-info-strip, .trust-rail, .process-steps { grid-template-columns: repeat(2, 1fr); }
-  .stylist-grid, .roof-grid { grid-template-columns: 1fr; }
+  .cafe-hero, .cafe-specials, .cafe-menu-section .demo-shell, .cafe-visit-grid, .story-grid, .salon-hero, .salon-services .demo-shell, .lookbook-grid, .salon-book, .roofing-hero, .roof-head, .roof-proof, .roof-project-split { grid-template-columns: 1fr; }
+  .cafe-info-strip, .cafe-special-grid, .trust-rail, .process-steps { grid-template-columns: repeat(2, 1fr); }
+  .salon-proof, .stylist-grid, .roof-grid, .roof-proof-grid { grid-template-columns: 1fr; }
   .cafe-hours-card, .roofing-card { position: static; width: 100%; margin-top: 12px; }
   .cafe-photo-card { transform: none; }
 }
@@ -379,8 +597,20 @@ section,
   .service-card strong {
     justify-self: start;
   }
-  .cafe-info-strip, .trust-rail, .process-steps, .style-tags { grid-template-columns: 1fr; }
-  .cafe-menu-section, .cafe-visit, .cafe-story, .salon-services, .lookbook, .stylists, .roof-services, .roof-process, .roof-projects { padding: 64px 0; }
+  .cafe-info-strip, .cafe-special-grid, .salon-proof, .trust-rail, .process-steps, .style-tags { grid-template-columns: 1fr; }
+  .cafe-specials,
+  .cafe-menu-section,
+  .cafe-visit,
+  .cafe-story,
+  .salon-services,
+  .lookbook,
+  .stylists,
+  .roof-proof,
+  .roof-services,
+  .roof-process,
+  .roof-projects {
+    padding: 64px 0;
+  }
   .salon-book { grid-template-columns: 1fr; margin-bottom: 52px; padding: 24px; }
   .cafe-panel, .quote-panel { padding: 22px; }
   .roofing .demo-header,
@@ -388,5 +618,14 @@ section,
   .trust-rail {
     padding-left: 14px;
     padding-right: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }

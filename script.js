@@ -4,9 +4,11 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const forms = document.querySelectorAll("[data-signup-form]");
 const revealItems = document.querySelectorAll("[data-reveal]");
+const demoShowcase = document.querySelector("[data-demo-showcase]");
 const demoCards = document.querySelectorAll("[data-demo-card]");
 const contactEmail = "daniellaky.uni@gmail.com";
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let activeDemoCard = null;
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
@@ -92,8 +94,10 @@ if (revealItems.length) {
 if (demoCards.length) {
   if (prefersReducedMotion || !("IntersectionObserver" in window)) {
     demoCards.forEach((card) => card.classList.add("is-active"));
+    updateDemoProgress(demoCards.length - 1);
   } else {
-    let activeDemoCard = demoCards[0];
+    setActiveDemoCard(demoCards[0]);
+
     const demoObserver = new IntersectionObserver(
       (entries) => {
         const mostVisible = entries
@@ -102,15 +106,29 @@ if (demoCards.length) {
 
         if (!mostVisible || mostVisible.target === activeDemoCard) return;
 
-        activeDemoCard.classList.remove("is-active");
-        mostVisible.target.classList.add("is-active");
-        activeDemoCard = mostVisible.target;
+        setActiveDemoCard(mostVisible.target);
       },
       { rootMargin: "-24% 0px -24% 0px", threshold: [0.28, 0.45, 0.62, 0.78] }
     );
 
     demoCards.forEach((card) => demoObserver.observe(card));
   }
+}
+
+function setActiveDemoCard(card) {
+  if (!card) return;
+  if (activeDemoCard) activeDemoCard.classList.remove("is-active");
+  card.classList.add("is-active");
+  activeDemoCard = card;
+  updateDemoProgress(Array.from(demoCards).indexOf(card));
+}
+
+function updateDemoProgress(index) {
+  if (!demoShowcase) return;
+  const safeIndex = Math.max(0, index);
+  const progress = demoCards.length > 1 ? (safeIndex / (demoCards.length - 1)) * 100 : 100;
+  demoShowcase.dataset.activeDemo = String(safeIndex);
+  demoShowcase.style.setProperty("--demo-progress", `${progress}%`);
 }
 
 function formatFieldName(name) {
