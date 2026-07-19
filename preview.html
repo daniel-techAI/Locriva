@@ -6,7 +6,7 @@
     <title>Preview Hub | GrowthStack</title>
     <meta
       name="description"
-      content="Review the GrowthStack website, demo builds, project intake, and maintenance offer before launch."
+      content="Review the GrowthStack portfolio gallery, demo builds, project intake, and maintenance offer before launch."
     />
     <meta name="theme-color" content="#0f6b2c" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -33,8 +33,8 @@
 
       <nav class="site-nav" id="site-nav" data-nav>
         <a href="index.html">Home</a>
-        <a href="index.html#portfolio">Demo Work</a>
-        <a href="index.html#care">Care & Analytics</a>
+        <a href="#review-path">Review Path</a>
+        <a href="#gallery">Gallery</a>
         <a href="#feedback">Feedback</a>
         <a class="nav-cta" href="start-project.html">Start Project</a>
       </nav>
@@ -44,78 +44,160 @@
       <section class="page-hero section-shell">
         <div>
           <p class="section-label">Preview hub</p>
-          <h1>Review GrowthStack before it goes public.</h1>
+          <h1>GrowthStack portfolio review room.</h1>
           <p>
-            Use this page as the one link for family, friends, and early testers. Open the main
-            site, compare the demo businesses, click the forms, and send honest feedback.
+            Send this page to family, friends, and early testers. It frames the work like a real
+            portfolio, explains what each demo proves, and asks for criticism that can improve the
+            site before serious outreach.
           </p>
           <div class="preview-actions">
-            <a class="button button-primary" href="index.html">Open Main Site</a>
-            <a class="button button-secondary" href="#feedback">Send Feedback</a>
+            <a class="button button-primary" href="#review-path">Start Review</a>
+            <a class="button button-secondary" href="#gallery">Open Gallery</a>
           </div>
         </div>
         <aside class="preview-note">
-          <h2>What to check</h2>
-          <p>
-            Does it feel like a real service? Are the demos different enough? Can you understand
-            monthly care without a technical explanation? Would you trust this enough to ask for a quote?
-          </p>
+          <h2>10-minute test</h2>
+          <ol>
+            <li>Open the main site and say what GrowthStack sells.</li>
+            <li>Compare the three demo businesses.</li>
+            <li>Click one quote or booking path.</li>
+            <li>Send what felt unclear, fake, or weak.</li>
+          </ol>
         </aside>
       </section>
 
-      <section class="content-section section-shell">
+      <section class="review-path content-section section-shell" id="review-path">
         <div class="section-heading">
-          <p class="section-label">Open the pages</p>
-          <h2>The full test path</h2>
-          <p>These are the pages that matter before advertising or buying a domain.</p>
+          <p class="section-label">Review path</p>
+          <h2>Give testers a job, not a vague opinion request.</h2>
+          <p>
+            This turns feedback into something useful: proof, clarity, difference, and action.
+          </p>
+        </div>
+
+        <div class="review-path-grid">
+          <article>
+            <span>01</span>
+            <h3>Check the offer</h3>
+            <p>Can a non-technical person explain the service after 30 seconds?</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Compare the demos</h3>
+            <p>Do cafe, salon, and roofing feel like separate businesses with separate needs?</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Test the next step</h3>
+            <p>Can someone find the right quote, booking, maintenance, or feedback action?</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Name the doubt</h3>
+            <p>What would stop a real owner from trusting this enough to reply?</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell portfolio-review" id="gallery">
+        <div class="section-heading">
+          <p class="section-label">Portfolio gallery</p>
+          <h2>What each page is supposed to prove.</h2>
+          <p>
+            These are still sample builds, not client claims. The point is to show that GrowthStack
+            can shape a website around the business, not reuse the same page with a different photo.
+          </p>
+        </div>
+
+        <div class="review-scoreboard" aria-label="Review score prompts">
+          <article><span>Trust</span><strong>Would you believe this business?</strong></article>
+          <article><span>Clarity</span><strong>Can you understand the offer fast?</strong></article>
+          <article><span>Difference</span><strong>Do the demos feel niche-specific?</strong></article>
+          <article><span>Action</span><strong>Is the next step obvious?</strong></article>
         </div>
 
         <div class="preview-grid">
           <article class="preview-card">
             <a href="index.html"><img src="assets/growthstack-local-owner-hero.png" alt="GrowthStack homepage preview" /></a>
             <div class="preview-card-body">
+              <span class="preview-badge">Core offer</span>
               <h2>Main Site</h2>
               <p>The actual GrowthStack offer: websites, demos, monthly care, pricing, and project request.</p>
+              <div class="before-after">
+                <p><strong>Before:</strong> a vague idea for web design.</p>
+                <p><strong>After:</strong> a clear offer with demos, pricing, trust notes, and intake.</p>
+              </div>
+              <p class="review-question">Question: would you know what to ask for next?</p>
               <a class="text-link" href="index.html">Open homepage</a>
             </div>
           </article>
           <article class="preview-card">
             <a href="demo-cafe.html"><img src="assets/demo-cafe-hero.png" alt="Cafe website demo preview" /></a>
             <div class="preview-card-body">
+              <span class="preview-badge cafe-badge">Food service</span>
               <h2>Cafe Demo</h2>
               <p>Warm menu-led page with hours, story, reservation, pickup, and catering request flow.</p>
+              <div class="before-after">
+                <p><strong>Before:</strong> generic cafe copy and a contact button.</p>
+                <p><strong>After:</strong> menu, specials, hours, catering, pickup, and reservation logic.</p>
+              </div>
+              <p class="review-question">Question: does it make you want to visit or order?</p>
               <a class="text-link" href="demo-cafe.html">Open cafe demo</a>
             </div>
           </article>
           <article class="preview-card">
             <a href="demo-salon.html"><img src="assets/demo-salon-hero.png" alt="Hair salon website demo preview" /></a>
             <div class="preview-card-body">
+              <span class="preview-badge salon-badge">Beauty service</span>
               <h2>Salon Demo</h2>
               <p>Premium style-led page with lookbook, service prices, stylists, and appointment request.</p>
+              <div class="before-after">
+                <p><strong>Before:</strong> a pretty page with no proof.</p>
+                <p><strong>After:</strong> lookbook, service menu, stylist specialties, and consultation rules.</p>
+              </div>
+              <p class="review-question">Question: would you trust the salon before booking?</p>
               <a class="text-link" href="demo-salon.html">Open salon demo</a>
             </div>
           </article>
           <article class="preview-card">
             <a href="demo-roofing.html"><img src="assets/demo-roofing-hero.png" alt="Roofing contractor website demo preview" /></a>
             <div class="preview-card-body">
+              <span class="preview-badge roofing-badge">Contractor</span>
               <h2>Roofing Demo</h2>
               <p>Practical contractor page with inspection steps, service categories, projects, and quote form.</p>
+              <div class="before-after">
+                <p><strong>Before:</strong> emergency claims and thin service text.</p>
+                <p><strong>After:</strong> proof, service area, materials, warranty notes, and quote qualification.</p>
+              </div>
+              <p class="review-question">Question: does it feel credible without overpromising?</p>
               <a class="text-link" href="demo-roofing.html">Open roofing demo</a>
             </div>
           </article>
           <article class="preview-card">
             <a href="start-project.html"><img src="assets/growthstack-redo-concept.png" alt="GrowthStack project intake preview" /></a>
             <div class="preview-card-body">
+              <span class="preview-badge">Sales flow</span>
               <h2>Project Intake</h2>
               <p>The first client form. It gathers business details so quoting is cleaner and less random.</p>
+              <div class="before-after">
+                <p><strong>Before:</strong> "make me a website" with missing details.</p>
+                <p><strong>After:</strong> business type, goals, timeline, budget, and current-site context.</p>
+              </div>
+              <p class="review-question">Question: does the form ask enough without feeling painful?</p>
               <a class="text-link" href="start-project.html">Open intake form</a>
             </div>
           </article>
           <article class="preview-card">
             <a href="maintenance.html"><img src="assets/demo-roofing-projects.png" alt="GrowthStack maintenance preview" /></a>
             <div class="preview-card-body">
+              <span class="preview-badge">Recurring care</span>
               <h2>Maintenance</h2>
               <p>The recurring offer: checks, small edits, analytics snapshots, and improvement ideas.</p>
+              <div class="before-after">
+                <p><strong>Before:</strong> one-time build with no follow-up.</p>
+                <p><strong>After:</strong> monthly checks, small updates, form tests, and practical reporting.</p>
+              </div>
+              <p class="review-question">Question: does monthly care sound useful and fair?</p>
               <a class="text-link" href="maintenance.html">Open maintenance page</a>
             </div>
           </article>
@@ -129,25 +211,26 @@
               <p class="section-label">Feedback</p>
               <h2>Ask people for useful criticism.</h2>
               <p>
-                Do not ask, "Do you like it?" Ask questions that reveal whether this can sell.
+                Do not ask, "Do you like it?" Ask questions that reveal whether this can sell,
+                where trust breaks, and what needs to be clearer.
               </p>
             </div>
             <div class="feedback-list">
               <article>
-                <h3>Trust</h3>
-                <p>Which page feels most believable? Which part still feels fake, generic, or unclear?</p>
+                <h3>Score the trust</h3>
+                <p>Which page feels most believable, and which part still feels fake, generic, or unclear?</p>
               </article>
               <article>
-                <h3>Clarity</h3>
-                <p>Can you explain what GrowthStack sells after 30 seconds on the homepage?</p>
+                <h3>Repeat the offer</h3>
+                <p>Can the reviewer explain what GrowthStack sells after 30 seconds on the homepage?</p>
               </article>
               <article>
-                <h3>Demos</h3>
-                <p>Do the cafe, salon, and roofing pages feel like different businesses with different needs?</p>
+                <h3>Compare the demos</h3>
+                <p>Ask which demo feels most real and which one still feels closest to a template.</p>
               </article>
               <article>
-                <h3>Action</h3>
-                <p>Can you find how to request a project, request a quote, or contact the business?</p>
+                <h3>Find the action</h3>
+                <p>Can they find how to request a project, request a quote, book, reserve, or contact?</p>
               </article>
             </div>
           </div>
@@ -170,6 +253,15 @@
                 <option>Salon demo</option>
                 <option>Roofing demo</option>
                 <option>Everything</option>
+              </select>
+            </label>
+            <label>
+              <span>How ready does this feel?</span>
+              <select name="confidence-rating" required>
+                <option value="">Choose one</option>
+                <option>Ready to show publicly</option>
+                <option>Good but needs small fixes</option>
+                <option>Not convincing yet</option>
               </select>
             </label>
             <label>

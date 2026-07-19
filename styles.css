@@ -1971,6 +1971,7 @@ h2 {
   background: var(--bg-soft);
   border: 1px solid var(--line);
   border-radius: var(--radius);
+  box-shadow: 0 18px 46px rgba(22, 52, 28, 0.08);
 }
 
 .preview-note h2 {
@@ -1979,34 +1980,172 @@ h2 {
   font-size: 20px;
 }
 
-.preview-note p {
+.preview-note p,
+.preview-note li {
   margin: 0;
   color: var(--muted);
   line-height: 1.65;
 }
 
+.preview-note ol {
+  display: grid;
+  gap: 12px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.review-path {
+  border-top: 1px solid var(--line);
+}
+
+.review-path-grid,
+.review-scoreboard {
+  display: grid;
+  gap: 16px;
+}
+
+.review-path-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.review-path-grid article {
+  min-width: 0;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 36px rgba(22, 52, 28, 0.06);
+}
+
+.review-path-grid span {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 24px;
+  color: #ffffff;
+  background: #102414;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.review-path-grid h3 {
+  margin-bottom: 9px;
+  font-size: 19px;
+}
+
+.review-path-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.portfolio-review {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbf7 100%);
+  border-top: 1px solid var(--line);
+}
+
+.review-scoreboard {
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 26px;
+}
+
+.review-scoreboard article {
+  padding: 18px;
+  background: #102414;
+  border-radius: var(--radius);
+  color: #ffffff;
+}
+
+.review-scoreboard span {
+  display: block;
+  margin-bottom: 8px;
+  color: #9ed2aa;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.review-scoreboard strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
 .preview-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 20px;
 }
 
 .preview-card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: 0 14px 36px rgba(22, 52, 28, 0.07);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.preview-card:hover {
+  border-color: rgba(15, 107, 44, 0.32);
+  box-shadow: 0 24px 58px rgba(22, 52, 28, 0.12);
+  transform: translateY(-3px);
 }
 
 .preview-card img {
   width: 100%;
-  height: 190px;
+  height: 220px;
   object-fit: cover;
+  transition: transform 420ms ease, filter 420ms ease;
+}
+
+.preview-card:hover img {
+  filter: saturate(1.08) contrast(1.02);
+  transform: scale(1.025);
 }
 
 .preview-card-body {
-  padding: 22px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.preview-badge {
+  width: fit-content;
+  margin-bottom: 16px;
+  padding: 6px 9px;
+  color: var(--blue);
+  background: var(--green-soft);
+  border: 1px solid rgba(15, 107, 44, 0.16);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cafe-badge {
+  color: #9a3412;
+  background: #fff6ec;
+  border-color: #f0d0b9;
+}
+
+.salon-badge {
+  color: #b83280;
+  background: #fff3fa;
+  border-color: #f0c9de;
+}
+
+.roofing-badge {
+  color: #0f766e;
+  background: #ecfdf8;
+  border-color: #b8eee7;
 }
 
 .preview-card h2 {
@@ -2018,6 +2157,36 @@ h2 {
 .preview-card p {
   color: var(--muted);
   line-height: 1.6;
+}
+
+.before-after {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0;
+  padding: 16px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.before-after p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.before-after strong {
+  color: var(--text);
+}
+
+.review-question {
+  margin: 0 0 18px;
+  color: #283524 !important;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.preview-card .text-link {
+  margin-top: auto;
 }
 
 .feedback-layout {
@@ -2101,6 +2270,8 @@ h2 {
   .content-grid,
   .process-list,
   .preview-grid,
+  .review-path-grid,
+  .review-scoreboard,
   .trust-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2217,6 +2388,8 @@ h2 {
   .process-list,
   .testimonial-grid,
   .preview-grid,
+  .review-path-grid,
+  .review-scoreboard,
   .trust-grid,
   .analytics-metrics,
   .launch-steps {
@@ -2308,6 +2481,15 @@ h2 {
 
   .price strong {
     font-size: 48px;
+  }
+
+  .preview-card img {
+    height: 210px;
+  }
+
+  .preview-card-body,
+  .review-path-grid article {
+    padding: 20px;
   }
 
   .site-footer {
