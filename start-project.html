@@ -11,8 +11,8 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header class="site-header">
+  <body class="intake-page">
+    <header class="site-header" data-header>
       <a class="brand" href="index.html" aria-label="GrowthStack home">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 32 32" role="img">
@@ -22,7 +22,11 @@
         </span>
         <span>GrowthStack</span>
       </a>
-      <nav class="site-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Open navigation</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
         <a href="index.html#features">Services</a>
         <a href="index.html#portfolio">Portfolio</a>
         <a href="maintenance.html">Maintenance</a>
@@ -35,9 +39,8 @@
         <p class="section-label">Client intake</p>
         <h1>Start with the details that make a website sell.</h1>
         <p>
-          This form collects the minimum information needed to quote a small-business website without
-          guessing. On GitHub Pages, it opens an email draft with the project details so no hidden
-          form database is needed.
+          Tell us what the business does, who it needs to reach, and what a successful website should
+          achieve. GrowthStack will use the details to recommend a clear scope and next step.
         </p>
       </section>
 
@@ -106,10 +109,10 @@
             <span>Budget range</span>
             <select name="budget" required>
               <option value="">Choose one</option>
-              <option>Under €500</option>
-              <option>€500-€1,000</option>
-              <option>€1,000-€2,000</option>
-              <option>€2,000+</option>
+              <option>Under EUR 500</option>
+              <option>EUR 500-EUR 1,000</option>
+              <option>EUR 1,000-EUR 2,000</option>
+              <option>EUR 2,000+</option>
             </select>
           </label>
           <p class="form-note">

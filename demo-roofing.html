@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Highland Roofing Demo | GrowthStack</title>
     <meta
       name="description"
@@ -28,7 +29,7 @@
         <div>
           <p class="demo-label">Residential roof repair and replacement</p>
           <h1>Roofing that is explained before the work starts.</h1>
-          <p>A contractor site should build trust with project photos, inspection steps, materials, warranty terms, service area, and a quote request that feels serious.</p>
+          <p>Residential repairs and replacements backed by photo inspections, clear material options, written scope, and realistic scheduling.</p>
           <div class="demo-actions">
             <a class="demo-button" href="#quote">Request Inspection</a>
             <a class="demo-button secondary" href="#projects">See Project Types</a>
@@ -44,19 +45,19 @@
       </section>
 
       <section class="trust-rail demo-shell" aria-label="Roofing trust signals">
-        <article><strong>Licensed and insured</strong><span>Show license number, insurance proof, and warranty terms.</span></article>
-        <article><strong>Local service area</strong><span>List the towns and neighborhoods actually served.</span></article>
-        <article><strong>Photo reports</strong><span>Inspection photos before a homeowner commits.</span></article>
-        <article><strong>Clear scheduling</strong><span>Normal appointments, storm checks, and realistic timelines.</span></article>
+        <article><strong>Licensed and insured</strong><span>Documentation and warranty terms supplied with the quote.</span></article>
+        <article><strong>Local service area</strong><span>Serving homes within a 25 km callout area.</span></article>
+        <article><strong>Photo reports</strong><span>See the issue before deciding how to proceed.</span></article>
+        <article><strong>Clear scheduling</strong><span>Confirmed weather windows and realistic timelines.</span></article>
       </section>
 
       <section class="roof-proof demo-shell" aria-label="Roofing proof and service detail">
         <div>
           <p class="demo-label">Proof before pressure</p>
-          <h2>Homeowners need evidence, not vague emergency promises.</h2>
+          <h2>See the evidence before choosing the repair.</h2>
           <p>
-            A stronger contractor page explains service areas, material choices, warranties, and
-            what counts as urgent before someone calls.
+            Every inspection explains the condition, the available options, and what can wait versus
+            what should be dealt with quickly.
           </p>
         </div>
         <div class="roof-proof-grid">
@@ -70,9 +71,9 @@
         <div class="roof-head">
           <div>
             <p class="demo-label">Services</p>
-            <h2>Separate small repairs from high-ticket replacement work.</h2>
+            <h2>Repair what is damaged. Replace only when it makes sense.</h2>
           </div>
-          <p>Roofing clients need to understand what kind of job they have, how it is inspected, and what details affect the quote.</p>
+          <p>Start with an inspection. The quote will explain access, material, ventilation, drainage, warranty, and the work that affects the price.</p>
         </div>
         <div class="roof-grid">
           <article class="roof-tile"><h3>Leak and damage repair</h3><p>For missing shingles, flashing issues, gutter edge damage, and small leaks.</p><ul><li>Photo inspection</li><li>Repair scope</li><li>Timeline estimate</li></ul></article>
@@ -85,9 +86,9 @@
         <div class="roof-head">
           <div>
             <p class="demo-label">Process</p>
-            <h2>A contractor site should remove doubt step by step.</h2>
+            <h2>One clear process from inspection to handover.</h2>
           </div>
-          <p>This is the kind of section that makes a roofing company feel organized instead of random.</p>
+          <p>You will know what happens next, who is responsible, and what needs to be ready before the crew arrives.</p>
         </div>
         <div class="process-steps">
           <article><span>01</span><h3>Inspect</h3><p>Confirm roof type, damage, access, safety, and photos.</p></article>
@@ -102,19 +103,20 @@
           <img src="assets/demo-roofing-projects.png" alt="Residential roofing project gallery" />
           <div class="quote-panel" id="quote">
             <p class="demo-label">Quote request</p>
-            <h2>Ask for enough detail to qualify the job.</h2>
-            <p>Not every roofing lead is the same. A better form asks for roof type, issue, address area, photos, and preferred inspection time.</p>
+            <h2>Tell us enough to plan the right inspection.</h2>
+            <p>Share the roof type, visible issue, property area, and preferred timing. Photos help us prepare but do not replace an on-site inspection.</p>
             <div class="urgency-scale" aria-label="Roofing urgency guide">
               <span>Active leak</span>
               <span>Storm damage</span>
               <span>Planned quote</span>
             </div>
-            <form class="demo-form">
-              <input placeholder="Name" />
-              <input placeholder="Phone or email" />
-              <select><option>Leak or small repair</option><option>Full replacement</option><option>Flat roof or extension</option><option>Inspection only</option></select>
-              <textarea placeholder="Tell us the roof issue, property area, and any useful details"></textarea>
-              <button class="demo-button" type="button">Request Roof Inspection</button>
+            <form class="demo-form" data-demo-form>
+              <input name="name" placeholder="Name" required />
+              <input name="contact" placeholder="Phone or email" required />
+              <select name="service"><option>Leak or small repair</option><option>Full replacement</option><option>Flat roof or extension</option><option>Inspection only</option></select>
+              <textarea name="details" placeholder="Tell us the roof issue, property area, and any useful details" required></textarea>
+              <button class="demo-button" type="submit">Request Roof Inspection</button>
+              <p class="demo-form-status" role="status" data-demo-form-status></p>
             </form>
           </div>
         </div>
@@ -123,7 +125,8 @@
 
     <footer class="demo-footer">
       <strong>Highland Roofing Demo</strong>
-      <a href="index.html#portfolio">Back to GrowthStack</a>
+      <a href="https://daniel-techai.github.io/GrowthStack/#portfolio">Back to GrowthStack</a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

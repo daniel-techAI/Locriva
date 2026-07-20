@@ -2,13 +2,21 @@ document.documentElement.classList.add("motion-ready");
 
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
+const header = document.querySelector("[data-header]");
 const forms = document.querySelectorAll("[data-signup-form]");
-const revealItems = document.querySelectorAll("[data-reveal]");
+const demoForms = document.querySelectorAll("[data-demo-form]");
+const revealItems = document.querySelectorAll("[data-reveal], main > section:not(:first-child)");
 const demoShowcase = document.querySelector("[data-demo-showcase]");
 const demoCards = document.querySelectorAll("[data-demo-card]");
 const contactEmail = "daniellaky.uni@gmail.com";
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 let activeDemoCard = null;
+
+if (header) {
+  const updateHeaderState = () => header.classList.toggle("is-scrolled", window.scrollY > 12);
+  updateHeaderState();
+  window.addEventListener("scroll", updateHeaderState, { passive: true });
+}
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
@@ -67,6 +75,16 @@ forms.forEach((form) => {
       }
     } finally {
       if (submitButton) submitButton.disabled = false;
+    }
+  });
+});
+
+demoForms.forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const status = form.querySelector("[data-demo-form-status]");
+    if (status) {
+      status.textContent = "Demo complete. A live client site would send this to the business booking or enquiry system.";
     }
   });
 });
