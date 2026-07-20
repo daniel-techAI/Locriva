@@ -2,6 +2,16 @@
 
 Static, self-owned website for GrowthStack, a small-business web design and growth systems studio. No paid website-builder dependency and no build step required.
 
+## Live Site Links
+
+Send any of these public links directly to testers, family members, or potential clients:
+
+- [GrowthStack selling site](https://daniel-techAI.github.io/GrowthStack/)
+- [GrowthStack tester review room](https://daniel-techAI.github.io/GrowthStack/preview.html)
+- [North Table Cafe demo](https://daniel-techAI.github.io/GrowthStack/demo-cafe.html)
+- [Luna Salon demo](https://daniel-techAI.github.io/GrowthStack/demo-salon.html)
+- [Highland Roofing demo](https://daniel-techAI.github.io/GrowthStack/demo-roofing.html)
+
 ## Open Locally
 
 Fastest option: double-click `Open GrowthStack.bat`, double-click `Start Local Preview.bat`, or open `index.html` in a browser.
