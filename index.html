@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Luna Salon Demo | GrowthStack</title>
     <meta
       name="description"
       content="GrowthStack sample salon website with services, style lookbook, stylist specialties, prices, and booking flow."
     />
-    <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="demo-sites.css" />
   </head>
@@ -29,7 +29,7 @@
         <div>
           <p class="demo-label">Color, cuts, styling</p>
           <h1>Hair work people can see before they book.</h1>
-          <p>A salon website needs visual proof first: finished cuts, color specialties, service prices, stylist confidence, policies, and a booking path that feels premium.</p>
+          <p>Considered color, precision cuts, and event styling shaped around your hair, routine, and the result you actually want to maintain.</p>
           <div class="demo-actions">
             <a class="demo-button" href="#book">Book Consultation</a>
             <a class="demo-button secondary" href="#lookbook">View Lookbook</a>
@@ -44,18 +44,18 @@
       <section class="salon-proof demo-shell" aria-label="Salon result examples">
         <article>
           <span>01</span>
-          <strong>Transformation cards</strong>
-          <p>Real salons should show the goal, technique, appointment length, and maintenance cycle.</p>
+          <strong>Personal consultation</strong>
+          <p>Every appointment starts with your hair history, daily routine, and desired finish.</p>
         </article>
         <article>
           <span>02</span>
-          <strong>Stylist matching</strong>
-          <p>Clients choose faster when specialties are visible before the booking step.</p>
+          <strong>Specialist matching</strong>
+          <p>Choose by specialty or let the salon match you with the right member of the team.</p>
         </article>
         <article>
           <span>03</span>
-          <strong>Consultation rules</strong>
-          <p>Color corrections, bridal work, and big changes need clearer intake than a basic contact form.</p>
+          <strong>Honest care plans</strong>
+          <p>Leave with realistic timing, maintenance advice, and product guidance for your result.</p>
         </article>
       </section>
 
@@ -64,7 +64,7 @@
           <div>
             <p class="demo-label">Service menu</p>
             <h2>Price clarity makes booking easier.</h2>
-            <p>Beauty clients want to know what you specialize in, where prices start, and whether the service fits their hair goals before they message.</p>
+            <p>Prices reflect the time, technique, and product needed. Major color changes begin with a consultation and a confirmed quote.</p>
           </div>
           <div class="service-menu">
             <article class="service-card"><div><h3>Balayage and lived-in color</h3><p>Consultation, custom placement, gloss, blow dry, and aftercare notes.</p></div><strong>from €145</strong></article>
@@ -80,8 +80,8 @@
           <img src="assets/demo-salon-lookbook.png" alt="Hair salon finished styles and specialist cuts" />
           <div>
             <p class="demo-label">Lookbook</p>
-            <h2>Show the exact kind of work the salon wants to sell.</h2>
-            <p>A real salon page should include approved client photos, before/after sets, stylist notes, hair type context, and maintenance advice. That makes the work believable.</p>
+            <h2>Modern color and cuts designed to grow out beautifully.</h2>
+            <p>Explore soft blondes, clean shapes, layered movement, and occasion styling from the Luna team.</p>
             <div class="style-tags">
               <span>Soft blonde balayage</span>
               <span>Clean blunt bob</span>
@@ -89,8 +89,8 @@
               <span>Bridal textured updo</span>
             </div>
             <div class="salon-care-note">
-              <strong>Real client upgrade:</strong> add approved before/after photos, hair type,
-              stylist name, timing, and aftercare advice for each look.
+              <strong>Planning a change?</strong> Bring reference images and your recent color history
+              so the stylist can recommend the safest route to the result.
             </div>
           </div>
         </div>
@@ -99,8 +99,8 @@
       <section class="stylists demo-shell" id="stylists">
         <div>
           <p class="demo-label">Stylist specialties</p>
-          <h2>People book with people, not just a business name.</h2>
-          <p>For a real salon, each worker should have a short specialty profile, days available, and examples of work they are strongest at.</p>
+          <h2>Meet the specialists behind every finish.</h2>
+          <p>Each stylist focuses on a different craft. Choose the work closest to your goal or ask us to recommend the right appointment.</p>
         </div>
         <div class="stylist-grid">
           <article class="stylist-card"><span>Color specialist</span><h3>Mara</h3><p>Dimensional blondes, gloss refreshes, and low-maintenance color plans.</p></article>
@@ -113,15 +113,16 @@
         <div>
           <p class="demo-label">Booking request</p>
           <h2>Ask the right questions before the appointment.</h2>
-          <p>The form should help the salon understand hair goal, service type, timing, and whether a consultation is needed first.</p>
+          <p>Share your hair goal, current color, and preferred date. The team will confirm the right service, timing, and stylist before booking.</p>
         </div>
-        <form class="demo-form">
-          <input placeholder="Name" />
-          <input placeholder="Phone or email" />
-          <select><option>Color consultation</option><option>Cut and finish</option><option>Gloss or tone</option><option>Bridal styling</option></select>
-          <textarea placeholder="Tell us your hair goal, current color, and preferred date"></textarea>
+        <form class="demo-form" data-demo-form>
+          <input name="name" placeholder="Name" required />
+          <input name="contact" placeholder="Phone or email" required />
+          <select name="service"><option>Color consultation</option><option>Cut and finish</option><option>Gloss or tone</option><option>Bridal styling</option></select>
+          <textarea name="details" placeholder="Tell us your hair goal, current color, and preferred date" required></textarea>
           <div class="salon-form-note">Color changes may need a consultation before final pricing.</div>
-          <button class="demo-button" type="button">Request Appointment</button>
+          <button class="demo-button" type="submit">Request Appointment</button>
+          <p class="demo-form-status" role="status" data-demo-form-status></p>
         </form>
       </section>
     </main>
@@ -130,5 +131,6 @@
       <strong>Luna Salon Demo</strong>
       <a href="https://daniel-techai.github.io/GrowthStack/#portfolio">Back to GrowthStack</a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
