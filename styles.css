@@ -2797,24 +2797,60 @@ h2 {
   clip-path: polygon(0 0, 90% 0, 100% 14%, 100% 100%, 10% 100%, 0 86%);
 }
 
-.home-page .motion-ready .demo-card > div,
-.home-page .motion-ready .demo-card .demo-image {
+.motion-ready .home-page .demo-card > div {
   opacity: 1;
   transform: none;
 }
 
-.home-page .motion-ready .demo-card .demo-image {
+.motion-ready .home-page .demo-card .demo-image {
+  opacity: 0.72;
   clip-path: inset(0 0 0 12%);
-  transition: clip-path 760ms cubic-bezier(0.2, 0.75, 0.2, 1), transform 300ms ease;
+  transform: translateY(12px);
+  transition:
+    clip-path 760ms cubic-bezier(0.2, 0.75, 0.2, 1),
+    opacity 420ms ease,
+    transform 520ms cubic-bezier(0.2, 0.75, 0.2, 1);
 }
 
-.home-page .motion-ready .demo-card.is-active .demo-image,
-.home-page .motion-ready .demo-card:hover .demo-image {
+.motion-ready .home-page .demo-card.is-active .demo-image,
+.motion-ready .home-page .demo-card:hover .demo-image {
+  opacity: 1;
   clip-path: inset(0);
+  transform: translateY(0);
 }
 
 .home-page .demo-card h3 {
   font-size: clamp(48px, 5vw, 72px);
+}
+
+.home-page .demo-card-roofing {
+  --demo-card-accent: #ffd34f;
+}
+
+.home-page .demo-card-cafe {
+  --demo-card-accent: #ffb26b;
+}
+
+.home-page .demo-card-salon {
+  --demo-card-accent: #ff9dca;
+}
+
+.home-page .portfolio .demo-card .check-list li {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.home-page .portfolio .demo-card .check-list li::before {
+  background: var(--demo-card-accent);
+}
+
+.home-page .portfolio .demo-card .text-link {
+  color: var(--demo-card-accent);
+  border-bottom-color: var(--demo-card-accent);
+}
+
+.home-page .portfolio .demo-image > span,
+.home-page .portfolio .demo-card .text-link {
+  letter-spacing: 0;
 }
 
 .home-page .portfolio-actions {
