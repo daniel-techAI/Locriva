@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://daniel-techai.github.io/GrowthStack/sitemap.xml

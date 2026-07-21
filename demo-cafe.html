@@ -1,142 +1,156 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
     <title>North Table Cafe Demo | GrowthStack</title>
     <meta
       name="description"
-      content="GrowthStack sample cafe website with menu, hours, reservations, catering, and a warm local business story."
+      content="GrowthStack sample cafe website with menu prices, opening hours, visit details, reservations, pickup, and catering."
     />
+    <meta name="theme-color" content="#0c3a27" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="assets/demo-cafe-menu.webp" type="image/webp" />
     <link rel="stylesheet" href="demo-sites.css" />
   </head>
   <body class="cafe">
     <div class="demo-banner">Demo site by GrowthStack. Sample business, not a real client.</div>
-    <header class="demo-header">
-      <a class="demo-brand" href="index.html">North Table Cafe</a>
-      <nav class="demo-nav">
+    <header class="demo-header cafe-header">
+      <a class="demo-brand" href="index.html" aria-label="North Table Cafe demo home">
+        <span>North Table</span>
+        <span>Cafe</span>
+      </a>
+      <nav class="demo-nav" aria-label="Cafe navigation">
         <a href="#menu">Menu</a>
         <a href="#visit">Hours</a>
         <a href="#story">Story</a>
         <a href="#reserve">Reserve</a>
       </nav>
+      <div class="cafe-open">
+        <span>Open today</span>
+        <strong>7:00-16:00</strong>
+      </div>
+      <a class="demo-button header-action" href="#reserve">Reserve a table</a>
     </header>
 
     <main>
-      <section class="cafe-hero demo-shell">
-        <div>
+      <section class="cafe-hero">
+        <div class="cafe-hero-copy">
           <p class="demo-label">Coffee, breakfast, brunch</p>
           <h1>Neighborhood brunch with real food, clear hours, and easy booking.</h1>
-          <p>Seasonal breakfasts, slow-fermented bread, and coffee from independent roasters, served seven days a week in the heart of the neighborhood.</p>
+          <p>
+            Seasonal breakfasts, slow-fermented bread, and coffee from independent roasters,
+            served seven days a week in the heart of the neighborhood.
+          </p>
           <div class="demo-actions">
             <a class="demo-button" href="#reserve">Reserve a Table</a>
             <a class="demo-button secondary" href="#menu">See Menu</a>
           </div>
         </div>
-        <div class="cafe-photo-card">
-          <img src="assets/demo-cafe-menu.png" alt="Cafe breakfast, coffee, pastry, sandwich, and granola on a wooden table" />
-          <div class="cafe-hours-card">
-            <strong>Open today 7:00-16:00</strong>
-            <span>Breakfast all day, weekend brunch, espresso bar, pickup orders, and small group reservations.</span>
-          </div>
+        <div class="cafe-hero-media">
+          <img
+            src="assets/demo-cafe-menu.webp"
+            alt="Cafe breakfast, coffee, pastry, sandwich, and granola on a wooden table"
+            width="1559"
+            height="1009"
+            fetchpriority="high"
+            decoding="async"
+          />
         </div>
       </section>
 
-      <section class="cafe-info-strip demo-shell" aria-label="Cafe quick information">
-        <article><strong>Morning pickup</strong><span>Order coffee and breakfast from 7:00</span></article>
-        <article><strong>Weekend brunch</strong><span>Reserved tables from 9:00-14:00</span></article>
-        <article><strong>Local suppliers</strong><span>Seasonal produce and neighborhood bakeries</span></article>
-        <article><strong>Office catering</strong><span>Breakfast boxes delivered nearby</span></article>
-      </section>
-
-      <section class="cafe-specials demo-shell" aria-label="Cafe daily specials">
-        <div>
-          <p class="demo-label">Today's counter</p>
-          <h2>A bright table, a proper breakfast, and coffee worth staying for.</h2>
-          <p>
-            The counter changes with the season. Come early for warm pastries, stay for brunch,
-            or pick up something quick on the way to work.
-          </p>
-        </div>
-        <div class="cafe-special-grid">
-          <article>
-            <span>08:00-11:00</span>
-            <strong>Breakfast sandwich + filter coffee</strong>
-            <p>Free-range egg, smoked bacon or mushrooms, cheddar, and house relish.</p>
-          </article>
-          <article>
-            <span>Weekend only</span>
-            <strong>Lemon ricotta pancakes</strong>
-            <p>Whipped ricotta, lemon curd, berries, and toasted pistachio.</p>
-          </article>
-          <article>
-            <span>Catering</span>
-            <strong>Office pastry trays</strong>
-            <p>House pastries, seasonal fruit, preserves, and fresh filter coffee.</p>
-          </article>
-        </div>
+      <section class="cafe-info-strip" aria-label="Cafe quick information">
+        <article><strong>Open 7 days</strong><span>Breakfast all day. Lunch from eleven.</span></article>
+        <article><strong>Order ahead</strong><span>Pickup made easy. Skip the wait.</span></article>
+        <article><strong>Catering</strong><span>Office breakfasts and relaxed gatherings.</span></article>
+        <article><strong>Allergies?</strong><span>Tell us before ordering. We will help.</span></article>
       </section>
 
       <section class="cafe-menu-section" id="menu">
-        <div class="demo-shell">
-          <div>
-            <p class="demo-label">Menu board</p>
-            <h2>Breakfast all day. Lunch from eleven.</h2>
-            <p>Our menu follows the market and keeps the favorites that regulars come back for. Ask the team about vegetarian, vegan, and gluten-free options.</p>
-            <p class="menu-note">Allergies or dietary requirements? Tell us when ordering. Our kitchen handles nuts, dairy, gluten, eggs, and sesame.</p>
-          </div>
-          <div class="menu-board">
-            <article class="menu-row"><div><h3>House Breakfast Plate</h3><p>Eggs, roasted tomato, greens, toasted sourdough, bacon or mushrooms.</p></div><strong>€13</strong></article>
-            <article class="menu-row"><div><h3>Grilled Market Sandwich</h3><p>Seasonal vegetables, cheddar, herb mayo, and side salad.</p></div><strong>€11</strong></article>
-            <article class="menu-row"><div><h3>Granola Bowl</h3><p>Greek yogurt, berries, toasted oats, honey, and seeds.</p></div><strong>€8</strong></article>
-            <article class="menu-row"><div><h3>Flat White / Latte</h3><p>House espresso, dairy or oat milk, served hot or iced.</p></div><strong>€3.80</strong></article>
-            <article class="menu-row"><div><h3>Office Breakfast Box</h3><p>Pastries, fruit, filter coffee, and sandwich halves for teams.</p></div><strong>from €42</strong></article>
-          </div>
+        <div class="cafe-menu-intro">
+          <p class="demo-label">Menu board</p>
+          <h2>Breakfast all day. Lunch from eleven.</h2>
+          <p>
+            The menu follows the market and keeps the favorites regulars return for. Ask about
+            vegetarian, vegan, and gluten-free options.
+          </p>
+          <p class="menu-note">
+            Allergies or dietary requirements? Tell us when ordering. The kitchen handles nuts,
+            dairy, gluten, eggs, and sesame.
+          </p>
+        </div>
+        <div class="menu-board">
+          <article class="menu-row"><div><h3>House Breakfast Plate</h3><p>Eggs, roasted tomato, greens, sourdough, bacon or mushrooms.</p></div><strong>&euro;13</strong></article>
+          <article class="menu-row"><div><h3>Grilled Market Sandwich</h3><p>Seasonal vegetables, cheddar, herb mayo, and side salad.</p></div><strong>&euro;11</strong></article>
+          <article class="menu-row"><div><h3>Granola Bowl</h3><p>Greek yogurt, berries, toasted oats, honey, and seeds.</p></div><strong>&euro;8</strong></article>
+          <article class="menu-row"><div><h3>Flat White / Latte</h3><p>House espresso, dairy or oat milk, served hot or iced.</p></div><strong>&euro;3.80</strong></article>
+          <article class="menu-row"><div><h3>Office Breakfast Box</h3><p>Pastries, fruit, filter coffee, and sandwich halves for teams.</p></div><strong>from &euro;42</strong></article>
         </div>
       </section>
 
-      <section class="cafe-visit demo-shell" id="visit">
-        <div class="cafe-visit-grid">
-          <img src="assets/demo-cafe-hero.png" alt="Warm cafe interior with coffee counter and pastries" />
-          <div class="cafe-panel">
-            <p class="demo-label">Visit</p>
-            <h2>Hours, table policy, and location in one place.</h2>
-            <p>Find us at 14 Market Lane, two minutes from the town hall. Walk-ins are welcome; weekend groups of four or more should book ahead.</p>
-            <ul class="hours-list">
-              <li><span>Mon-Fri</span><strong>7:00-16:00</strong></li>
-              <li><span>Saturday</span><strong>8:00-15:00</strong></li>
-              <li><span>Sunday brunch</span><strong>9:00-14:00</strong></li>
-              <li><span>Kitchen closes</span><strong>30 min before close</strong></li>
-            </ul>
-            <a class="demo-button" href="#reserve">Reserve or ask about catering</a>
-          </div>
-        </div>
+      <section class="cafe-dayparts" aria-label="Cafe dayparts">
+        <article>
+          <img src="assets/demo-cafe-menu.webp" alt="Coffee and pastry" width="1559" height="1009" loading="lazy" decoding="async" />
+          <div><span>Morning</span><h2>Coffee &amp; pastries</h2><p>From 7:00</p></div>
+        </article>
+        <article>
+          <img src="assets/demo-cafe-menu.webp" alt="Brunch plate" width="1559" height="1009" loading="lazy" decoding="async" />
+          <div><span>Midday</span><h2>Brunch classics</h2><p>From 11:00</p></div>
+        </article>
+        <article>
+          <img src="assets/demo-cafe-menu.webp" alt="Lunch sandwich and coffee" width="1559" height="1009" loading="lazy" decoding="async" />
+          <div><span>Afternoon</span><h2>Lunch &amp; good coffee</h2><p>All day</p></div>
+        </article>
       </section>
 
-      <section class="cafe-story demo-shell" id="story">
-        <div class="story-grid">
-          <h2>Built around regulars, seasonal food, and a room people remember.</h2>
-          <div>
-            <p>North Table began as a Saturday market stall and grew into a permanent home for generous breakfasts, thoughtful coffee, and unhurried lunches.</p>
-            <p>We buy from producers we know, change the menu when the seasons do, and keep enough familiar favorites that a weekday coffee still feels easy.</p>
-          </div>
+      <section class="cafe-story" id="story">
+        <div class="cafe-story-copy">
+          <p class="demo-label">Our story</p>
+          <h2>Built for the neighborhood. Made with care.</h2>
+          <p>
+            North Table began as a Saturday market stall and grew into a permanent home for generous
+            breakfasts, thoughtful coffee, and unhurried lunches.
+          </p>
+          <p>
+            We buy from producers we know, change the menu when the seasons do, and keep enough
+            familiar favorites that a weekday coffee still feels easy.
+          </p>
         </div>
+        <img
+          src="assets/demo-cafe-hero.webp"
+          alt="Warm cafe interior with coffee counter and pastries"
+          width="1600"
+          height="895"
+          loading="lazy"
+          decoding="async"
+        />
       </section>
 
-      <section class="cafe-visit demo-shell" id="reserve">
-        <div class="cafe-visit-grid">
-          <div class="cafe-panel">
-            <p class="demo-label">Reservations and orders</p>
-            <h2>Save a table or plan the office breakfast.</h2>
-            <p>Send the date, time, and group size. For catering, include the number of guests and any dietary requirements.</p>
-          </div>
+      <section class="cafe-visit" id="visit">
+        <div class="cafe-visit-details">
+          <p class="demo-label">Find us</p>
+          <h2>Everything you need before you arrive.</h2>
+          <p>14 Market Lane, two minutes from the town hall. Walk-ins are welcome.</p>
+          <ul class="hours-list">
+            <li><span>Monday-Friday</span><strong>7:00-16:00</strong></li>
+            <li><span>Saturday</span><strong>8:00-15:00</strong></li>
+            <li><span>Sunday brunch</span><strong>9:00-14:00</strong></li>
+            <li><span>Kitchen closes</span><strong>30 min before close</strong></li>
+          </ul>
+          <p class="table-policy">Weekend groups of four or more should book ahead. A few tables stay free for walk-ins.</p>
+        </div>
+
+        <div class="cafe-reserve" id="reserve">
+          <p class="demo-label">Reservations and orders</p>
+          <h2>Save a table or plan the office breakfast.</h2>
           <form class="reservation-form" data-demo-form>
-            <input name="name" placeholder="Name" required />
-            <input name="contact" placeholder="Phone or email" required />
-            <select name="request"><option>Reservation</option><option>Pickup order</option><option>Catering request</option></select>
-            <textarea name="details" placeholder="Preferred date, time, number of people, or catering details" required></textarea>
+            <label><span>Name</span><input name="name" autocomplete="name" required /></label>
+            <label><span>Phone or email</span><input name="contact" autocomplete="email" required /></label>
+            <label>
+              <span>Request</span>
+              <select name="request"><option>Reservation</option><option>Pickup order</option><option>Catering request</option></select>
+            </label>
+            <label><span>Details</span><textarea name="details" placeholder="Date, time, group size, or catering details" required></textarea></label>
             <button class="demo-button" type="submit">Send Cafe Request</button>
             <p class="demo-form-status" role="status" data-demo-form-status></p>
           </form>
@@ -146,7 +160,8 @@
 
     <footer class="demo-footer">
       <strong>North Table Cafe Demo</strong>
-      <a href="https://daniel-techai.github.io/GrowthStack/#portfolio">Back to GrowthStack</a>
+      <span>Concept business. No reservations are actually sent.</span>
+      <a href="index.html#portfolio">Back to GrowthStack</a>
     </footer>
     <script src="script.js"></script>
   </body>
