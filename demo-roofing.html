@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,16 +6,20 @@
     <title>Highland Roofing Demo | GrowthStack</title>
     <meta
       name="description"
-      content="GrowthStack sample roofing website with service categories, inspection process, project proof, and quote request flow."
+      content="GrowthStack sample roofing website with services, photo inspections, material options, process, projects, and quote qualification."
     />
+    <meta name="theme-color" content="#0a523d" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="assets/demo-roofing-hero.webp" type="image/webp" />
     <link rel="stylesheet" href="demo-sites.css" />
   </head>
   <body class="roofing">
     <div class="demo-banner">Demo site by GrowthStack. Sample business, not a real client.</div>
-    <header class="demo-header">
-      <a class="demo-brand" href="index.html">Highland Roofing</a>
-      <nav class="demo-nav">
+    <header class="demo-header roofing-header">
+      <a class="demo-brand" href="index.html" aria-label="Highland Roofing demo home">
+        <span aria-hidden="true"></span>Highland Roofing
+      </a>
+      <nav class="demo-nav" aria-label="Roofing navigation">
         <a href="#services">Services</a>
         <a href="#process">Process</a>
         <a href="#projects">Projects</a>
@@ -24,106 +28,143 @@
     </header>
 
     <main>
-      <section class="roofing-hero demo-shell">
-        <div>
+      <section class="roofing-hero">
+        <img
+          src="assets/demo-roofing-hero.webp"
+          alt="Completed residential shingle roof"
+          width="1600"
+          height="800"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="roofing-hero-copy">
           <p class="demo-label">Residential roof repair and replacement</p>
           <h1>Roofing that is explained before the work starts.</h1>
-          <p>A contractor site should build trust with project photos, inspection steps, materials, warranty terms, service area, and a quote request that feels serious.</p>
+          <p>
+            Residential repairs and replacements backed by photo inspections, clear material
+            options, written scope, and realistic scheduling.
+          </p>
           <div class="demo-actions">
             <a class="demo-button" href="#quote">Request Inspection</a>
             <a class="demo-button secondary" href="#projects">See Project Types</a>
           </div>
         </div>
-        <div class="roofing-image">
-          <img src="assets/demo-roofing-projects.png" alt="Completed roofing project examples with shingle, metal, and flat roofs" />
-          <div class="roofing-card">
-            <strong>Photo-backed inspections</strong>
-            <span>Every quote should explain the issue, show the evidence, and give a clear next step.</span>
-          </div>
-        </div>
+        <div class="roof-annotation"><span></span>Architectural shingle condition documented</div>
       </section>
 
-      <section class="trust-rail demo-shell" aria-label="Roofing trust signals">
-        <article><strong>Licensed and insured</strong><span>Show license number, insurance proof, and warranty terms.</span></article>
-        <article><strong>Local service area</strong><span>List the towns and neighborhoods actually served.</span></article>
-        <article><strong>Photo reports</strong><span>Inspection photos before a homeowner commits.</span></article>
-        <article><strong>Clear scheduling</strong><span>Normal appointments, storm checks, and realistic timelines.</span></article>
+      <section class="roof-evidence" aria-label="Roofing trust signals">
+        <article><strong>Photo-based inspections</strong><p>See the condition, the options, and what can wait versus what should be handled quickly.</p></article>
+        <article><strong>Warranty clarity</strong><p>Manufacturer and workmanship terms, exclusions, and care notes are separated clearly.</p></article>
+        <article><strong>Local scheduling</strong><p>Serving homes within a 25 km normal callout area with realistic weather windows.</p></article>
       </section>
 
-      <section class="roof-proof demo-shell" aria-label="Roofing proof and service detail">
-        <div>
-          <p class="demo-label">Proof before pressure</p>
-          <h2>Homeowners need evidence, not vague emergency promises.</h2>
+      <section class="roof-services" id="services">
+        <div class="roof-services-intro">
+          <p class="demo-label">Services</p>
+          <h2>Repair what is damaged. Replace only when it makes sense.</h2>
           <p>
-            A stronger contractor page explains service areas, material choices, warranties, and
-            what counts as urgent before someone calls.
+            Start with an inspection. The quote explains access, material, ventilation, drainage,
+            warranty, and the work that affects the price.
           </p>
         </div>
-        <div class="roof-proof-grid">
-          <article><strong>Service area</strong><span>South side towns, 25 km normal callout radius, storm backlog noted clearly.</span></article>
-          <article><strong>Material options</strong><span>Architectural shingles, standing seam metal, flat membrane, gutter edge repair.</span></article>
-          <article><strong>Warranty clarity</strong><span>Separate manufacturer warranty, workmanship warranty, exclusions, and care notes.</span></article>
+        <div class="roof-spec-list">
+          <article><span>01</span><div><h3>Leak and damage repair</h3><p>Targeted repairs that stop active leaks and extend roof life.</p></div><strong>Inspect first</strong></article>
+          <article><span>02</span><div><h3>Full roof replacement</h3><p>Complete tear-off and replacement with proper ventilation.</p></div><strong>Written scope</strong></article>
+          <article><span>03</span><div><h3>Flat roof and extensions</h3><p>Low-slope systems, garages, additions, and transitions.</p></div><strong>Drainage review</strong></article>
+          <article><span>04</span><div><h3>Flashing and penetrations</h3><p>Chimneys, skylights, vents, walls, and change-of-plane details.</p></div><strong>Photo proof</strong></article>
+          <article><span>05</span><div><h3>Gutters and drainage</h3><p>Correct slope, capacity, edge metal, and downspout placement.</p></div><strong>Flow check</strong></article>
+          <article><span>06</span><div><h3>Storm and wind damage</h3><p>Assessment, documentation, and a repair plan without pressure.</p></div><strong>Clear priority</strong></article>
         </div>
       </section>
 
-      <section class="roof-services demo-shell" id="services">
-        <div class="roof-head">
-          <div>
-            <p class="demo-label">Services</p>
-            <h2>Separate small repairs from high-ticket replacement work.</h2>
-          </div>
-          <p>Roofing clients need to understand what kind of job they have, how it is inspected, and what details affect the quote.</p>
+      <section class="roof-materials" aria-label="Roof material options">
+        <div>
+          <p class="demo-label">Material options</p>
+          <h2>Compare the system, lifespan, and maintenance before choosing.</h2>
         </div>
-        <div class="roof-grid">
-          <article class="roof-tile"><h3>Leak and damage repair</h3><p>For missing shingles, flashing issues, gutter edge damage, and small leaks.</p><ul><li>Photo inspection</li><li>Repair scope</li><li>Timeline estimate</li></ul></article>
-          <article class="roof-tile"><h3>Full roof replacement</h3><p>For aging roofs, storm damage, or planned upgrades with material options.</p><ul><li>Shingle or metal</li><li>Ventilation check</li><li>Warranty review</li></ul></article>
-          <article class="roof-tile"><h3>Flat roof and extensions</h3><p>For garages, additions, terraces, and low-slope surfaces that need specialist detail.</p><ul><li>Drainage review</li><li>Membrane options</li><li>Edge detailing</li></ul></article>
-        </div>
+        <ol>
+          <li><span>01</span><strong>Architectural shingle</strong><small>Dimensional finish</small></li>
+          <li><span>02</span><strong>Standing seam metal</strong><small>Long-life option</small></li>
+          <li><span>03</span><strong>Flat membrane</strong><small>Low-slope detailing</small></li>
+          <li><span>04</span><strong>Edge and flashing metal</strong><small>Critical transitions</small></li>
+        </ol>
       </section>
 
-      <section class="roof-process demo-shell" id="process">
-        <div class="roof-head">
-          <div>
-            <p class="demo-label">Process</p>
-            <h2>A contractor site should remove doubt step by step.</h2>
-          </div>
-          <p>This is the kind of section that makes a roofing company feel organized instead of random.</p>
+      <section class="roof-projects" id="projects">
+        <div class="roof-project-title">
+          <p class="demo-label">What good work looks like</p>
+          <h2>Clear documentation. No surprises. Work that lasts.</h2>
+        </div>
+        <figure>
+          <img
+            src="assets/demo-roofing-projects.webp"
+            alt="Completed shingle, metal, and flat roofing project examples"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span><b>Inspect</b> Find the actual issue.</span>
+            <span><b>Explain</b> Show the condition.</span>
+            <span><b>Build</b> Install to standard.</span>
+            <span><b>Protect</b> Handover warranty notes.</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="roof-process" id="process">
+        <div class="roof-process-title">
+          <p class="demo-label">Our process</p>
+          <h2>A plan you can see. A job you can trust.</h2>
         </div>
         <div class="process-steps">
-          <article><span>01</span><h3>Inspect</h3><p>Confirm roof type, damage, access, safety, and photos.</p></article>
-          <article><span>02</span><h3>Explain</h3><p>Send scope, material options, warranty, and timeline.</p></article>
-          <article><span>03</span><h3>Schedule</h3><p>Confirm deposit, weather window, crew access, and cleanup plan.</p></article>
-          <article><span>04</span><h3>Handoff</h3><p>Provide final photos, warranty notes, invoice, and care advice.</p></article>
+          <article><span>01</span><h3>Inspect</h3><p>Document roof type, visible damage, access, and safety with photos.</p></article>
+          <article><span>02</span><h3>Scope</h3><p>Review options, materials, budget, warranty, and a written price.</p></article>
+          <article><span>03</span><h3>Schedule</h3><p>Set timing, access, delivery, weather backup, and cleanup.</p></article>
+          <article><span>04</span><h3>Build</h3><p>Install to standard, document the work, and hand over care notes.</p></article>
         </div>
       </section>
 
-      <section class="roof-projects demo-shell" id="projects">
-        <div class="roof-project-split">
-          <img src="assets/demo-roofing-projects.png" alt="Residential roofing project gallery" />
-          <div class="quote-panel" id="quote">
-            <p class="demo-label">Quote request</p>
-            <h2>Ask for enough detail to qualify the job.</h2>
-            <p>Not every roofing lead is the same. A better form asks for roof type, issue, address area, photos, and preferred inspection time.</p>
-            <div class="urgency-scale" aria-label="Roofing urgency guide">
-              <span>Active leak</span>
-              <span>Storm damage</span>
-              <span>Planned quote</span>
-            </div>
-            <form class="demo-form">
-              <input placeholder="Name" />
-              <input placeholder="Phone or email" />
-              <select><option>Leak or small repair</option><option>Full replacement</option><option>Flat roof or extension</option><option>Inspection only</option></select>
-              <textarea placeholder="Tell us the roof issue, property area, and any useful details"></textarea>
-              <button class="demo-button" type="button">Request Roof Inspection</button>
-            </form>
-          </div>
+      <section class="roof-quote" id="quote">
+        <div class="roof-quote-copy">
+          <p class="demo-label">Get your quote</p>
+          <h2>Start with the right information.</h2>
+          <p>The more we know now, the more useful the inspection can be. Photos help, but they do not replace an on-site check.</p>
+          <ul>
+            <li>No fake 24/7 promise</li>
+            <li>No obligation</li>
+            <li>Clear next step</li>
+          </ul>
         </div>
+        <form class="demo-form roof-form" data-demo-form>
+          <label><span>Name</span><input name="name" autocomplete="name" required /></label>
+          <label><span>Phone or email</span><input name="contact" autocomplete="email" required /></label>
+          <label><span>Property area</span><input name="area" placeholder="Approximate floor or roof area" required /></label>
+          <label>
+            <span>Roof type</span>
+            <select name="roof-type" required><option value="">Choose roof type</option><option>Pitched shingle</option><option>Metal</option><option>Flat roof</option><option>Not sure</option></select>
+          </label>
+          <label>
+            <span>Visible issue</span>
+            <select name="issue" required><option value="">Choose the closest match</option><option>Active leak</option><option>Missing or damaged material</option><option>Storm or wind damage</option><option>Ageing roof / planned quote</option></select>
+          </label>
+          <label>
+            <span>Timing</span>
+            <select name="timing" required><option value="">Choose timing</option><option>As soon as scheduling allows</option><option>Within one month</option><option>Within three months</option><option>Researching options</option></select>
+          </label>
+          <label class="roof-form-wide"><span>Additional details</span><textarea name="details" placeholder="Property area, access notes, visible issue, and anything else useful"></textarea></label>
+          <button class="demo-button" type="submit">Request Roof Inspection</button>
+          <p class="demo-form-status" role="status" data-demo-form-status></p>
+        </form>
       </section>
     </main>
 
     <footer class="demo-footer">
       <strong>Highland Roofing Demo</strong>
+      <span>Concept business. No inspections are actually scheduled.</span>
       <a href="index.html#portfolio">Back to GrowthStack</a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

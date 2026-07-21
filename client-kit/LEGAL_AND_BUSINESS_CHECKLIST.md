@@ -1,6 +1,15 @@
 # Legal And Business Checklist
 
-This is not legal or tax advice. It is a checklist of topics to resolve before taking real money.
+This is not legal or tax advice. It records the unresolved decisions that block the first paid contract.
+
+## Blocking Decisions
+
+- Choose whether the legal operator will be registered in the Netherlands or Slovakia.
+- Confirm the operator's full legal name, legal form, official business address, and registration number.
+- Confirm VAT status, invoice wording, record-retention duties, and which tax authority receives filings.
+- Confirm governing law, competent courts, professional liability position, and the client agreement wording.
+- Name the responsible data protection authority in the privacy policy.
+- Complete KVK/Slovak register, BOIP, EUIPO, domain, and broad web searches for the GrowthStack name.
 
 ## Business Setup
 
@@ -12,7 +21,7 @@ This is not legal or tax advice. It is a checklist of topics to resolve before t
 - Set up a business bank/payment method.
 - Track income and expenses from day one.
 - Understand tax obligations in your country/state.
-- Add your official business name, registration number, VAT/tax number if applicable, and registered address to the website before formal paid contracting.
+- Add the official legal identity, legal form, register, registration number, VAT ID if issued, service address, and business contact details to the Legal Notice before formal paid contracting.
 
 ## Website Compliance
 
@@ -35,8 +44,20 @@ This is not legal or tax advice. It is a checklist of topics to resolve before t
 
 ## Inputs Needed From You
 
-- Country/state where you will legally register.
+- Country where the business will be legally established.
+- Full legal operator name, legal form, registered address, register, and registration number.
+- VAT status and VAT ID if issued.
+- Governing law and dispute venue confirmed by professional advice.
 - Your preferred business name after name checks.
 - Your contact email: daniellaky.uni@gmail.com.
 - Payment method you can accept.
 - Whether you want to sell in English, Dutch, Slovak, German, or another language.
+
+## Official Starting Points
+
+- Netherlands business setup: https://business.gov.nl/starting-your-business/
+- Netherlands Chamber of Commerce: https://www.kvk.nl/en/
+- KVK business-name guidance: https://www.kvk.nl/en/starting/choosing-a-business-name/
+- Benelux trademark register: https://www.boip.int/
+- Slovakia government business portal: https://www.slovensko.sk/en/
+- EU business website requirements: https://europa.eu/youreurope/business/running-business/digitalising/setting-up-business-website/index_en.htm
