@@ -2,17 +2,18 @@
 
 ## Before Going Public
 
-- Pick final domain name.
+- Decide whether to keep the GitHub Pages URL or connect a final domain.
 - Contact email set to daniellaky.uni@gmail.com.
-- Add a sitemap after the final public URL exists.
+- Sitemap and robots file point to the active public URL.
 - Review privacy, terms, legal notice, and cookie policy for your country before paid client work.
 - Decide final offer prices.
-- Add official business name, registration number, VAT/tax number, and registered address before paid client contracting if required.
+- Add full legal name, legal form, registration jurisdiction/number, VAT status, business address, and business phone if used before paid client contracting.
 - Submit the contact form after deploy and confirm the email draft works.
 - Test on mobile, tablet, and desktop.
 - Confirm business registration/tax approach before accepting paid client money.
 - Check whether GrowthStack is available as a trade name/trademark before relying on it commercially.
 - Confirm whether you need local service-provider disclosure, Impressum-style details, consumer cancellation wording, or VAT wording for your market.
+- Put the chosen governing law, court, liability terms, and legal identities into every signed project agreement.
 - Do not add Google Analytics, ads pixels, embedded maps, chat widgets, or booking tools until the privacy/cookie policy and consent flow are updated.
 
 ## First Offers
@@ -45,3 +46,4 @@
 - Do not build complicated apps before selling simple sites.
 - Do not hide required business details once you are formally selling.
 - Do not collect form submissions into a third-party database without updating privacy terms.
+- Do not claim that the starter legal pages guarantee compliance; have the final cross-border setup reviewed professionally.

@@ -12,8 +12,8 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header class="site-header">
+  <body class="maintenance-page">
+    <header class="site-header" data-header>
       <a class="brand" href="index.html" aria-label="GrowthStack home">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 32 32" role="img">
@@ -23,7 +23,11 @@
         </span>
         <span>GrowthStack</span>
       </a>
-      <nav class="site-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Open navigation</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
         <a href="index.html#features">Services</a>
         <a href="index.html#portfolio">Demo Work</a>
         <a href="start-project.html">Start Project</a>
@@ -35,7 +39,7 @@
     <main>
       <section class="page-hero section-shell">
         <p class="section-label">Recurring support</p>
-        <h1>Maintenance with clear limits, not mystery retainers.</h1>
+        <h1>Website care with clear limits and useful reporting.</h1>
         <p>
           Monthly care keeps the website useful after launch: forms checked, links tested, small
           edits handled, and a simple report showing what visitors used.
@@ -45,8 +49,8 @@
       <section class="content-section section-shell">
         <div class="section-heading">
           <p class="section-label">Packages</p>
-          <h2>Start with a plan you can actually deliver.</h2>
-          <p>Prices are starter examples and should be confirmed in a written agreement.</p>
+          <h2>Choose care that matches the support you need.</h2>
+          <p>Choose a predictable level of support; final scope is confirmed in writing before the plan begins.</p>
         </div>
 
         <div class="content-grid">
@@ -168,5 +172,6 @@
         <a href="cookies.html">Cookies</a>
       </nav>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
