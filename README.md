@@ -1,6 +1,16 @@
 # GrowthStack
 
-Static, self-owned website for GrowthStack, a small-business web design and growth systems studio. No paid website-builder dependency and no build step required.
+Static, self-owned website for GrowthStack, a small-business web design and growth systems studio. It has no paid website-builder dependency and no build step.
+
+## Live Site Links
+
+Send any of these public links directly to testers, family members, or potential clients:
+
+- [GrowthStack selling site](https://daniel-techAI.github.io/GrowthStack/)
+- [GrowthStack tester review room](https://daniel-techAI.github.io/GrowthStack/preview.html)
+- [North Table Cafe demo](https://daniel-techAI.github.io/GrowthStack/demo-cafe.html)
+- [Luna Salon demo](https://daniel-techAI.github.io/GrowthStack/demo-salon.html)
+- [Highland Roofing demo](https://daniel-techAI.github.io/GrowthStack/demo-roofing.html)
 
 ## Open Locally
 
@@ -11,27 +21,33 @@ The local preview opens the site directly from this folder. It does not need Nod
 ## Files
 
 - `index.html` - page content and sections
-- `styles.css` - responsive visual system
-- `script.js` - mobile navigation and form success state
+- `styles.css` - responsive GrowthStack and support-page visual system
+- `demo-sites.css` - three deliberately separate demo design systems
+- `script.js` - mobile navigation, reveal states, demo interactions, and email-draft form handling
 - `preview.html` - shareable review hub for family, testers, and early prospects
-- `privacy.html`, `terms.html`, `legal.html`, `cookies.html` - starter legal pages for public launch
+- `privacy.html`, `terms.html`, `legal.html`, `cookies.html` - pre-launch legal and privacy information
 - `Start Local Preview.bat` - Windows preview shortcut with clear instructions
 - `Start Local Preview.ps1` - PowerShell launcher used by the preview shortcut
 - `netlify.toml` - Netlify static deploy config
-- `robots.txt` - crawler file
+- `robots.txt` and `sitemap.xml` - crawler files for the current public URL
 - `Open GrowthStack.bat` - double-click local preview shortcut for Windows
 - `start-project.html` - client intake page
 - `maintenance.html` - recurring support offer
 - `demo-*.html` - sample portfolio demo sites
-- `client-kit/` - sales, scope, agreement, and maintenance templates
-- `assets/growthstack-redo-concept.png` - generated visual reference for the rebuilt agency direction
-- `assets/growthstack-local-owner-hero.png` - generated homepage hero image
-- `assets/growthstack-concept.png` - earlier generated visual reference used during implementation
-- `qa/polsia-reference.png` and `qa/polsia-reference-text.txt` - captured reference from the Polsia page
+- `client-kit/` - sales, scope, agreement, maintenance, operations, and client handover templates
+- `assets/*.webp` - optimized public photography; the PNG files are retained as source-quality originals
+
+## Current Behavior
+
+- The public site and demos work on GitHub Pages without a server.
+- Main enquiry forms prepare a pre-filled email draft. The visitor must choose to send it.
+- Demo forms show a local demonstration result and never send data.
+- The site does not intentionally load third-party fonts, analytics, advertisements, maps, chat, or non-essential cookies.
+- The Legal Notice deliberately contains unresolved identity fields. Complete them before accepting paid work.
 
 ## Deploy
 
-This can be hosted as a static site on GitHub Pages, Netlify, Cloudflare Pages, or Vercel. Upload the folder as-is and set `index.html` as the entry page.
+This can be hosted as a static site on GitHub Pages, Netlify, Cloudflare Pages, or Vercel. GitHub Pages is already the active public host.
 
 For GitHub Pages, use repository Settings -> Pages -> Deploy from a branch -> `main` -> `/root`, then save. The public URL will be:
 
@@ -41,4 +57,4 @@ Once GitHub Pages is enabled, send testers:
 
 `https://daniel-techAI.github.io/GrowthStack/preview.html`
 
-GitHub Pages is the current free public setup. The site does not use tracking cookies or external web fonts. If you later add analytics, payments, booking widgets, chat, or stored form submissions, update the privacy and cookie pages first.
+GitHub Pages is the current free public setup. If analytics, payments, booking widgets, chat, or stored form submissions are added later, review the privacy policy, cookie policy, providers, and consent behavior before enabling them.
