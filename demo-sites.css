@@ -191,12 +191,13 @@ textarea {
 /* Cafe */
 
 .cafe {
-  --cafe-deep: #092f20;
-  --cafe-green: #0c4a31;
-  --cafe-sage: #a8b69b;
-  --cafe-light: #dfe6d5;
-  --cafe-red: #c72f38;
-  --cafe-yellow: #ffd33d;
+  --cafe-deep: #261f1a;
+  --cafe-green: #315443;
+  --cafe-sage: #d8c5a5;
+  --cafe-light: #f2eadc;
+  --cafe-red: #a83b2d;
+  --cafe-yellow: #f0bc4b;
+  font-family: "Avenir Next", "Segoe UI", Arial, sans-serif;
   background: var(--cafe-green);
   color: #f8fbf5;
 }
@@ -467,7 +468,7 @@ textarea {
 }
 
 .cafe-dayparts span {
-  color: var(--cafe-red);
+  color: #67261f;
   font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
@@ -502,6 +503,10 @@ textarea {
   max-width: 560px;
   font-size: 16px;
   line-height: 1.7;
+}
+
+.cafe-story .demo-label {
+  color: #7d2d24;
 }
 
 .cafe-story img {
@@ -556,7 +561,7 @@ textarea {
 }
 
 .cafe-reserve .demo-label {
-  color: var(--cafe-yellow);
+  color: #fff7e8;
 }
 
 .reservation-form {
@@ -974,8 +979,19 @@ textarea {
   --roof-concrete: #d4d6d3;
   --roof-paper: #eceeeb;
   --roof-yellow: #ffc928;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   background: var(--roof-concrete);
   color: #17191a;
+}
+
+.roofing h1,
+.roofing h2,
+.roofing h3,
+.roofing .demo-brand,
+.roofing .demo-nav,
+.roofing .demo-label,
+.roofing .demo-button {
+  font-family: "Arial Narrow", "Franklin Gothic Medium", Arial, sans-serif;
 }
 
 .roofing .demo-banner {
@@ -1189,6 +1205,11 @@ textarea {
 .roof-materials h2 {
   max-width: 600px;
   font-size: clamp(34px, 4vw, 58px);
+}
+
+.roof-materials .demo-label,
+.roof-process .demo-label {
+  color: var(--roof-pine);
 }
 
 .roof-materials ol {
