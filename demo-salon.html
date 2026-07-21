@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,16 +6,18 @@
     <title>Luna Salon Demo | GrowthStack</title>
     <meta
       name="description"
-      content="GrowthStack sample salon website with services, style lookbook, stylist specialties, prices, and booking flow."
+      content="GrowthStack sample salon website with services, style lookbook, stylist specialties, prices, and consultation flow."
     />
+    <meta name="theme-color" content="#090909" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="assets/demo-salon-editorial.webp" type="image/webp" />
     <link rel="stylesheet" href="demo-sites.css" />
   </head>
   <body class="salon">
     <div class="demo-banner">Demo site by GrowthStack. Sample business, not a real client.</div>
-    <header class="demo-header">
-      <a class="demo-brand" href="index.html">Luna Salon</a>
-      <nav class="demo-nav">
+    <header class="demo-header salon-header">
+      <a class="demo-brand" href="index.html" aria-label="Luna Salon demo home">Luna Salon</a>
+      <nav class="demo-nav" aria-label="Salon navigation">
         <a href="#services">Services</a>
         <a href="#lookbook">Lookbook</a>
         <a href="#stylists">Stylists</a>
@@ -24,102 +26,115 @@
     </header>
 
     <main>
-      <section class="salon-hero demo-shell">
-        <div>
+      <section class="salon-hero">
+        <img
+          class="salon-hero-image"
+          src="assets/demo-salon-editorial.webp"
+          alt="Editorial salon portrait with a modern layered precision haircut"
+          width="1586"
+          height="992"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="salon-hero-copy">
           <p class="demo-label">Color, cuts, styling</p>
           <h1>Hair work people can see before they book.</h1>
-          <p>Considered color, precision cuts, and event styling shaped around your hair, routine, and the result you actually want to maintain.</p>
+          <p>
+            Considered color, precision cuts, and event styling shaped around your hair, routine,
+            and the result you actually want to maintain.
+          </p>
           <div class="demo-actions">
             <a class="demo-button" href="#book">Book Consultation</a>
             <a class="demo-button secondary" href="#lookbook">View Lookbook</a>
           </div>
-          <div class="salon-badges" aria-label="Salon specialties">
-            <span>Balayage</span><span>Precision bobs</span><span>Bridal styling</span><span>Gloss and tone</span>
-          </div>
         </div>
-        <img src="assets/demo-salon-lookbook.png" alt="Salon lookbook with balayage waves, bob cut, layered cut, and bridal updo" />
-      </section>
-
-      <section class="salon-proof demo-shell" aria-label="Salon result examples">
-        <article>
-          <span>01</span>
-          <strong>Personal consultation</strong>
-          <p>Every appointment starts with your hair history, daily routine, and desired finish.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <strong>Specialist matching</strong>
-          <p>Choose by specialty or let the salon match you with the right member of the team.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <strong>Honest care plans</strong>
-          <p>Leave with realistic timing, maintenance advice, and product guidance for your result.</p>
-        </article>
+        <div class="salon-specialty-index" aria-label="Salon specialties">
+          <span><b>01</b> Balayage</span>
+          <span><b>02</b> Precision bobs</span>
+          <span><b>03</b> Blonding</span>
+          <span><b>04</b> Gloss and tone</span>
+          <span><b>05</b> Event styling</span>
+        </div>
       </section>
 
       <section class="salon-services" id="services">
-        <div class="demo-shell">
-          <div>
-            <p class="demo-label">Service menu</p>
-            <h2>Price clarity makes booking easier.</h2>
-            <p>Prices reflect the time, technique, and product needed. Major color changes begin with a consultation and a confirmed quote.</p>
-          </div>
-          <div class="service-menu">
-            <article class="service-card"><div><h3>Balayage and lived-in color</h3><p>Consultation, custom placement, gloss, blow dry, and aftercare notes.</p></div><strong>from €145</strong></article>
-            <article class="service-card"><div><h3>Precision cut and finish</h3><p>Face-shape consultation, wash, cut, blow dry, and style coaching.</p></div><strong>from €58</strong></article>
-            <article class="service-card"><div><h3>Gloss, tone, and refresh</h3><p>Maintenance appointment for color shine, tone, and softness.</p></div><strong>from €68</strong></article>
-            <article class="service-card"><div><h3>Bridal and event styling</h3><p>Trial session, updo, waves, accessory placement, and group options.</p></div><strong>quote</strong></article>
-          </div>
+        <div class="salon-section-title">
+          <p class="demo-label">Service menu</p>
+          <h2>Price clarity makes booking easier.</h2>
+          <p>
+            Prices reflect the time, technique, and product needed. Major color changes begin with
+            a consultation and a confirmed quote.
+          </p>
+          <a class="salon-text-link" href="#book">Book your consultation</a>
+        </div>
+        <div class="service-menu">
+          <article><span>01</span><div><h3>Balayage and lived-in color</h3><p>Consultation, custom placement, gloss, blow dry, and aftercare notes.</p></div><strong>from &euro;145</strong></article>
+          <article><span>02</span><div><h3>Precision cut and finish</h3><p>Face-shape consultation, wash, cut, blow dry, and style coaching.</p></div><strong>from &euro;58</strong></article>
+          <article><span>03</span><div><h3>Gloss, tone, and refresh</h3><p>Maintenance appointment for color shine, tone, and softness.</p></div><strong>from &euro;68</strong></article>
+          <article><span>04</span><div><h3>Bridal and event styling</h3><p>Trial session, updo, waves, accessory placement, and group options.</p></div><strong>quote</strong></article>
         </div>
       </section>
 
-      <section class="lookbook demo-shell" id="lookbook">
-        <div class="lookbook-grid">
-          <img src="assets/demo-salon-lookbook.png" alt="Hair salon finished styles and specialist cuts" />
-          <div>
-            <p class="demo-label">Lookbook</p>
-            <h2>Modern color and cuts designed to grow out beautifully.</h2>
-            <p>Explore soft blondes, clean shapes, layered movement, and occasion styling from the Luna team.</p>
-            <div class="style-tags">
-              <span>Soft blonde balayage</span>
-              <span>Clean blunt bob</span>
-              <span>Layered brunette cut</span>
-              <span>Bridal textured updo</span>
-            </div>
-            <div class="salon-care-note">
-              <strong>Planning a change?</strong> Bring reference images and your recent color history
-              so the stylist can recommend the safest route to the result.
-            </div>
-          </div>
+      <section class="lookbook" id="lookbook">
+        <div class="lookbook-title">
+          <p class="demo-label">Real hair. Real light. Real results.</p>
+          <h2>Lookbook</h2>
+          <p>Soft blondes, clean shapes, layered movement, and occasion styling from the Luna team.</p>
         </div>
+        <figure class="lookbook-image">
+          <img
+            src="assets/demo-salon-lookbook.webp"
+            alt="Salon lookbook showing balayage waves, a bob, layered hair, and a bridal updo"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span>Soft blonde balayage</span>
+            <span>Clean blunt bob</span>
+            <span>Layered brunette cut</span>
+            <span>Bridal textured updo</span>
+          </figcaption>
+        </figure>
       </section>
 
-      <section class="stylists demo-shell" id="stylists">
-        <div>
-          <p class="demo-label">Stylist specialties</p>
-          <h2>Meet the specialists behind every finish.</h2>
-          <p>Each stylist focuses on a different craft. Choose the work closest to your goal or ask us to recommend the right appointment.</p>
+      <section class="stylists" id="stylists">
+        <div class="salon-section-title">
+          <p class="demo-label">Stylists</p>
+          <h2>Specialty meets intuition.</h2>
+          <p>Choose the work closest to your goal or let the salon match you with the right member of the team.</p>
         </div>
-        <div class="stylist-grid">
-          <article class="stylist-card"><span>Color specialist</span><h3>Mara</h3><p>Dimensional blondes, gloss refreshes, and low-maintenance color plans.</p></article>
-          <article class="stylist-card"><span>Cut specialist</span><h3>Eva</h3><p>Sharp bobs, fringe shaping, layers, and styling routines clients can repeat.</p></article>
-          <article class="stylist-card"><span>Event styling</span><h3>Nina</h3><p>Bridal trials, soft waves, textured updos, and group preparation timelines.</p></article>
+        <div class="stylist-list">
+          <article><span>01</span><h3>Mara</h3><p>Founder and color specialist</p><small>Balayage, blonding, color correction, lived-in color</small></article>
+          <article><span>02</span><h3>Eva</h3><p>Precision cut specialist</p><small>Bobs, lobs, long layers, face-shape mapping, cut and finish</small></article>
+          <article><span>03</span><h3>Nina</h3><p>Styling and events</p><small>Bridal, events, updos, waves, and accessory styling</small></article>
         </div>
       </section>
 
       <section class="salon-book" id="book">
-        <div>
-          <p class="demo-label">Booking request</p>
-          <h2>Ask the right questions before the appointment.</h2>
-          <p>Share your hair goal, current color, and preferred date. The team will confirm the right service, timing, and stylist before booking.</p>
+        <div class="salon-book-copy">
+          <p class="demo-label">Your hair history starts here</p>
+          <h2>Book your consultation.</h2>
+          <p>
+            Share your hair goal, current color, and preferred date. The team confirms the right
+            service, timing, stylist, and price before booking.
+          </p>
+          <ol>
+            <li>Share your history, routine, and goal.</li>
+            <li>We match you with the right stylist.</li>
+            <li>Leave with a realistic maintenance plan.</li>
+          </ol>
         </div>
         <form class="demo-form" data-demo-form>
-          <input name="name" placeholder="Name" required />
-          <input name="contact" placeholder="Phone or email" required />
-          <select name="service"><option>Color consultation</option><option>Cut and finish</option><option>Gloss or tone</option><option>Bridal styling</option></select>
-          <textarea name="details" placeholder="Tell us your hair goal, current color, and preferred date" required></textarea>
-          <div class="salon-form-note">Color changes may need a consultation before final pricing.</div>
+          <label><span>Name</span><input name="name" autocomplete="name" required /></label>
+          <label><span>Phone or email</span><input name="contact" autocomplete="email" required /></label>
+          <label>
+            <span>Service</span>
+            <select name="service"><option>Color consultation</option><option>Cut and finish</option><option>Gloss or tone</option><option>Bridal styling</option></select>
+          </label>
+          <label><span>Hair goal and history</span><textarea name="details" placeholder="Current color, desired result, and preferred date" required></textarea></label>
+          <p class="salon-form-note">Color changes may need a consultation before final pricing.</p>
           <button class="demo-button" type="submit">Request Appointment</button>
           <p class="demo-form-status" role="status" data-demo-form-status></p>
         </form>
@@ -128,6 +143,7 @@
 
     <footer class="demo-footer">
       <strong>Luna Salon Demo</strong>
+      <span>Concept business. No appointments are actually sent.</span>
       <a href="index.html#portfolio">Back to GrowthStack</a>
     </footer>
     <script src="script.js"></script>

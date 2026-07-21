@@ -16,6 +16,7 @@
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#0f6b2c" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="assets/growthstack-local-owner-hero.webp" type="image/webp" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="home-page">
@@ -84,7 +85,14 @@
         </div>
 
         <div class="growth-hero-media">
-          <img src="assets/growthstack-local-owner-hero.png" alt="Small business owner standing outside a local shop" />
+          <img
+            src="assets/growthstack-local-owner-hero.webp"
+            alt="Small business owner standing outside a local shop"
+            width="1586"
+            height="992"
+            fetchpriority="high"
+            decoding="async"
+          />
           <div class="hero-insight-card" aria-label="GrowthStack outcome example">
             <strong>More enquiries. Better bookings.</strong>
             <span>Less guessing about what to improve next.</span>
@@ -180,7 +188,7 @@
           </div>
           <article class="demo-card demo-card-roofing is-active" data-demo-card data-reveal>
             <a class="demo-image" href="demo-roofing.html">
-              <img src="assets/demo-roofing-hero.png" alt="Roofing contractor demo preview" />
+              <img src="assets/demo-roofing-hero.webp" alt="Roofing contractor demo preview" width="1600" height="800" loading="lazy" decoding="async" />
               <span>Inspection-first service page</span>
             </a>
             <div>
@@ -196,7 +204,7 @@
           </article>
           <article class="demo-card demo-card-cafe" data-demo-card data-reveal>
             <a class="demo-image" href="demo-cafe.html">
-              <img src="assets/demo-cafe-hero.png" alt="Cafe demo preview" />
+              <img src="assets/demo-cafe-hero.webp" alt="Cafe demo preview" width="1600" height="895" loading="lazy" decoding="async" />
               <span>Menu, hours, and reservations</span>
             </a>
             <div>
@@ -212,7 +220,7 @@
           </article>
           <article class="demo-card demo-card-salon" data-demo-card data-reveal>
             <a class="demo-image" href="demo-salon.html">
-              <img src="assets/demo-salon-hero.png" alt="Hair salon demo preview" />
+              <img src="assets/demo-salon-editorial.webp" alt="Hair salon demo preview" width="1586" height="992" loading="lazy" decoding="async" />
               <span>Lookbook-led booking flow</span>
             </a>
             <div>
