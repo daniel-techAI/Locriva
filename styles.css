@@ -3054,6 +3054,10 @@ h2 {
     width: min(calc(100% - 64px), var(--max));
   }
 
+  .home-page .portfolio {
+    padding-top: 180px;
+  }
+
   .home-page .growth-hero-copy {
     padding-left: 0;
   }
