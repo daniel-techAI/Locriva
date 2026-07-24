@@ -4175,6 +4175,11 @@ h2 {
   transform: translateY(0);
 }
 
+.motion-ready main > section#portfolio {
+  opacity: 1;
+  transform: none;
+}
+
 .motion-ready main > section:nth-child(2) {
   opacity: 1;
   transform: none;

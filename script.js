@@ -5,7 +5,9 @@ const nav = document.querySelector("[data-nav]");
 const header = document.querySelector("[data-header]");
 const forms = document.querySelectorAll("[data-signup-form]");
 const demoForms = document.querySelectorAll("[data-demo-form]");
-const revealItems = document.querySelectorAll("[data-reveal], main > section:not(:first-child)");
+const revealItems = document.querySelectorAll(
+  "[data-reveal], main > section:not(:first-child):not(#portfolio)"
+);
 const demoShowcase = document.querySelector("[data-demo-showcase]");
 const demoCards = document.querySelectorAll("[data-demo-card]");
 const contactEmail = "daniellaky.uni@gmail.com";
