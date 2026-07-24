@@ -1,8 +1,8 @@
-# GrowthStack Sales Playbook
+# Locriva Sales Playbook
 
 ## Positioning
 
-GrowthStack builds simple, fast websites for small businesses that need more calls, quote requests, bookings, or local trust.
+Locriva builds simple, fast websites for small businesses that need more calls, quote requests, bookings, or local trust.
 
 Do not pitch complicated software first. Pitch clarity, speed, and fewer lost leads.
 
@@ -38,7 +38,7 @@ Hi [Name],
 
 I noticed [specific issue: mobile layout, unclear services, no quote form, old design, slow first impression].
 
-I build simple websites for small businesses that make the offer clearer and make it easier for customers to contact you. I put together a few demo directions here: [GrowthStack link].
+I build simple websites for small businesses that make the offer clearer and make it easier for customers to contact you. I put together a few demo directions here: [Locriva link].
 
 Would you be open to a quick homepage teardown or a simple redesign direction for [Business Name]?
 

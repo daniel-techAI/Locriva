@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daniel-techai.github.io/GrowthStack/sitemap.xml
+Sitemap: https://daniel-techai.github.io/Locriva/sitemap.xml

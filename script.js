@@ -34,7 +34,7 @@ if (navToggle && nav) {
 }
 
 forms.forEach((form) => {
-  form.addEventListener("submit", async (event) => {
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
     const data = new FormData(form);
     const formStatus = form.querySelector("[data-form-status]");
@@ -50,25 +50,8 @@ forms.forEach((form) => {
     if (formStatus) formStatus.textContent = "Preparing your request...";
 
     try {
-      if (shouldUseEmailDraft()) {
-        openEmailDraft(data, form);
-        if (formStatus) formStatus.textContent = "Your email app should open with the request details.";
-      } else {
-        const response = await fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(data).toString(),
-        });
-
-        if (!response.ok) {
-          openEmailDraft(data, form);
-          if (formStatus) formStatus.textContent = "The form provider did not respond, so an email draft was prepared instead.";
-          return;
-        }
-
-        form.reset();
-        if (formStatus) formStatus.textContent = "Thanks. Your GrowthStack request was sent.";
-      }
+      openEmailDraft(data, form);
+      if (formStatus) formStatus.textContent = "Your email app should open with the request details. Review it, then choose Send.";
     } catch {
       if (formStatus) {
         formStatus.textContent = `Something went wrong. Email ${contactEmail} directly.`;
@@ -155,18 +138,13 @@ function formatFieldName(name) {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-function shouldUseEmailDraft() {
-  const host = window.location.hostname;
-  return window.location.protocol === "file:" || host.endsWith("github.io") || host === "127.0.0.1" || host === "localhost";
-}
-
 function openEmailDraft(data, form) {
-  const formName = String(data.get("form-name") || form.getAttribute("name") || "GrowthStack request");
+  const formName = String(data.get("form-name") || form.getAttribute("name") || "Locriva request");
   const lines = Array.from(data.entries())
     .filter(([key, value]) => key !== "form-name" && key !== "bot-field" && String(value).trim())
     .map(([key, value]) => `${formatFieldName(key)}: ${String(value).trim()}`);
 
-  const subject = encodeURIComponent(`GrowthStack request - ${formName}`);
+  const subject = encodeURIComponent(`Locriva request - ${formName}`);
   const body = encodeURIComponent(lines.join("\n"));
   window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
 }
