@@ -38,4 +38,4 @@ Date:
 
 Accepted open items:
 
-GrowthStack representative:
+Locriva representative:

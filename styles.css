@@ -1111,6 +1111,11 @@ h1 {
   text-underline-offset: 3px;
 }
 
+.legal-page a.button {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .legal-block {
   padding: 28px 0;
   border-top: 1px solid var(--line);
