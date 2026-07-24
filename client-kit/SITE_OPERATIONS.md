@@ -1,6 +1,6 @@
 # Site Operations
 
-Use this checklist whenever GrowthStack or a client website is changed.
+Use this checklist whenever Locriva or a client website is changed.
 
 ## Before Editing
 
