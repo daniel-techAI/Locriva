@@ -1,4 +1,4 @@
-# GrowthStack Launch Checklist
+# Locriva Launch Checklist
 
 ## Before Going Public
 
@@ -11,7 +11,7 @@
 - Submit the contact form after deploy and confirm the email draft works.
 - Test on mobile, tablet, and desktop.
 - Confirm business registration/tax approach before accepting paid client money.
-- Check whether GrowthStack is available as a trade name/trademark before relying on it commercially.
+- Keep the 24 July 2026 preliminary Locriva clearance record and obtain a professional similarity check before a trade-mark filing or substantial brand investment.
 - Confirm whether you need local service-provider disclosure, Impressum-style details, consumer cancellation wording, or VAT wording for your market.
 - Put the chosen governing law, court, liability terms, and legal identities into every signed project agreement.
 - Do not add Google Analytics, ads pixels, embedded maps, chat widgets, or booking tools until the privacy/cookie policy and consent flow are updated.
