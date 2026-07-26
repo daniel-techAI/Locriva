@@ -7,14 +7,33 @@
     <meta name="description" content="Locriva page not found. Return to the small-business website and growth systems homepage." />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      const pageAliases = {
+        share: "share.html",
+        preview: "preview.html",
+        tester: "preview.html",
+        "tester-site": "preview.html",
+        cafe: "demo-cafe.html",
+        "demo-cafe": "demo-cafe.html",
+        salon: "demo-salon.html",
+        "demo-salon": "demo-salon.html",
+        roofing: "demo-roofing.html",
+        "demo-roofing": "demo-roofing.html"
+      };
+      const requestedPage = window.location.pathname.split("/").filter(Boolean).pop();
+      if (pageAliases[requestedPage]) {
+        window.location.replace(new URL(pageAliases[requestedPage], window.location.href));
+      }
+    </script>
   </head>
   <body>
     <main class="legal-page section-shell">
       <a class="brand" href="index.html">Locriva</a>
       <h1>Page not found</h1>
-      <p>The page you tried to open does not exist yet.</p>
+      <p>The page you tried to open does not exist. Use the public site directory to find every live page.</p>
       <p><a class="button button-primary legal-home-button" href="index.html">Back to Locriva</a></p>
       <nav class="legal-nav" aria-label="Legal navigation">
+        <a href="share.html">Public Sites</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="legal.html">Legal Notice</a>

@@ -2,15 +2,25 @@
 
 Static, self-owned website for Locriva, a small-business web design and growth systems studio. It has no paid website-builder dependency and no build step.
 
-## Live Site Links
+## Public Share Link
+
+Send this one page to friends, family, testers, or potential clients:
+
+**[Open every live Locriva site](https://daniel-techai.github.io/Locriva/share.html)**
+
+`https://daniel-techai.github.io/Locriva/share.html`
+
+Use the `github.io` links below to view the websites. GitHub branch and file links only show the source code.
+
+## Direct Website Links
 
 Send any of these public links directly to testers, family members, or potential clients:
 
-- [Locriva selling site](https://daniel-techAI.github.io/Locriva/)
-- [Locriva tester review room](https://daniel-techAI.github.io/Locriva/preview.html)
-- [North Table Cafe demo](https://daniel-techAI.github.io/Locriva/demo-cafe.html)
-- [Luna Salon demo](https://daniel-techAI.github.io/Locriva/demo-salon.html)
-- [Highland Roofing demo](https://daniel-techAI.github.io/Locriva/demo-roofing.html)
+- [Locriva selling site](https://daniel-techai.github.io/Locriva/)
+- [Locriva tester review room](https://daniel-techai.github.io/Locriva/preview.html)
+- [North Table Cafe demo](https://daniel-techai.github.io/Locriva/demo-cafe.html)
+- [Luna Salon demo](https://daniel-techai.github.io/Locriva/demo-salon.html)
+- [Highland Roofing demo](https://daniel-techai.github.io/Locriva/demo-roofing.html)
 
 ## Open Locally
 
@@ -50,10 +60,10 @@ This can be hosted as a static site on GitHub Pages, Cloudflare Pages, or anothe
 
 For GitHub Pages, use repository Settings -> Pages -> Deploy from a branch -> `main` -> `/root`, then save. The public URL will be:
 
-`https://daniel-techAI.github.io/Locriva/`
+`https://daniel-techai.github.io/Locriva/`
 
 Once GitHub Pages is enabled, send testers:
 
-`https://daniel-techAI.github.io/Locriva/preview.html`
+`https://daniel-techai.github.io/Locriva/share.html`
 
 GitHub Pages is the current free public setup. If analytics, payments, booking widgets, chat, or stored form submissions are added later, review the privacy policy, cookie policy, providers, and consent behavior before enabling them.
