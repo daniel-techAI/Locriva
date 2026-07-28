@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest a focused improvement to Locriva.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What user need would this address?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome
+      description: Describe the result, not only a particular implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What simpler approaches or workarounds did you consider?
+  - type: textarea
+    id: impact
+    attributes:
+      label: Privacy, accessibility, and maintenance impact
+      description: Note any external services, stored data, accessibility changes, or ongoing costs.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues for a similar request.
+          required: true
+        - label: This request does not rely on invented testimonials or guaranteed business results.
+          required: true
