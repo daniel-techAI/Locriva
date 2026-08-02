@@ -43,6 +43,26 @@ test("homepage has no automated WCAG A or AA violations", async ({ page }) => {
   await expectNoAxeViolations(page);
 });
 
+test("small brass labels retain WCAG AA contrast on white surfaces", async ({ page }) => {
+  await page.goto("/");
+
+  for (const label of [page.locator(".process-list article span").first(), page.locator(".popular").first()]) {
+    const contrast = await label.evaluate((element) => {
+      const values = getComputedStyle(element).color.match(/[\d.]+/g)?.slice(0, 3).map(Number);
+      if (!values || values.length !== 3) return 0;
+
+      const luminance = values
+        .map((value) => value / 255)
+        .map((value) => (value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4))
+        .reduce((sum, value, index) => sum + value * [0.2126, 0.7152, 0.0722][index], 0);
+
+      return 1.05 / (luminance + 0.05);
+    });
+
+    expect(contrast).toBeGreaterThanOrEqual(4.5);
+  }
+});
+
 test("skip link moves keyboard focus to the main content", async ({ page }) => {
   await page.goto("/");
   await page.keyboard.press("Tab");
