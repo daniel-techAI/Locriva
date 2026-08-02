@@ -32,3 +32,9 @@ coverage/
 qa/
 playwright-report/
 test-results/
+
+# Private sales and client records
+client-kit/LEAD_TRACKER.csv
+client-kit/private/
+clients/
+proposals/

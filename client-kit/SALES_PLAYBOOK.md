@@ -74,4 +74,5 @@ Thanks,
 - Won
 - Lost
 
-Use `LEAD_TRACKER.csv` to keep this out of your head.
+Copy `LEAD_TRACKER_TEMPLATE.csv` to `LEAD_TRACKER.csv` for local use. The working tracker is
+ignored by Git so prospect contact details and sales notes do not enter the public repository.

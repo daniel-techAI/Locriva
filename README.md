@@ -11,6 +11,7 @@ Locriva is a dependency-free static website for a pre-launch small-business web 
 - Project-intake and feedback forms that prepare an email draft in the visitor's email app.
 - Privacy, terms, cookie, and legal-notice starter pages.
 - Reusable scope, quote, agreement, handover, maintenance, and sales templates in `client-kit/`.
+- A lead-tracker template whose populated local copy is excluded from Git.
 - No analytics, advertising pixels, remote fonts, chat widgets, or form-storage service.
 
 ## Preview locally
@@ -81,3 +82,4 @@ The intended GitHub Pages URL is `https://daniel-techai.github.io/Locriva/`. It 
 - Licensing: [LICENSE](LICENSE)
 
 The legal and contract documents in this repository are starting templates, not legal or tax advice.
+Never commit populated lead trackers, client files, proposals, contracts, credentials, or customer data.
