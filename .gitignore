@@ -30,3 +30,5 @@ coverage/
 
 # Local visual-regression artifacts
 qa/
+playwright-report/
+test-results/

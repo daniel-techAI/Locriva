@@ -32,7 +32,7 @@
         </svg>
       </button>
 
-      <nav class="site-nav" id="site-nav" data-nav>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
         <a href="index.html">Home</a>
         <a href="#review-path">Review Path</a>
         <a href="#gallery">Gallery</a>
@@ -110,11 +110,11 @@
           </p>
         </div>
 
-        <div class="review-scoreboard" aria-label="Review score prompts">
-          <article><span>Trust</span><strong>Would you believe this business?</strong></article>
-          <article><span>Clarity</span><strong>Can you understand the offer fast?</strong></article>
-          <article><span>Difference</span><strong>Do the demos feel niche-specific?</strong></article>
-          <article><span>Action</span><strong>Is the next step obvious?</strong></article>
+        <div class="review-scoreboard" role="list" aria-label="Review score prompts">
+          <article role="listitem"><span>Trust</span><strong>Would you believe this business?</strong></article>
+          <article role="listitem"><span>Clarity</span><strong>Can you understand the offer fast?</strong></article>
+          <article role="listitem"><span>Difference</span><strong>Do the demos feel niche-specific?</strong></article>
+          <article role="listitem"><span>Action</span><strong>Is the next step obvious?</strong></article>
         </div>
 
         <div class="preview-grid">
@@ -239,7 +239,7 @@
           <form class="signup-form" name="locriva-feedback" method="POST" data-signup-form>
             <input type="hidden" name="form-name" value="locriva-feedback" />
             <p class="hidden-field">
-              <label>Do not fill this out <input name="bot-field" /></label>
+              <label>Do not fill this out <input type="text" name="bot-field" /></label>
             </p>
             <label>
               <span>Your email</span>

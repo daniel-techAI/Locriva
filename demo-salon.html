@@ -49,12 +49,12 @@
             <a class="demo-button secondary" href="#lookbook">View Lookbook</a>
           </div>
         </div>
-        <div class="salon-specialty-index" aria-label="Salon specialties">
-          <span><b>01</b> Balayage</span>
-          <span><b>02</b> Precision bobs</span>
-          <span><b>03</b> Blonding</span>
-          <span><b>04</b> Gloss and tone</span>
-          <span><b>05</b> Event styling</span>
+        <div class="salon-specialty-index" role="list" aria-label="Salon specialties">
+          <span role="listitem"><b>01</b> Balayage</span>
+          <span role="listitem"><b>02</b> Precision bobs</span>
+          <span role="listitem"><b>03</b> Blonding</span>
+          <span role="listitem"><b>04</b> Gloss and tone</span>
+          <span role="listitem"><b>05</b> Event styling</span>
         </div>
       </section>
 
@@ -128,8 +128,8 @@
           </ol>
         </div>
         <form class="demo-form" data-demo-form>
-          <label><span>Name</span><input name="name" autocomplete="name" required /></label>
-          <label><span>Phone or email</span><input name="contact" autocomplete="email" required /></label>
+          <label><span>Name</span><input type="text" name="name" autocomplete="name" required /></label>
+          <label><span>Phone or email</span><input type="text" name="contact" autocomplete="email" required /></label>
           <label>
             <span>Service</span>
             <select name="service"><option>Color consultation</option><option>Cut and finish</option><option>Gloss or tone</option><option>Bridal styling</option></select>

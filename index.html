@@ -24,7 +24,9 @@
     <link rel="preload" as="image" href="assets/locriva-local-owner-hero.webp" type="image/webp" />
     <link rel="stylesheet" href="styles.css?v=20260724-2" />
   </head>
-  <body class="home-page">
+  <body class="home-page" id="top">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Locriva home">
         <span class="brand-mark" aria-hidden="true">
@@ -43,17 +45,17 @@
         </svg>
       </button>
 
-      <nav class="site-nav" id="site-nav" data-nav>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
         <a href="#features">Services</a>
         <a href="#portfolio">Demo Work</a>
-        <a href="#care">Care & Analytics</a>
+        <a href="#care">Care &amp; Analytics</a>
         <a href="#process">Process</a>
         <a href="#pricing">Pricing</a>
         <a class="nav-cta" href="start-project.html">Start Project</a>
       </nav>
     </header>
 
-    <main id="top">
+    <main id="main-content" tabindex="-1">
       <section class="growth-hero section-shell">
         <div class="growth-hero-copy">
           <h1>Websites that bring in more local customers.</h1>
@@ -70,18 +72,18 @@
             </a>
             <a class="button button-secondary" href="#portfolio">See Demo Work</a>
           </div>
-          <div class="proof-row" aria-label="Locriva service proof points">
-            <article>
+          <div class="proof-row" role="list" aria-label="Locriva service proof points">
+            <article role="listitem">
               <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" /></svg></span>
               <h3>Built to feel real</h3>
               <p>Industry-specific pages, not one template copied three times.</p>
             </article>
-            <article>
+            <article role="listitem">
               <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.7M20 12a8 8 0 0 1-13.7 5.7M17 3v4h-4M7 21v-4h4" /></svg></span>
               <h3>Monthly care</h3>
               <p>Checks, edits, reporting, and improvement ideas after launch.</p>
             </article>
-            <article>
+            <article role="listitem">
               <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19V5M5 19h14M9 16v-5M13 16V8M17 16v-8" /></svg></span>
               <h3>Clear insights</h3>
               <p>Know which pages get attention and which calls to action get used.</p>
@@ -98,7 +100,7 @@
             fetchpriority="high"
             decoding="async"
           />
-          <div class="hero-insight-card" aria-label="Locriva outcome example">
+          <div class="hero-insight-card" role="group" aria-label="Locriva outcome example">
             <strong>More enquiries. Better bookings.</strong>
             <span>Less guessing about what to improve next.</span>
             <svg viewBox="0 0 112 42" aria-hidden="true">
@@ -264,7 +266,7 @@
           <a class="button button-secondary" href="maintenance.html">See Maintenance Plans</a>
         </div>
 
-        <div class="analytics-panel" aria-label="Example monthly website report">
+        <div class="analytics-panel" role="group" aria-label="Example monthly website report">
           <div class="analytics-header">
             <strong>Your site this month</strong>
             <span>Example report</span>
@@ -303,23 +305,23 @@
           </p>
         </div>
 
-        <div class="trust-grid" aria-label="Locriva readiness checks">
-          <article data-reveal>
+        <div class="trust-grid" role="list" aria-label="Locriva readiness checks">
+          <article role="listitem" data-reveal>
             <span>01</span>
             <h3>Honest portfolio</h3>
             <p>Concept work is clearly labelled, with no invented testimonials or guaranteed results.</p>
           </article>
-          <article data-reveal>
+          <article role="listitem" data-reveal>
             <span>02</span>
             <h3>Privacy-first setup</h3>
             <p>No tracking cookies or external font calls are used on the current public site.</p>
           </article>
-          <article data-reveal>
+          <article role="listitem" data-reveal>
             <span>03</span>
             <h3>Clear paid scope</h3>
             <p>Projects and monthly care are separated so clients know what is included and what costs extra.</p>
           </article>
-          <article data-reveal>
+          <article role="listitem" data-reveal>
             <span>04</span>
             <h3>Clean handover</h3>
             <p>Clients receive launch checks, account access, agreed files, and clear notes for ongoing care.</p>
@@ -467,7 +469,7 @@
         <form class="signup-form" name="locriva-leads" method="POST" data-signup-form>
           <input type="hidden" name="form-name" value="locriva-leads" />
           <p class="hidden-field">
-            <label>Do not fill this out <input name="bot-field" /></label>
+            <label>Do not fill this out <input type="text" name="bot-field" /></label>
           </p>
           <label>
             <span>Work email</span>

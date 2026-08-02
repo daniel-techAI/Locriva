@@ -21,16 +21,29 @@ if (header) {
 }
 
 if (navToggle && nav) {
+  const navToggleLabel = navToggle.querySelector(".sr-only");
+
+  const setNavigationState = (isOpen, { returnFocus = false } = {}) => {
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("nav-open", isOpen);
+    if (navToggleLabel) navToggleLabel.textContent = isOpen ? "Close navigation" : "Open navigation";
+    if (returnFocus) navToggle.focus();
+  };
+
   navToggle.addEventListener("click", () => {
     const nextState = navToggle.getAttribute("aria-expanded") !== "true";
-    navToggle.setAttribute("aria-expanded", String(nextState));
-    document.body.classList.toggle("nav-open", nextState);
+    setNavigationState(nextState);
   });
 
   nav.addEventListener("click", (event) => {
     if (event.target instanceof HTMLAnchorElement) {
-      navToggle.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("nav-open");
+      setNavigationState(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
+      setNavigationState(false, { returnFocus: true });
     }
   });
 }

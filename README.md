@@ -52,7 +52,22 @@ The check verifies required page metadata, unique IDs, local links and assets, C
 
 ## Form and privacy behavior
 
-Public enquiry forms do not transmit or store submissions. They open a pre-filled `mailto:` draft, which the visitor must review and send. Demo forms only display an on-page demonstration message. If a backend, analytics, payments, booking, chat, or other third-party service is added, review the privacy, cookie, security, and deployment documentation before enabling it.
+Public enquiry forms do not transmit or store submissions. They open a pre-filled `mailto:` draft,
+which the visitor must review and send. Demo forms only display an on-page demonstration message. If
+a backend, analytics, payments, booking, chat, or other third-party service is added, review the
+privacy, cookie, security, and deployment documentation before enabling it.
+
+## Quality checks
+
+Pull requests and changes to `main` run automated HTML, local-link, desktop, mobile, and WCAG A/AA checks.
+
+```bash
+npm install
+npx playwright install chromium
+npm run check
+```
+
+The browser checks cover every public HTML page, confirm local assets remain reachable, verify the skip link and mobile menu keyboard behaviour, and use axe-core to catch automated accessibility regressions. Manual keyboard and screen-reader testing is still required before major releases.
 
 ## Deployment
 
