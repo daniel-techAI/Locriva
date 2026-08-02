@@ -46,7 +46,7 @@ test("homepage has no automated WCAG A or AA violations", async ({ page }) => {
 test("small brass labels retain WCAG AA contrast on white surfaces", async ({ page }) => {
   await page.goto("/");
 
-  for (const label of [page.locator(".process-list article span").first(), page.locator(".popular").first()]) {
+  for (const label of [page.locator(".trust-grid article span").first(), page.locator(".popular").first()]) {
     const contrast = await label.evaluate((element) => {
       const values = getComputedStyle(element).color.match(/[\d.]+/g)?.slice(0, 3).map(Number);
       if (!values || values.length !== 3) return 0;
