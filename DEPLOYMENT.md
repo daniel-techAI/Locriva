@@ -1,35 +1,51 @@
-# Locriva Deployment Steps
+# Deploying Locriva
 
-## What Is Already Prepared
+Locriva is a static site. Deployment consists of publishing the repository root; there is no dependency installation, compilation, server process, database, or secret configuration.
 
-- Static site files
-- GitHub Pages-ready public site
-- Email-draft enquiry forms that work without a form-storage provider
-- Robots file
-- Sitemap for the current GitHub Pages URL
-- Privacy, terms, legal notice, and cookie pages
+## Pre-deployment checks
 
-## Recommended Launch Path
+1. Run the local validator:
 
-1. Push approved changes to the `main` branch.
-2. Confirm GitHub Pages still uses `main` and `/root` in repository Settings -> Pages.
-3. Wait for the Pages deployment to finish.
-4. Open `https://daniel-techAI.github.io/Locriva/` in a fresh private window.
-5. Test the homepage, demos, project form email draft, mobile navigation, legal pages, and footer links.
-6. Check `sitemap.xml` and `robots.txt` after any public URL change.
-7. Complete the Legal Notice identity fields before accepting a paid contract.
-8. Buy and connect a domain only after the Locriva name is rechecked immediately before purchase.
+   ```powershell
+   powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\Test-Site.ps1
+   ```
 
-## Branch Layout
+2. Preview `index.html` and test the homepage, navigation, all three demos, project form, feedback form, legal pages, and the 404 page at mobile and desktop widths.
+3. Confirm that each real enquiry form opens an accurate email draft and that demo forms do not send data.
+4. Complete the blocking identity and business items in `LAUNCH_CHECKLIST.md` before accepting paid work.
 
-- `main` - public selling site and all shared source files.
-- `tester-site` - separated tester landing page.
-- `demo-cafe`, `demo-salon`, `demo-roofing` - saved standalone demo branches.
+## GitHub Pages
 
-The public GitHub Pages site uses `main`; demo URLs are normal HTML pages under that deployment.
+After repository and Pages access are available:
 
-## Public URL Before Buying A Domain
+1. Open the repository's **Settings -> Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select `main`, choose `/ (root)`, and save.
+4. Wait for the Pages deployment to complete.
+5. Open `https://daniel-techai.github.io/Locriva/` in a private browser window and repeat the pre-deployment checks.
 
-You do not need a custom domain to make the site public. GitHub Pages gives you a `*.github.io` URL after Pages is enabled. Buy the custom domain later, then connect it to the same deployed site with free HTTPS.
+The `.nojekyll` file tells GitHub Pages to publish the static files as-is. No custom GitHub Actions workflow is required for this branch-based setup.
 
-When a custom domain is connected, update canonical/public URLs, `sitemap.xml`, `robots.txt`, documentation, and any absolute links before announcing it.
+## Other static hosts
+
+Cloudflare Pages, Netlify, and similar hosts can publish the same files. Use the repository root as the publish directory and leave the build command empty. Verify the provider's current settings before launch.
+
+## Changing the public URL
+
+Before announcing a custom domain or a different host, update every public absolute URL in:
+
+- `index.html` (`canonical`, Open Graph URL, and Open Graph image)
+- `robots.txt`
+- `sitemap.xml`
+- `README.md`
+- this deployment guide
+
+Then rerun the validator and verify HTTPS, the 404 page, social previews, forms, and every sitemap URL on the deployed site.
+
+## Release checklist
+
+- Publish only reviewed changes from `main`.
+- Check the deployed site in a fresh private window rather than relying on a cached local copy.
+- Confirm that no `.env`, credentials, customer data, private drafts, or QA screenshots were added.
+- Revisit the privacy and cookie notices before adding analytics, payments, stored submissions, booking, maps, chat, or advertising tools.
+- Recheck the Locriva business name and domain immediately before registration; earlier availability checks are not guarantees.
