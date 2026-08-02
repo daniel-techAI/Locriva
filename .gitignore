@@ -1,10 +1,32 @@
+# Operating-system files
 .DS_Store
 Thumbs.db
-node_modules/
+Desktop.ini
+
+# Editors and local tooling
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local configuration and credentials
 .env
 .env.*
+!.env.example
+
+# Dependencies, generated output, and caches
+node_modules/
 dist/
 build/
+coverage/
+.cache/
+.tmp/
+*.log
+
+# Hosting-provider state
 .netlify/
 .wrangler/
+
+# Local visual-regression artifacts
 qa/
