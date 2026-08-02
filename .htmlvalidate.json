@@ -1,0 +1,13 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "attribute-boolean-style": "off",
+    "doctype-style": "off",
+    "element-required-attributes": "error",
+    "no-inline-style": "off",
+    "prefer-native-element": "off",
+    "svg-focusable": "off",
+    "void-style": "off",
+    "wcag/h63": "error"
+  }
+}

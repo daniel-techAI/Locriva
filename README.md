@@ -54,6 +54,18 @@ The local preview opens the site directly from this folder. It does not need Nod
 - The site does not intentionally load third-party fonts, analytics, advertisements, maps, chat, or non-essential cookies.
 - The Legal Notice deliberately contains unresolved identity fields. Complete them before accepting paid work.
 
+## Quality Checks
+
+Pull requests and changes to `main` run automated HTML, local-link, desktop, mobile, and WCAG A/AA checks.
+
+```bash
+npm install
+npx playwright install chromium
+npm run check
+```
+
+The browser checks cover every public HTML page, confirm local assets remain reachable, verify the skip link and mobile menu keyboard behaviour, and use axe-core to catch automated accessibility regressions. Manual keyboard and screen-reader testing is still required before major releases.
+
 ## Deploy
 
 This can be hosted as a static site on GitHub Pages, Cloudflare Pages, or another static host. GitHub Pages is already the active public host.

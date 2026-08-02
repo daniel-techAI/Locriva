@@ -1,0 +1,17 @@
+{
+  "name": "locriva-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Locriva website quality checks",
+  "scripts": {
+    "check": "npm run check:html && npm run test:a11y",
+    "check:html": "html-validate \"*.html\"",
+    "preview": "node scripts/serve-static.mjs",
+    "test:a11y": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
+    "@playwright/test": "1.62.1",
+    "html-validate": "11.6.1"
+  }
+}

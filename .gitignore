@@ -8,3 +8,5 @@ build/
 .netlify/
 .wrangler/
 qa/
+playwright-report/
+test-results/

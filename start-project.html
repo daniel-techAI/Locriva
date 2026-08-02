@@ -26,7 +26,7 @@
         <span class="sr-only">Open navigation</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
       </button>
-      <nav class="site-nav" id="site-nav" data-nav>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
         <a href="index.html#features">Services</a>
         <a href="index.html#portfolio">Portfolio</a>
         <a href="maintenance.html">Maintenance</a>
@@ -65,7 +65,7 @@
         <form class="intake-form" name="project-intake" method="POST" data-signup-form>
           <input type="hidden" name="form-name" value="project-intake" />
           <p class="hidden-field">
-            <label>Do not fill this out <input name="bot-field" /></label>
+            <label>Do not fill this out <input type="text" name="bot-field" /></label>
           </p>
           <label>
             <span>Your email</span>
