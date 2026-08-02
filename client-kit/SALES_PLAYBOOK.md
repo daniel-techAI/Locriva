@@ -11,7 +11,7 @@ Do not pitch complicated software first. Pitch clarity, speed, and fewer lost le
 - Business has an outdated website.
 - Business has no clear contact form or booking CTA.
 - Business depends on local trust.
-- Owner is reachable by email, Instagram, Facebook, or phone.
+- Owner or manager is reachable through a lawful, permission-based channel.
 - Website problem is obvious in under 2 minutes.
 
 ## First Offer
@@ -30,17 +30,33 @@ Care Plan:
 - Analytics snapshot.
 - Suggested first price: EUR 49-EUR 99/month.
 
-## Outreach Message
+## Permission-First Outreach
 
-Subject: quick website idea for [Business Name]
+Do not treat a public email address, social profile, or contact form as consent to receive sales
+messages. In the Netherlands, unsolicited commercial email, app, and SMS messages generally require
+prior explicit consent. Cold-calling rules also depend on the recipient's legal form. Start with an
+in-person introduction, referral, local event, or another channel confirmed as lawful for that
+recipient and market.
+
+In-person opener:
+
+> Hi, I am Daniel. I build compact websites for local businesses. I noticed one specific thing on
+> your site that may be making booking or contact harder. Would it be okay if I email the owner a
+> short three-point note? I will not add you to a mailing list.
+
+Record who gave permission, the permitted address, the purpose, and the date before sending.
+
+## Message After Permission
+
+Subject: website note you agreed to receive for [Business Name]
 
 Hi [Name],
 
-I noticed [specific issue: mobile layout, unclear services, no quote form, old design, slow first impression].
+Thanks for speaking with me on [date]. As agreed, I noticed [one specific, verifiable issue].
 
 I build simple websites for small businesses that make the offer clearer and make it easier for customers to contact you. I put together a few demo directions here: [Locriva link].
 
-Would you be open to a quick homepage teardown or a simple redesign direction for [Business Name]?
+Would a 15-minute call on [option 1] or [option 2] be useful? If not, I will close this out.
 
 Thanks,
 [Your Name]
@@ -67,6 +83,8 @@ Thanks,
 ## Simple Pipeline Statuses
 
 - Researching
+- Permission requested
+- Permission granted
 - Contacted
 - Followed up
 - Call booked
@@ -76,3 +94,8 @@ Thanks,
 
 Copy `LEAD_TRACKER_TEMPLATE.csv` to `LEAD_TRACKER.csv` for local use. The working tracker is
 ignored by Git so prospect contact details and sales notes do not enter the public repository.
+
+Official Netherlands starting points:
+
+- Advertising and unsolicited electronic messages: https://business.gov.nl/regulations/advertising/
+- Telesales rules and legal-form restrictions: https://business.gov.nl/regulations/telesales/

@@ -4,9 +4,10 @@ This is not legal or tax advice. It records the unresolved decisions that block 
 
 ## Blocking Decisions
 
-- Register the legal operator in Slovakia before accepting paid client work.
+- Confirm with Slovak and Dutch advisers whether Slovakia is the correct place of establishment before registering or accepting paid work.
 - Confirm the operator's full legal name, legal form, official business address, and registration number.
 - Confirm VAT status, invoice wording, record-retention duties, and which tax authority receives filings.
+- Confirm whether working regularly from the Netherlands creates Dutch registration, tax, VAT, or permanent-establishment duties.
 - Confirm governing law, competent courts, professional liability position, and the client agreement wording.
 - Keep the Slovak data-protection authority named in the privacy policy.
 - Ask a Slovak trade-mark professional to confirm the Locriva similarity search before filing a mark or making substantial brand investment.
@@ -20,6 +21,7 @@ This is not legal or tax advice. It records the unresolved decisions that block 
 - Track income and expenses from day one.
 - Understand tax obligations in your country/state.
 - Add the official legal identity, legal form, register, registration number, VAT ID if issued, service address, and business contact details to the Legal Notice before formal paid contracting.
+- Document a lawful outreach basis and honour opt-outs; a publicly listed address is not automatically consent for commercial email.
 
 ## Website Compliance
 
@@ -72,3 +74,6 @@ This is not legal or tax advice. It records the unresolved decisions that block 
 - SK-NIC WHOIS: https://whois.sk-nic.sk/?lang=en
 - Slovak data-protection authority: https://dataprotection.gov.sk/
 - EU business website requirements: https://europa.eu/youreurope/business/running-business/digitalising/setting-up-business-website/index_en.htm
+- Netherlands foreign-company registration: https://business.gov.nl/starting-your-business/registering-your-business/foreign-company-registration-in-the-netherlands/
+- Netherlands advertising rules: https://business.gov.nl/regulations/advertising/
+- Netherlands telesales rules: https://business.gov.nl/regulations/telesales/

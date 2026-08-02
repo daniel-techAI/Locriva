@@ -33,9 +33,11 @@
 
 1. Find businesses with outdated websites or no clear contact flow.
 2. Write down the business name, website, owner/contact, and the main problem.
-3. Send a short message with one concrete observation.
-4. Offer a free homepage teardown or quick redesign direction.
-5. Follow up after 3-5 days.
+3. Check the outreach rules and the recipient's legal form before making contact.
+4. Obtain and record permission through a lawful channel before sending a commercial email or message.
+5. Send one short note with one concrete observation and offer a focused homepage teardown.
+6. Follow up once after 5-7 business days only when the original permission covers it.
+7. Stop immediately after an opt-out, refusal, or unanswered final follow-up.
 
 ## Risks To Avoid
 
@@ -47,3 +49,4 @@
 - Do not hide required business details once you are formally selling.
 - Do not collect form submissions into a third-party database without updating privacy terms.
 - Do not claim that the starter legal pages guarantee compliance; have the final cross-border setup reviewed professionally.
+- Do not scrape addresses or send unsolicited commercial email, app, or SMS messages where prior consent is required.
